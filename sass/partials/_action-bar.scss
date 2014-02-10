@@ -1,0 +1,57 @@
+.action-bar {
+  @include pie-clearfix;
+  padding: rhythm(2) 0 rhythm(1);
+  background-color: #e9e9e7;
+
+  .content {
+    @include trailer(1);
+  }
+  .action {
+    @include trailer(1);
+    text-align: center;
+  }
+
+  .slogan {
+    @include adjust-font-size-to(20px);
+    @extend %subpixel;
+    color: $global-color;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    min-width: 5em;
+    text-align: center;
+    padding: rhythm(.5) rhythm(.75);
+    font-size: 18px;
+    line-height: 1em;
+    border: 2px solid $global-color;
+    color: $global-color;
+    @extend %subpixel;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @include at-breakpoint($pad) {
+    padding: rhythm(2) 0 rhythm(2);
+    width: 100%;
+    display: table;
+
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .slogan {
+      text-align: left;
+    }
+    .action {
+      padding-left: 48px;
+      text-align: right;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+  }
+
+}

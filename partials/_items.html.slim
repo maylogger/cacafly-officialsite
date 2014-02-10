@@ -1,0 +1,32 @@
+.block
+  .items
+    - 3.times do
+      .item
+        .item-image= image_tag lorem_image("72x72")
+        .item-content
+          h4.item-title= zh_lorem_words(rand(3) + 4)
+          p.item-text= zh_lorem_words(rand(10) + 20)
+
+  .items.center
+    - 4.times do
+      .item
+        .item-image= image_tag lorem_image("72x72")
+        .item-content
+          h4.item-title= zh_lorem_words(rand(3) + 4)
+          p.item-text= zh_lorem_words(rand(10) + 20)
+
+  .items.image-left
+    - 3.times do
+      .item
+        .item-image= image_tag lorem_image("72x72")
+        .item-content
+          h4.item-title= zh_lorem_words(rand(3) + 4)
+          p.item-text= zh_lorem_words(rand(10) + 20)
+
+  .items.title-with-image
+    - 3.times do
+      .item
+        .item-image= image_tag lorem_image("36x36")
+        .item-content
+          h4.item-title= zh_lorem_words(rand(3) + 4)
+          p.item-text= zh_lorem_words(rand(10) + 20)
