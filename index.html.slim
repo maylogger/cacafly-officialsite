@@ -1,7 +1,7 @@
 .block.center
   .block-content
     .headline
-      h2 cacaFly聖洋科技，台灣數位網路領域的領先者與耕耘者
+      h2 cacaFly 聖洋科技，台灣數位網路領域的領先者與耕耘者
       p cacaFly 聖洋科技2009 年創立，獲業界前輩詹宏志先生等的肯定與指導，深耕數位行銷領域。cacaFly 秉持用最好的服務與專業知識幫客戶創造價值，服務據點分佈於台北、新竹與台中，服務團隊人數超過 80 人，使 cacaFly 成為客戶最信賴的數位媒體廠商。
 
 .block
@@ -21,7 +21,6 @@
           .item-content
             h4.item-title 粉絲專頁經營
             p.item-text 利用社交為導向的 Facebook，經營粉絲專頁與客戶打交道、作朋友，建立顧客忠誠度
-  .row.grid-1-2-2
     .col
       .items.image-left
         .item
@@ -36,7 +35,6 @@
           .item-content
             h4.item-title Microsoft 獨家授權廣告
             p.item-text MSN多媒體廣告訴說故事方式來塑造品牌形象與創造品牌忠誠度
-  .row.grid-1-2-2
     .col
       .items.image-left
         .item
@@ -51,7 +49,6 @@
           .item-content
             h4.item-title Youtube 廣告
             p.item-text 多種類型影音廣告，非常適合作為品牌力的宣傳
-  .row.grid-1-2-2
     .col
       .items.image-left
         .item
@@ -83,7 +80,6 @@
           .item-image= image_tag lorem_image("72x72")
           .item-content
             h4.item-title 中小企業主
-  .row.grid-1-2-2
     .col
       .items.image-left
         .item
@@ -100,13 +96,14 @@
 .block
   h3.block-title 重大消息
   .row.grid-1-2-2
-    - 2.times do
+    - 4.times do
       .col
-      	ul.list.has-divider
-          - 4.times do
-            li
-              .list-title= zh_lorem_words( rand(3) + 3 )
-              a.content= zh_lorem_words( rand(5) + 20 )
+        .items.image-left
+          .item
+            .item-image= image_tag lorem_image("210x130")
+            .item-content
+              h4.item-title= zh_lorem_words( rand(3) + 3 )
+              p.item-text= zh_lorem_paragraph
 
 .block
   h3.block-title 課程活動
@@ -115,23 +112,22 @@
       .col
         .items.image-left
           .item
-            .item-image= image_tag lorem_image("220x140")
+            .item-image= image_tag lorem_image("210x130")
             .item-content
               h4.item-title= zh_lorem_words( rand(3) + 3 )
               p.item-text= zh_lorem_paragraph
 
 .block
   h3.block-title cacaFly 市場動態
-  - 2.times do
-    .row.grid-1-2-2
-      - 2.times do
-        .col
-          .items.image-left
-            .item
-              .item-image= image_tag lorem_image("220x140")
-              .item-content
-                h4.item-title= zh_lorem_words( rand(3) + 3 )
-                p.item-text= zh_lorem_paragraph
+  .row.grid-1-2-2
+    - 4.times do
+      .col
+        .items.image-left
+          .item
+            .item-image= image_tag lorem_image("210x130")
+            .item-content
+              h4.item-title= zh_lorem_words( rand(3) + 3 )
+              p.item-text= zh_lorem_paragraph
   .row.grid-1-2-2
     - 2.times do |i|
       .col
