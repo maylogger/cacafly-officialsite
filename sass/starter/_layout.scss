@@ -5,6 +5,10 @@ $gutter-width   : 24px;
 $grid-padding   : $gutter-width;
 
 // add media
+$wide-mobile-columns  : 4;
+$wide-mobile-break    : 540px;
+$wide-mobile: $wide-mobile-break $wide-mobile-columns;
+
 $pad-columns  : 6;
 $pad-break    : 760px;
 $pad: $pad-break $pad-columns;

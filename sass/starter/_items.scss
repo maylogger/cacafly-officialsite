@@ -66,6 +66,12 @@
     }
   }
 
+  &.image-top-left {
+    .item-content {
+      overflow: hidden;
+    }
+  }
+
   // 圖片置於標題左側
   &.title-with-image {
     .item-image {
@@ -83,6 +89,32 @@
     }
     .item-text {
       clear: both;
+    }
+  }
+
+  @include at-breakpoint($wide-mobile) {
+    .item {
+
+    }
+    .item-icon {
+      img {
+
+      }
+    }
+    .item-content {
+
+    }
+    .item-text {
+
+    }
+    &.image-top-left {
+      .item-image {
+        float: left;
+        margin: 0 1em 0 0;
+      }
+      .item-content {
+        overflow: hidden;
+      }
     }
   }
 

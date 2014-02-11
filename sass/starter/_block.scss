@@ -26,7 +26,7 @@
 
 .block {
   @include pie-clearfix;
-  padding: rhythm(2) 0 0;
+  padding: rhythm(1) 0 0;
 
   // &:nth-child(2n+1) {
   //   background-color: #f9f9f7;
@@ -57,7 +57,7 @@
 
 
   @include at-breakpoint($pad) {
-    padding: rhythm(3) 0 rhythm(1);
+    padding: rhythm(1.5) 0 0;
     .block-content {
       @include trailer(2);
     }
@@ -76,7 +76,7 @@
   } // end pad
 
   @include at-breakpoint($desktop) {
-    padding: rhythm(4) 0 rhythm(2);
+    padding: rhythm(2) 0 0;
     &.center {
       .headline {
         max-width: 560px;

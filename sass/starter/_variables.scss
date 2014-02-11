@@ -3,7 +3,7 @@ $grid-background-column-color: rgba(#f15a14,.2);
 $grid-background-baseline-color: rgba(#009a8e,.3);
 
 
-//======== Base Color
+//======== Base Color ============
 $color-darken-black: #252525;
 $color-black: #444;
 $color-gray: #999;
@@ -11,6 +11,22 @@ $color-lighter-gray: #f0f2f0;
 $color-blue: #369;
 $color-red: #ae3941;
 $color-green: #8fbe3e;
+
+$color-black-100: lighten(black, 0%);
+$color-black-90: lighten(black, 10%);
+$color-black-80: lighten(black, 20%);
+$color-black-70: lighten(black, 30%);
+$color-black-60: lighten(black, 40%);
+$color-black-50: lighten(black, 50%);
+$color-black-40: lighten(black, 60%);
+$color-black-30: lighten(black, 70%);
+$color-black-20: lighten(black, 80%);
+$color-black-10: lighten(black, 90%);
+
+//======== Ci Color ==============
+$color-brown: #7C5122;
+$color-orange: #F26522;
+$color-yellow: #F99D1C;
 
 //======== Global Setting ========
 // text
@@ -23,7 +39,7 @@ $global-link-hover-color: darken($color-blue, 20%);
 // background & border
 $global-background: white;
 $global-spectail-block: #fafafa;
-$global-divider: $color-lighter-gray;
+$global-divider: $color-black-10;
 
 
 //======== Typography ========
