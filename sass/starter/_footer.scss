@@ -46,13 +46,19 @@
 
   .footer-bottom {
     @include pie-clearfix;
-    @include padding-leader(1);
-    border-top: 1px solid $footer-divider-color;
+    // @include padding-leader(1);
+    // border-top: 1px solid $footer-divider-color;
   }
 
   .copyright {
     @include adjust-font-size-to(13px, 3/4);
-    color: darken($footer-color, 25%);
+    color: $footer-color;
+    @include trailer(1);
+  }
+
+  .company-info {
+    @include adjust-font-size-to(13px, 3/4);
+    color: $footer-color;
     @include trailer(1);
   }
 
@@ -83,6 +89,9 @@
       float: right;
     }
     .footer-links {
+      float: left;
+    }
+    .company-info {
       float: left;
     }
   }

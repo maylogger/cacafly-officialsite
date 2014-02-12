@@ -10,17 +10,18 @@ html lang="zh-TW" class="no-js"
         .outside-inner
           .main-nav data-set="main-nav"
             ul
-              li: a href="/" 關於 cacaFly
-              li: a href="/" Facebook 廣告
-              li: a href="/" MSN 廣告
-              li: a href="/" Google / Youtube
-              li: a href="/" 行銷工具
-              li: a href="/" 聯絡
+              li: a href="/about" 關於 cacaFly
+              li: a href="/facebook" Facebook 廣告
+              li: a href="/microsoft" MSN 廣告
+              li: a href="/google" Google / Youtube
+              li: a href="/marketing" 行銷工具
+              li: a href="/contact" 聯絡
 
       .page
         = render "/partials/header"
         .main
           = yield
+        = render "/partials/footer"
         .off-canvas-mask
 
     = render "/layout_foot"
