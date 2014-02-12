@@ -1,0 +1,25 @@
+.contact-form {
+  max-width: 40em;
+  margin: 0 auto rhythm(2);
+  padding-top: rhythm(2);
+  border-top: 1px solid $global-divider;
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+.col.contact-form-unit {
+  margin-bottom: 0;
+}
+@include at-breakpoint($pad) {
+  .contact-form {
+    input {
+      width: 90%;
+    }
+    textarea {
+      width: 100%;
+    }
+  }
+}

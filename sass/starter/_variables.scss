@@ -22,6 +22,11 @@ $color-black-40: lighten(black, 60%);
 $color-black-30: lighten(black, 70%);
 $color-black-20: lighten(black, 80%);
 $color-black-10: lighten(black, 90%);
+$color-black-9: lighten(black, 91%);
+$color-black-8: lighten(black, 92%);
+$color-black-7: lighten(black, 93%);
+$color-black-6: lighten(black, 94%);
+$color-black-5: lighten(black, 95%);
 
 //======== Ci Color ==============
 $color-brown: #7C5122;
@@ -60,9 +65,9 @@ $main-nav-color: $global-color;
 
 
 // footer
-$footer-bg-color: $color-black;
+$footer-bg-color: $color-black-80;
 $footer-title-color: invert($color-darken-black);
-$footer-color: invert($global-color);
+$footer-color: $color-black-20;
 $footer-divider-color: #515151;
 
 
