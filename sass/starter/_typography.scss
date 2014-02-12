@@ -4,12 +4,17 @@
   font-style: normal;
 }
 
+%helvetica-light {
+  font-family: "HelveticaNeue-Light", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+}
+
 %subpixel {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
-  @extend %avenir;
+  @extend %helvetica-light;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
