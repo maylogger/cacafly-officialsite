@@ -7,10 +7,10 @@
     a {
       display: block;
       color: black;
-      // @include replace-text-with-svg("logo-small");
+      @include replace-text-with-svg("logo-small");
       @include at-breakpoint($desktop) {
         margin: auto;
-        // @include replace-text-with-svg("logo");
+        @include replace-text-with-svg("logo");
       }
       &:hover {
         text-decoration: none;
