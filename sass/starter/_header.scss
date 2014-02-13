@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 1000; // for cacaFly hero background.
   .logo {
     float: left;
     @include adjust-font-size-to(22px, 2);

@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+  margin-top: -#{rhythm(4)};
+  padding-top: rhythm(4);
+  background-color: white;
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: .35;
+    @include filter(contrast(200%));
+    // background-size: cover;
+    background-position: center;
+  }
+  .container {
+    position: relative;
+    z-index: 1000;
+  }
+}
