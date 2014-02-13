@@ -1,0 +1,63 @@
+.showcase {
+  @include pie-clearfix;
+  .case-item {
+    @include box-sizing(border-box);
+    position: relative;
+    float: left;
+    width: 50%;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    .case-item-info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      color: white;
+      background-color: rgba(black, .5);
+      opacity: 0;
+      @include transition(.5s);
+      .case-title {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        padding: 0 rhythm(1);
+        text-align: center;
+        @include translateY(-50%);
+        @include box-sizing(border-box);
+      }
+    }
+    .case-item-photo {
+      position: relative;
+      height: 0;
+      padding-top: 100%;
+      background-color: $color-black-70;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        vertical-align: middle;
+        @include transition(.5s);
+      }
+    }
+    &:hover {
+      .case-item-info {
+        opacity: 1;
+      }
+      .case-item-photo {
+        img {
+          @include filter(contrast(200%));
+        }
+      }
+    }
+  }
+}
+@include at-breakpoint($pad) {
+  .showcase {
+    .case-item {
+      width: 25%;
+    }
+  }
+}
