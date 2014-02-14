@@ -1,7 +1,9 @@
 .hero {
   position: relative;
   margin-top: -#{rhythm(4)};
+  @include trailer(2);
   padding-top: rhythm(4);
+  padding-bottom: rhythm(2);
   background-color: white;
   .hero-bg {
     position: absolute;

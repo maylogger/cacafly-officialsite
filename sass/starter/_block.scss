@@ -76,7 +76,7 @@
   } // end pad
 
   @include at-breakpoint($desktop) {
-    padding: rhythm(2) 0 0;
+    padding: rhythm(3) 0 0;
     &.center {
       .headline {
         max-width: 560px;

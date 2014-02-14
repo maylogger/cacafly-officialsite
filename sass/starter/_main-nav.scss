@@ -7,13 +7,18 @@
     list-style: none;
   }
   a {
+    padding: 3px 9px; // for cacaFly.
     color: $main-nav-color;
-    // font-style: italic;
+    // font-style: italic; // for cacaFly.
     @extend %subpixel;
     @include adjust-font-size-to(16px);
+    @include transition(.2s);
+
     &:hover {
-      color: lighten($main-nav-color, 20%);
+      color: white; // for cacFly.
       text-decoration: none;
+      background: rgba($color-orange, .9); // for cacaFly.
+      @include border-radius(3px); // for cacaFly.
     }
   }
 
@@ -28,7 +33,10 @@
     li {
       display: block;
       float: left;
-      margin: 0 .5em;
+      margin: 0 .25em;
+    }
+    a {
+      @include adjust-font-size-to(14px);
     }
     // append-around
     .outside & {
@@ -36,6 +44,14 @@
     }
     .header & {
       display: block;
+    }
+    .pad-hide {
+      display: none;
+    }
+  }
+  @include at-breakpoint($desktop) {
+    .pad-hide {
+      display: inline;
     }
   }
 }

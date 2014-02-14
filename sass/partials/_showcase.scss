@@ -1,7 +1,10 @@
 .showcase {
+  @include leader(2);
+  @include trailer(2);
   @include pie-clearfix;
   .case-item {
     @include box-sizing(border-box);
+    overflow: hidden;
     position: relative;
     float: left;
     width: 50%;
@@ -14,8 +17,9 @@
       left: 0;
       bottom: 0;
       color: white;
-      background-color: rgba(black, .5);
+      background-color: rgba(black, .7);
       opacity: 0;
+      @include scale(1);
       @include transition(.5s);
       .case-title {
         position: absolute;
@@ -23,8 +27,8 @@
         width: 100%;
         padding: 0 rhythm(1);
         text-align: center;
-        @include translateY(-50%);
         @include box-sizing(border-box);
+        @include translateY(-50%); // IE8 need hack.
       }
     }
     .case-item-photo {
@@ -45,10 +49,11 @@
     &:hover {
       .case-item-info {
         opacity: 1;
+        @include scale(.85);
       }
       .case-item-photo {
         img {
-          @include filter(contrast(200%));
+          @include filter(contrast(150%));
         }
       }
     }
