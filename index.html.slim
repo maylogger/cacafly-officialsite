@@ -1,5 +1,5 @@
 .hero
-  .hero-bg style="background-image: url(http://hhhhold.com/1200x800);"
+  .hero-bg
   .container
     .block
       .block-content
@@ -8,7 +8,7 @@
           p cacaFly 聖洋科技2009 年創立，獲業界前輩詹宏志先生等的肯定與指導，深耕數位行銷領域。<br>cacaFly 秉持用最好的服務與專業知識幫客戶創造價值，服務據點分佈於台北、新竹與台中，服務團隊人數超過 80 人，<br>使 cacaFly 成為客戶最信賴的數位媒體廠商。
 .container
   .block
-    h3.block-title 主要服務
+    h3.block-title.main-title: span 主要服務
     .row.grid-1-2-2
       .col
         .items.image-left
@@ -24,6 +24,7 @@
             .item-content
               h4.item-title 粉絲專頁經營
               p.item-text 利用社交為導向的 Facebook，經營粉絲專頁與客戶打交道、作朋友，建立顧客忠誠度
+    .row.grid-1-2-2
       .col
         .items.image-left
           .item
@@ -38,6 +39,7 @@
             .item-content
               h4.item-title Microsoft 獨家授權廣告
               p.item-text MSN多媒體廣告訴說故事方式來塑造品牌形象與創造品牌忠誠度
+    .row.grid-1-2-2
       .col
         .items.image-left
           .item
@@ -52,6 +54,7 @@
             .item-content
               h4.item-title Youtube 廣告
               p.item-text 多種類型影音廣告，非常適合作為品牌力的宣傳
+    .row.grid-1-2-2
       .col
         .items.image-left
           .item
@@ -68,7 +71,7 @@
               p.item-text 透過粉絲好康建立「好康活動」達成招募粉絲之效果，讓你無預算也能製作行銷活動並整合粉絲專頁
 
   .block
-    h3.block-title 服務客群
+    h3.block-title.main-title: span 服務客群
     p cacaFly 在台灣最先代理 Facebook 廣告，服務過的客戶不勝枚舉，因而擁有豐富的服務經驗，包含知曉客戶的困境、需求與了解市場狀況與趨勢。<br>cacaFly 為了能提供更專業的服務品質，精細分割不同的客戶並以深耕服務
     .row.grid-1-2-2
       .col
@@ -83,6 +86,7 @@
             .item-image= image_tag lorem_image("72x72")
             .item-content
               h4.item-title 中小企業主
+    .row.grid-1-2-2
       .col
         .items.image-left
           .item
@@ -101,22 +105,23 @@
       .case-item-photo
         img src="http://hhhhold.com/400x400/#{rand(100)}"
       .case-item-info
-        h3.case-title 測試
+        h3.case-title= zh_lorem_words( rand(3) + 7 )
 .container
   .block
-    h3.block-title 重大消息
-    .row.grid-1-2-2
-      - 4.times do
-        .col
-          .items.image-top-left
-            .item
-              .item-image= image_tag lorem_image("210x130")
-              .item-content
-                h4.item-title= zh_lorem_words( rand(3) + 3 )
-                p.item-text= zh_lorem_paragraph
+    h3.block-title.main-title: span 重大消息
+    - 2.times do
+      .row.grid-1-2-2
+        - 2.times do
+          .col
+            .items.image-top-left
+              .item
+                .item-image= image_tag lorem_image("210x130")
+                .item-content
+                  h4.item-title= zh_lorem_words( rand(3) + 3 )
+                  p.item-text= zh_lorem_paragraph
 
   .block
-    h3.block-title 課程活動
+    h3.block-title.main-title: span 課程活動
     .row.grid-1-2-2
       - 2.times do
         .col
@@ -128,7 +133,7 @@
                 p.item-text= zh_lorem_paragraph
 
   .block
-    h3.block-title cacaFly 市場動態
+    h3.block-title.main-title: span cacaFly 市場動態
     .row.grid-1-2-2
       - 4.times do
         .col
@@ -138,24 +143,64 @@
               .item-content
                 h4.item-title= zh_lorem_words( rand(3) + 3 )
                 p.item-text= zh_lorem_paragraph
+  .block
+    h3.block-title.main-title: span cacaFly 市場分析報告
     .row.grid-1-2-2
       - 2.times do |i|
         .col
-          ul.list.has-divider
-            li
-              a.content #{i+1}月份市場分析報告
+          .items.image-top-left
+            .item
+              .item-image= image_tag lorem_image("210x130")
+              .item-content
+                h4.item-title #{i+1}月份市場分析報告
+                p.item-text= zh_lorem_paragraph
 
   .block
-    h3.block-title 聯絡我們
+    h3.block-title.main-title: span 聯絡我們
     .row.grid-1-3-3
-      - 3.times do
-        .col
-          .items
-            .item
-              .item-image= image_tag lorem_image("340x180")
-              .item-content
-                h4.item-title= zh_lorem_words( rand(3) + 3 )
-                p.item-text= zh_lorem_paragraph
+      .col
+        .items
+          .item
+            .contact-map
+              .google-map
+                iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7229.418045338532!2d121.55899871662083!3d25.043947015107893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbeae765e95%3A0x3be36b55733bf3ed!2sNo.+178%2C+Section+1%2C+J%C4%ABl%C3%B3ng+Rd%2C+Xinyi+District!5e0!3m2!1sen!2stw!4v1392384417323"
+            .item-content
+              h4.item-title 台北據點
+              .item-text
+                ul.contact-info
+                  li.address 台北市信義區基隆路一段 178 號 6 樓 ＆ 8 樓
+                  li 品牌客戶：02-66315699
+                  li 中小企業：02-66315640
+                  li 遊戲業務：02-66315681
+                  li 廣告代理商：02-66315672
+                  li 地區型代理商：02-66315658
+                  li 傳真：02-2789256
+      .col
+        .items
+          .item
+            .contact-map
+              .google-map
+                iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3622.3121314017253!2d121.01823920000001!3d24.784763299999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468363bb971eaf5%3A0x6dfe41e734f96c56!2sNo.+27%2C+Gu%C4%81nx%C4%ABn+Rd%2C+Dong+District!5e0!3m2!1sen!2stw!4v1392384661209"
+            .item-content
+              h4.item-title 新竹據點
+              .item-text
+                ul.contact-info
+                  li.address 新竹市關新路 27 號 12 樓之 2
+                  li 中小企業：03-6127599
+                  li 傳真：03-6668389
+      .col
+        .items
+          .item
+            .contact-map
+              .google-map
+                iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7279.358695487113!2d120.6155287845644!3d24.182975812050586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd43d01bc4fb2806a!2z5p2x5rW35aSn5a24!5e0!3m2!1sen!2stw!4v1392385941135"
+            .item-content
+              h4.item-title 台中據點
+              .item-text
+                ul.contact-info
+                  li.address 台中市中港路 3 段 181 號 301-3 室<br>（東海大學育成中心）
+                  li 中小企業：04-23594525
+                  li 傳真：04-23597348
     .contact-form
       p 若您有需要在 facebook 上進行廣告、行銷活動，歡迎填寫下方表格與 cacaFly 連繫，我們將有專人為您服務。
       form

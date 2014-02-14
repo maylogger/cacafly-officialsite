@@ -1,0 +1,35 @@
+.main-title {
+  position: relative;
+  span {
+    position: relative;
+    z-index: 1;
+    padding-right: rhythm(1);
+    color: $color-orange;
+    @include adjust-font-size-to($font-size-xl);
+    background-color: $global-background;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 1px;
+    background: $color-black-20;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 0;
+    width: 15%;
+    height: 1px;
+    background: $color-orange;
+  }
+}
+.sub-title {
+
+}
