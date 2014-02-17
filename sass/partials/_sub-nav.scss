@@ -17,13 +17,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+    background-color: lighten($color-yellow, 40%);
   }
   li {
     display: none;
     padding: 0 12px;
     @include adjust-font-size-to($font-size-s, 1.5);
     background-color: $color-black-5;
-    border-bottom: 1px solid white;
     a {
       color: $color-orange;
     }
@@ -48,6 +49,9 @@
       &:after {
         content: "｜";
         color: $color-black-30;
+      }
+      a {
+        padding: 0 6px;
       }
     }
     li:last-child {
