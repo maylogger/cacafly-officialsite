@@ -1,6 +1,8 @@
 .showcase {
   @include leader(2);
   @include trailer(2);
+  margin-left: -12px;
+  margin-right: -12px;
   @include pie-clearfix;
   .case-item {
     @include box-sizing(border-box);
@@ -8,8 +10,7 @@
     position: relative;
     float: left;
     width: 50%;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    border: 12px solid transparent;
     .case-item-info {
       position: absolute;
       top: 0;
@@ -43,6 +44,7 @@
         width: 100%;
         margin: 0;
         vertical-align: middle;
+        @include scale(1);
         @include transition(.5s);
       }
     }
@@ -53,6 +55,7 @@
       }
       .case-item-photo {
         img {
+          @include scale(1.15);
           @include filter(contrast(150%));
         }
       }
