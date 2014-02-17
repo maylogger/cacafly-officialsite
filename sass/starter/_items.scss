@@ -67,6 +67,9 @@
   }
 
   &.image-top-left {
+    .item-image {
+      margin: 0 auto;
+    }
     .item-content {
       overflow: hidden;
     }
