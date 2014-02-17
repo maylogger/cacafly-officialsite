@@ -3,7 +3,7 @@ html lang="zh-TW" class="no-js"
   head
     = render "/layout_head"
     = render "/layout_og"
-  body.off-canvas
+  body.off-canvas.home
     .wrapper
 
       .outside
@@ -11,8 +11,8 @@ html lang="zh-TW" class="no-js"
           .main-nav data-set="main-nav"
             ul
               li: a href="/about" 關於 cacaFly
-              li: a href="/facebook" Facebook 廣告
-              li: a href="/microsoft" MSN 廣告
+              li: a href="/facebook" Facebook <div class="pad-hide">廣告</div>
+              li: a href="/microsoft" MSN <div class="pad-hide">廣告</div>
               li: a href="/google" Google / Youtube
               li: a href="/marketing" 行銷工具
               li: a href="/contact" 聯絡
