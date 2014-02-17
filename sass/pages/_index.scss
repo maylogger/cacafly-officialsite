@@ -1,3 +1,4 @@
+// contact form maybe move to new partial.
 .contact-map {
   margin-bottom: rhythm(.5);
   .google-map {
@@ -20,7 +21,6 @@
     margin-bottom: rhythm(.5);
   }
 }
-// contact form maybe move to new partial.
 .contact-form {
   max-width: 40em;
   margin: 0 auto rhythm(2);
@@ -44,5 +44,12 @@
     textarea {
       width: 100%;
     }
+  }
+}
+
+.home {
+  .header {
+    @include box-shadow(0px 3px 7px rgba($color-brown, .25));
+    background-color: rgba(white, .85);
   }
 }
