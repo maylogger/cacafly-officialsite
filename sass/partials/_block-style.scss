@@ -1,0 +1,7 @@
+.orange-block {
+  color: white;
+  background-color: desaturate($color-orange, 10%);
+}
+.lightgray-block {
+  background-color: lighten(black, 97%);
+}
