@@ -1,23 +1,18 @@
 .item.member {
   .item-image {
-    @include replace-text-with-svg("member-bg");
-    @include at-breakpoint($pad) {
-    }
     img {
       max-width: 200px;
       max-height: 200px;
       width: 100%;
       height: auto;
       margin: 10px;
-      -webkit-mask-image: url(/images/member-mask.svg);
-      -moz-mask-image: url(/images/member-mask.svg);
-      mask-image: url(/images/member-mask.svg);
     }
   }
   .item-title {
     @include leader(.5);
   }
 }
+
 .auth {
   @include leader(1);
   @include trailer(1);
@@ -27,5 +22,11 @@
   }
   @include at-breakpoint($pad) {
     text-align: right;
+  }
+}
+
+.big-events {
+  @include at-breakpoint($pad) {
+    @include trailer(3);
   }
 }

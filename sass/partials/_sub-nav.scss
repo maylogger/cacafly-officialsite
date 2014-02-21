@@ -6,11 +6,11 @@
     right: 0;
     margin: rhythm(.6);
     border: 7px solid transparent;
-    border-top-color: $color-black-80;
+    border-top-color: lighten(black, 20%);
     &.open {
       top: -7px;
       border-top-color: transparent;
-      border-bottom-color: $color-orange;
+      border-bottom-color: lighten(black, 20%);
     }
   }
   ul {
@@ -18,15 +18,15 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: lighten($color-yellow, 40%);
+    background-color: lighten(black, 90%);
   }
   li {
     display: none;
     padding: 0 12px;
     @include adjust-font-size-to($font-size-s, 1.5);
-    background-color: $color-black-5;
+    background-color: lighten(black, 95%);
     a {
-      color: $color-orange;
+      color: lighten(black, 20%)
     }
   }
   li.onpage {
@@ -48,7 +48,7 @@
       background-color: transparent;
       &:after {
         content: "｜";
-        color: $color-black-30;
+        color: lighten(black, 70%);
       }
       a {
         padding: 0 6px;
