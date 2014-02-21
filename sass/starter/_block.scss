@@ -26,16 +26,17 @@
 
 .block {
   @include pie-clearfix;
-  padding: rhythm(1) 0 0;
+  padding: rhythm(2) 0 0;
 
   // &:nth-child(2n+1) {
   //   background-color: #f9f9f7;
   // }
   .block-title {
-    @include trailer(1);
+    @include trailer(2);
   }
   .block-content {
     @include trailer(1);
+    text-align: center; // for cacaFly
   }
 
   .block-image {
@@ -57,7 +58,7 @@
 
 
   @include at-breakpoint($pad) {
-    padding: rhythm(1.5) 0 0;
+    padding: rhythm(2) 0 0;
     .block-content {
       @include trailer(2);
     }
