@@ -2,13 +2,13 @@
 
   h3, h4 {
     color: $color-darken-black;
-    font-weight: bold;
-
   }
+
   h3 {
     @include leader(2);
     @include trailer(1);
   }
+
   h4 {
   }
 
