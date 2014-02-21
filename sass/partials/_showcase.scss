@@ -1,8 +1,4 @@
 .showcase {
-  @include leader(2);
-  @include trailer(2);
-  margin-left: -12px;
-  margin-right: -12px;
   @include pie-clearfix;
   .case-item {
     @include box-sizing(border-box);
@@ -10,7 +6,7 @@
     position: relative;
     float: left;
     width: 50%;
-    border: 12px solid transparent;
+    //border: 12px solid transparent;
     .case-item-info {
       position: absolute;
       top: 0;
@@ -36,7 +32,7 @@
       position: relative;
       height: 0;
       padding-top: 100%;
-      background-color: $color-black-70;
+      background-color: lighten(black, 30%);
       img {
         position: absolute;
         top: 0;
@@ -56,7 +52,6 @@
       .case-item-photo {
         img {
           @include scale(1.15);
-          @include filter(contrast(150%));
         }
       }
     }
