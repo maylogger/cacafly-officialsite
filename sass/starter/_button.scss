@@ -1,7 +1,8 @@
-button, a.button {
+button, .button, a.button {
   @include unstyled-link;
   text-align: center;
-  padding: 1em 24px;
+  margin: rhythm(.5) 0;
+  padding: .75em 24px;
   border: none;
   background-color: #eee;
   background-image: none;
@@ -44,6 +45,11 @@ button, a.button {
   & + & {
     margin-left: 1em;
   }
+
+  &.right {
+    float: right;
+  }
+
 }
 
 
