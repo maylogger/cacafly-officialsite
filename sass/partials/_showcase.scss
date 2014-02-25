@@ -1,12 +1,15 @@
 .showcase {
+  @include trailer(2);
   @include pie-clearfix;
+  margin-left: -12px;
+  margin-right: -12px;
   .case-item {
     @include box-sizing(border-box);
     overflow: hidden;
     position: relative;
     float: left;
     width: 50%;
-    //border: 12px solid transparent;
+    border: 12px solid transparent;
     .case-item-info {
       position: absolute;
       top: 0;
