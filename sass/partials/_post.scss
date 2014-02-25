@@ -1,8 +1,40 @@
-.item-post {
+.list-post {
   @include padding-trailer(2);
   border-bottom: 1px dotted $global-divider;
   a:hover {
     color: $color-orange;
     text-decoration: none;
+  }
+}
+
+.post {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  .post-photo {
+    position: relative;
+    padding-top: 75%;
+    height: 0;
+    background-color: $color-gray;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .post-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(black, .35);
+    .post-content-inner {
+      padding: rhythm(.5);
+    }
+  }
+  .post-title {
+    @include ellipsis;
+    @include adjust-font-size-to(14px, .75);
   }
 }
