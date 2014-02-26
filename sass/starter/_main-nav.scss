@@ -6,18 +6,22 @@
     @include reset-box-model;
     list-style: none;
   }
+  li {
+    margin: .5em 0;
+  }
   a {
-    padding: 3px 5px; // for cacaFly.
+    padding: 6px 3px; // for cacaFly.
+    margin: 0 6px; // for cacaFly.
     color: $main-nav-color;
-    // font-style: italic; // for cacaFly.
     @extend %subpixel;
     @include adjust-font-size-to(16px);
-    @include border-radius(3px); // for cacaFly.
-    @include transition(.2s);
+    border-bottom: 2px solid transparent;
+    @include transition(.5s);
 
     &:hover {
       color: $color-orange; // for cacaFly.
       text-decoration: none;
+      border-bottom: 2px solid $color-orange;
     }
     &.active {
       color: $color-brown; // for cacaFly.
@@ -57,7 +61,7 @@
   }
   @include at-breakpoint($desktop) {
     a {
-      @include adjust-font-size-to(16px);
+      @include adjust-font-size-to(14px);
     }
     .pad-hide {
       display: inline;
