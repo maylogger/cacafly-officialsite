@@ -1,8 +1,8 @@
 .headline {
   max-width: 40em;
-  margin: 0 auto;
+  // margin: 0 auto;
   @include trailer(2);
-  text-align: center;
+  text-align: left;
 
   h2 {
     @include trailer(.75);
