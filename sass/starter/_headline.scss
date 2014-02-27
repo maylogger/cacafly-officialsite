@@ -4,16 +4,22 @@
   @include trailer(2);
   text-align: left;
 
+  h1 {
+    @include trailer(.75);
+    line-height: 1.5em;
+    color: $intro-title-color;
+  }
+
   h2 {
     @include trailer(.75);
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.5em;
     color: $intro-title-color;
   }
 
   h3 {
     @include trailer(.75);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.1em;
     color: $intro-title-color;
   }
