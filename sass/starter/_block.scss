@@ -34,6 +34,18 @@
   .block-title {
     @include trailer(2);
   }
+  .block-sub-title {
+    @include pie-clearfix;
+    @include trailer(.5);
+    .sub-title {
+      float: left;
+      @include adjust-font-size-to(20px, 2);
+    }
+    .readmore {
+      float: right;
+      @include adjust-font-size-to(16px, 2);
+    }
+  }
   .block-content {
     @include trailer(1);
     text-align: center; // for cacaFly
