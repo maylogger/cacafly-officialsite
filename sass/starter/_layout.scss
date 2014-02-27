@@ -30,7 +30,7 @@ html, body {
 
 .page {
   background-color: #fff;
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ html, body {
 
 @include at-breakpoint($pad) {
   #{$page-container}, .header-inner, .footer-inner {
-    max-width: 80%; // 限制 conntainer 寬度，並且預留左右留白空間
+    max-width: 65em; // 限制 conntainer 寬度，並且預留左右留白空間
   }
 }
 
