@@ -21,7 +21,6 @@
   }
 }
 .contact-form {
-  max-width: 48em;
   margin: 0 auto rhythm(2);
   padding: rhythm(1);
   background-color: lighten(black, 97%);
@@ -51,10 +50,14 @@
   .contact-form {
     padding: rhythm(2);
     input {
-      width: 90%;
+      width: 85%;
     }
     textarea {
       width: 100%;
+    }
+    .submit {
+      width: auto;
+      padding: 12px 48px;
     }
   }
 }
