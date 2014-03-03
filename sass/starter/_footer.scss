@@ -46,6 +46,7 @@
 
   .footer-bottom {
     @include pie-clearfix;
+    @include trailer(1);
     // @include padding-leader(1);
     // border-top: 1px solid $footer-divider-color;
   }
