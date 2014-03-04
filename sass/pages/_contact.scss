@@ -37,9 +37,9 @@
     @include leader(1);
     padding: 12px 0;
     border: none;
-    background-color: $color-orange;
+    background-color: $color-gray;
     &:hover {
-      background-color: saturate($color-orange, 10%);
+      background-color: lighten($color-gray, 10%);
     }
   }
 }
@@ -48,6 +48,7 @@
 }
 @include at-breakpoint($pad) {
   .contact-form {
+    max-width: 45em;
     padding: rhythm(2);
     input {
       width: 85%;
