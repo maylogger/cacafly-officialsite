@@ -119,6 +119,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title cacaFly 聖洋科技與微軟攜手合作，服務內容再添全球重量級廣告媒體新成員
       .col
         .post
@@ -126,6 +127,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title cacaFly 與日本知名企業 Torchlight、MindFree 達成業務合作協議
       .col
         .post
@@ -133,6 +135,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title cacaFly 成立專頁 - 卡卡愛台灣，希望能為台灣盡一份心力
 
   .container
@@ -146,6 +149,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title cacaFly 與微軟一起打造數位廣告嘉年華，在玩樂中共同體驗數位行銷
       .col
         .post
@@ -153,14 +157,16 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title
-                | [活動資訊] Facebook 行銷淘金術 - 讚術解密，成就每筆訂單
+                | [ 活動資訊 ] Facebook 行銷淘金術 - 讚術解密，成就每筆訂單
       .col
         .post
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title cacaFly 與微軟一起打造數位廣告嘉年華，在玩樂中共同體驗數位行銷
 
   .container
@@ -174,6 +180,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title Facebook 更新客製化受眾功能
       .col
         .post
@@ -181,6 +188,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title 更改粉絲專頁名稱小撇步
       .col
         .post
@@ -188,6 +196,7 @@
             img= image_tag lorem_image("400x250")
           .post-content
             .post-content-inner
+              .post-date = lorem_date.to_date
               h4.post-title 付費的 Facebook 動態時報貼文同時提升了自發與病毒式的擴散
 
   .container
@@ -280,16 +289,16 @@
           .form-group-content
             .radio
               label
-                input type="radio" facebook 廣告刊登
+                input type="radio" name="business-type"  facebook 廣告刊登
             .radio
               label
-                input type="radio" 應用程式開發
+                input type="radio" name="business-type" 應用程式開發
             .radio
               label
-                input type="radio" 粉絲專頁行銷
+                input type="radio" name="business-type" 粉絲專頁行銷
             .radio
               label
-                input type="radio" 其他
+                input type="radio" name="business-type" 其他
         .form-group
             label.form-group-label 留言
             .form-group-content
