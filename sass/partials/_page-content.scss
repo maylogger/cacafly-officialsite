@@ -68,6 +68,13 @@
       @include adjust-font-size-to(16px);
     }
 
+    .page-content-inner {
+      &.left {
+        max-width: 100%;
+        @include span-columns(8);
+      }
+    }
+
     .page-content-summary {
       p {
         @include adjust-font-size-to(16px, 1.25);
@@ -80,6 +87,14 @@
     .page-content-title-with-line {
       span {
         padding: 0 1em;
+      }
+    }
+  }
+
+  @include at-breakpoint($desktop) {
+    .page-content-inner {
+      &.left {
+        @include span-columns(8);
       }
     }
   }
