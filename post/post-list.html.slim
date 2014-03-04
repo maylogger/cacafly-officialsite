@@ -1,0 +1,13 @@
+.container
+  .block
+    h3.block-title cacaFly 市場動態
+    .row
+      - 10.times do
+        .col
+          .items.image-top-left
+            .item.list-post
+              a.item-image href="#" = image_tag lorem_image("210x130")
+              .item-content
+                a.item-title href="#" = zh_lorem_words( rand(3) + 3 )
+                p.item-text= zh_lorem_paragraphs 2
+    = render "/partials/pagination"
