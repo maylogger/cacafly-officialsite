@@ -5,9 +5,10 @@
       - 10.times do
         .col
           .items.image-top-left
-            .item.list-post
-              a.item-image href="#" = image_tag lorem_image("210x130")
+            a.item.list-post href="/post/post-page.html"
+              .item-image = image_tag lorem_image("300x175")
               .item-content
-                a.item-title href="#" = zh_lorem_words( rand(3) + 3 )
-                p.item-text= zh_lorem_paragraphs 2
+                .item-title.post-title = zh_lorem_words( rand(3) + 3 )
+                .post-date = lorem_date.to_date
+                p.item-text.post-text = zh_lorem_paragraphs 2
     = render "/partials/pagination"
