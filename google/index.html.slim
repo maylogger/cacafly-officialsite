@@ -2,10 +2,10 @@
   .hero-bg
   .container
     .block
-      .block-content
-        .headline
-          h1 Google 廣告
-          p 科技與數位媒體改變了消費者的決定行為
+      .headline
+        h1 Google 廣告
+        p 科技與數位媒體改變了消費者的決定行為
+
 .sub-nav
   h3
     a.sub-nav-title href="#" 目錄
@@ -16,10 +16,13 @@
     li: a href="#" Google 特點
     li: a href="#" 成功案例
     li: a href="#" 聯絡我們
+
 .page-content
   .block
     .container
-      h2.block-title.main-title 前言
+      .block-header
+        h2.block-title.main-title 前言
+        p.block-content 利用 Google 廣告在消費者的第一次接觸前給予正向、消費者有興趣的資訊，使消費者主動搜尋資訊，改變消費決策模式而提高你的訂單量
       .row.grid-1-2-2
         .col
           .items
@@ -33,10 +36,11 @@
               .item-content
                 h4.item-title 新的購買流程
                 p.item-text 刺激→給予消費者正向的資訊→第一次消費經驗→第二次消費經驗
-      p 利用 Google 廣告在消費者的第一次接觸前給予正向、消費者有興趣的資訊，使消費者主動搜尋資訊，改變消費決策模式而提高你的訂單量
+
   .block.lightgray-block
     .container
-      h2.block-title.main-title Google 廣告類型
+      .block-header
+        h2.block-title.main-title Google 廣告類型
       .row.grid-1-3-3
         .col
           .items
@@ -59,9 +63,11 @@
               .item-content
                 h4.item-title YouTube 影音廣告
                 p.item-text 台灣 YouTube 的 99% 高到達率，曝光量最大的網站之一，有影音素材的你，試試 YouTube 廣告為你產品的溝通方式更活潑、具渲染力
+
   .block
     .container
-      h2.block-title.main-title YouTube 廣告類型
+      .block-header
+        h2.block-title.main-title YouTube 廣告類型
       .row.grid-1-2-2
         .col
           .items
@@ -110,7 +116,8 @@
 
   .block.lightgray-block
     .container
-      h2.block-title.main-title Google 特點
+      .block-header
+        h2.block-title.main-title Google 特點
       .row.grid-1-2-2
         .col
           .items.image-left
@@ -144,60 +151,21 @@
               .item-image= image_tag lorem_image("72x72")
               .item-content
                 h4.item-title 大量的合作網站，為你的品牌在各大網站上曝光
+
   .block
     .container
-      h2.block-title.main-title 案例分享
-      p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
+      .block-header
+        h2.block-title.main-title 案例分享
+        p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
       .showcase
         - 8.times do
           .case-item
             .case-item-photo= image_tag lorem_image("400x400")
             .case-item-info
               h4.case-title Showcase
+
   .block
     .container
-      h2.block-title.main-title 聯絡我們
-      .contact-form
-        p 若您有需要在 facebook 上進行廣告、行銷活動，歡迎填寫下方表格與 cacaFly 連繫，我們將有專人為您服務。
-        form
-          .row.grid-1-2-2
-            .col.contact-form-unit
-              .form-group
-                label.form-group-label 姓名
-                .form-group-content
-                  input type="text"
-            .col.contact-form-unit
-              .form-group
-                label.form-group-label 公司
-                .form-group-content
-                  input type="text"
-            .col.contact-form-unit
-              .form-group
-                label.form-group-label 電話
-                .form-group-content
-                  input type="text"
-            .col.contact-form-unit
-              .form-group
-                label.form-group-label E-mail
-                .form-group-content
-                  input type="text"
-          .form-group
-            label.form-group-label 業務咨詢
-            .form-group-content
-              .radio
-                label
-                  input type="radio" name="business-type" facebook 廣告刊登
-              .radio
-                label
-                  input type="radio" name="business-type" 應用程式開發
-              .radio
-                label
-                  input type="radio" name="business-type" 粉絲專頁行銷
-              .radio
-                label
-                  input type="radio" name="business-type" 其他
-          .form-group
-              label.form-group-label 留言
-              .form-group-content
-                textarea
-          input.submit type="submit" value="送出"
+      .block-header
+        h2.block-title.main-title 聯絡我們
+      = render "/partials/contact-form"

@@ -1,4 +1,5 @@
 .article {
+  @include leader(2);
 
   h3, h4 {
     color: $color-darken-black;

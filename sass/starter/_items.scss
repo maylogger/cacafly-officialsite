@@ -21,6 +21,7 @@
   }
   .item-title {
     @include adjust-font-size-to(18px);
+    @include trailer(.5);
     small {
       display: block;
       color: lighten($item-title-color, 30%);

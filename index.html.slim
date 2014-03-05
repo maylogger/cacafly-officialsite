@@ -2,13 +2,13 @@
   .hero-bg
   .container
     .block
-      .block-content
-        .headline
-          h1 cacaFly 聖洋科技<br>台灣數位網路領域的領先者與耕耘者
-          p cacaFly 聖洋科技2009 年創立，獲業界前輩詹宏志先生等的肯定與指導，深耕數位行銷領域。cacaFly 秉持用最好的服務與專業知識幫客戶創造價值，服務據點分佈於台北、新竹與台中，服務團隊人數超過 80 人，使 cacaFly 成為客戶最信賴的數位媒體廠商。
+      .headline
+        h1 cacaFly 聖洋科技<br>台灣數位網路領域的領先者與耕耘者
+        p cacaFly 聖洋科技2009 年創立，獲業界前輩詹宏志先生等的肯定與指導，深耕數位行銷領域。cacaFly 秉持用最好的服務與專業知識幫客戶創造價值，服務據點分佈於台北、新竹與台中，服務團隊人數超過 80 人，使 cacaFly 成為客戶最信賴的數位媒體廠商。
 .block
   .container
-    h2.block-title.main-title 主要服務
+    .block-header
+      h2.block-title.main-title 主要服務
     .row.grid-1-2-2
       .col
         .items.image-left
@@ -72,8 +72,9 @@
 
 .block.lightgray-block
   .container
-    h2.block-title.main-title 服務客群
-    p.block-content cacaFly 在台灣最先代理 Facebook 廣告，服務過的客戶不勝枚舉，因而擁有豐富的服務經驗，包含知曉客戶的困境、需求與了解市場狀況與趨勢。cacaFly 為了能提供更專業的服務品質，精細分割不同的客戶並以深耕服務。
+    .block-header
+      h2.block-title.main-title 服務客群
+      p.block-content cacaFly 在台灣最先代理 Facebook 廣告，服務過的客戶不勝枚舉，因而擁有豐富的服務經驗，包含知曉客戶的困境、需求與了解市場狀況與趨勢。cacaFly 為了能提供更專業的服務品質，精細分割不同的客戶並以深耕服務。
     .row.grid-2-2-4
       .col
         .items.image-top
@@ -108,13 +109,14 @@
 
 .block
   .container
-    h2.block-title.main-title 重大消息
+    .block-header
+      h2.block-title.main-title 重大消息
     .block-sub-title
       h3.sub-title 最新消息
-      a.readmore href="#" Read more >
+      a.readmore href="/post/post-list.html" Read more >
     .row.grid-1-3-3
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -122,7 +124,7 @@
               .post-date = lorem_date.to_date
               h4.post-title cacaFly 聖洋科技與微軟攜手合作，服務內容再添全球重量級廣告媒體新成員
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -130,7 +132,7 @@
               .post-date = lorem_date.to_date
               h4.post-title cacaFly 與日本知名企業 Torchlight、MindFree 達成業務合作協議
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -141,10 +143,10 @@
   .container
     .block-sub-title
       h3.sub-title 課程活動
-      a.readmore href="#" Read more >
+      a.readmore href="/post/post-list.html" Read more >
     .row.grid-1-3-3
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -152,7 +154,7 @@
               .post-date = lorem_date.to_date
               h4.post-title cacaFly 與微軟一起打造數位廣告嘉年華，在玩樂中共同體驗數位行銷
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -161,7 +163,7 @@
               h4.post-title
                 | [ 活動資訊 ] Facebook 行銷淘金術 - 讚術解密，成就每筆訂單
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -172,10 +174,10 @@
   .container
     .block-sub-title
       h3.sub-title cacaFly 市場動態
-      a.readmore href="#" Read more >
+      a.readmore href="/post/post-list.html" Read more >
     .row.grid-1-3-3
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -183,7 +185,7 @@
               .post-date = lorem_date.to_date
               h4.post-title Facebook 更新客製化受眾功能
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -191,7 +193,7 @@
               .post-date = lorem_date.to_date
               h4.post-title 更改粉絲專頁名稱小撇步
       .col
-        .post
+        a.post href="/post/post-page.html"
           .post-photo
             img= image_tag lorem_image("400x250")
           .post-content
@@ -202,7 +204,7 @@
   .container
     .block-sub-title
       h3.sub-title cacaFly 市場分析報告
-      a.readmore href="#" Read more >
+      a.readmore href="/post/post-list.html" Read more >
     .row.grid-1-2-2
       - 2.times do |i|
         .col
@@ -215,7 +217,8 @@
 
 .block
   .container
-    h2.block-title.main-title 聯絡我們
+    .block-header
+      h2.block-title.main-title 聯絡我們
     .row.grid-1-3-3
       .col
         .items
@@ -260,47 +263,4 @@
                   li.address 台中市中港路 3 段 181 號 301-3 室<br>（東海大學育成中心）
                   li 中小企業：04-23594525
                   li 傳真：04-23597348
-    .contact-form
-      p 若您有需要在 facebook 上進行廣告、行銷活動，歡迎填寫下方表格與 cacaFly 連繫，我們將有專人為您服務。
-      form
-        .row.grid-1-2-2
-          .col.contact-form-unit
-            .form-group
-              label.form-group-label 姓名
-              .form-group-content
-                input type="text"
-          .col.contact-form-unit
-            .form-group
-              label.form-group-label 公司
-              .form-group-content
-                input type="text"
-          .col.contact-form-unit
-            .form-group
-              label.form-group-label 電話
-              .form-group-content
-                input type="text"
-          .col.contact-form-unit
-            .form-group
-              label.form-group-label E-mail
-              .form-group-content
-                input type="text"
-        .form-group
-          label.form-group-label 業務咨詢
-          .form-group-content
-            .radio
-              label
-                input type="radio" name="business-type"  facebook 廣告刊登
-            .radio
-              label
-                input type="radio" name="business-type" 應用程式開發
-            .radio
-              label
-                input type="radio" name="business-type" 粉絲專頁行銷
-            .radio
-              label
-                input type="radio" name="business-type" 其他
-        .form-group
-            label.form-group-label 留言
-            .form-group-content
-              textarea
-        input.submit type="submit" value="送出"
+    = render "/partials/contact-form"

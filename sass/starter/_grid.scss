@@ -126,7 +126,7 @@
 
 .row {
   @include pie-clearfix;
-  @include trailer(1);
+  // @include trailer(1);
 }
 
 // custom gird
