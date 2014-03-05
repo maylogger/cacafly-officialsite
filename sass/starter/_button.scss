@@ -1,3 +1,9 @@
+.button-group {
+  text-align: center;
+  button, .button, a.button {
+    display: inline-block;
+  }
+}
 button, .button, a.button {
   @include unstyled-link;
   text-align: center;
@@ -12,7 +18,6 @@ button, .button, a.button {
   font-family: "AvenirNext-Regular", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   @extend %subpixel;
-
   @include border-radius(0);
 
   // 狀態
@@ -49,7 +54,8 @@ button, .button, a.button {
   &.right {
     float: right;
   }
+  &.left {
+    float: left;
+  }
 
 }
-
-
