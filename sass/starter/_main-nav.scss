@@ -1,3 +1,23 @@
+@mixin nav-icon-animation($icon-name) {
+  &:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 33.5%;
+  display: block;
+  opacity: 0;
+  margin:3px auto 0;
+  @include replace-text-with-svg($icon-name);
+  @include transition(.5s);
+  }
+  &:hover {
+    &:after {
+      top: 25px;
+      opacity: 1;
+    }
+  }
+}
+
 .main-nav {
   @include reset-box-model;
   @include pie-clearfix;
@@ -10,18 +30,19 @@
     margin: .5em 0;
   }
   a {
-    padding: 6px 3px; // for cacaFly.
+    position: relative;
+    top: 0;
+    display: inline-block;
+    padding: 0 6px; // for cacaFly.
     margin: 0 6px; // for cacaFly.
-    color: $main-nav-color;
+    color: lighten($main-nav-color, 10%);
     @extend %subpixel;
     @include adjust-font-size-to(16px);
     border-bottom: 2px solid transparent;
     @include transition(.5s);
-
     &:hover {
       color: $color-orange; // for cacaFly.
       text-decoration: none;
-      border-bottom: 2px solid $color-orange;
     }
     &.active {
       color: $color-brown; // for cacaFly.
@@ -62,9 +83,31 @@
   @include at-breakpoint($desktop) {
     a {
       @include adjust-font-size-to(14px);
+      &:hover {
+        top: -15px;
+      }
     }
     .pad-hide {
       display: inline;
+    }
+
+    .about {
+      @include nav-icon-animation(nav-icon-about-hover);
+    }
+    .facebook {
+      @include nav-icon-animation(nav-icon-fb-hover);
+    }
+    .msn {
+      @include nav-icon-animation(nav-icon-msn-hover);
+    }
+    .google {
+      @include nav-icon-animation(nav-icon-google-hover);
+    }
+    .marketing {
+      @include nav-icon-animation(nav-icon-marketing-hover);
+    }
+    .contact {
+      @include nav-icon-animation(nav-icon-contact-hover);
     }
   }
 }

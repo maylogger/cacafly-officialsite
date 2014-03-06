@@ -9,13 +9,7 @@ html lang="zh-TW" class="no-js"
       .outside
         .outside-inner
           .main-nav data-set="main-nav"
-            ul
-              li: a href="/about" 關於 cacaFly
-              li: a href="/facebook" Facebook
-              li: a href="/microsoft" Microsoft
-              li: a href="/google" Google
-              li: a href="/marketing" 行銷工具
-              li: a href="/contact" 聯絡我們
+            = render "/partials/main-nav"
 
       .page
         = render "/partials/header"
