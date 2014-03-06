@@ -1,5 +1,6 @@
 .aside {
   width: 100%;
+  float: right;
   @include at-breakpoint($desktop) {
     @include span-columns(4 omega);
   }
