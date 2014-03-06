@@ -42,7 +42,7 @@
   @include at-breakpoint($desktop) {
     padding: rhythm(1) 0;
     .logo {
-      padding: 0;
+      padding: 8px 0;
       @include adjust-font-size-to(28px);
     }
   }
