@@ -1,0 +1,70 @@
+.showcase {
+  @include trailer(2);
+  @include pie-clearfix;
+  margin-left: -12px;
+  margin-right: -12px;
+  .case-item {
+    @include box-sizing(border-box);
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 50%;
+    border: 12px solid transparent;
+    &:hover {
+      .case-item-info {
+        opacity: 1;
+        @include scale(.85);
+      }
+      .case-item-photo {
+        img {
+          @include scale(1.15);
+        }
+      }
+    }
+    .case-item-info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      color: white;
+      background-color: rgba(black, .7);
+      opacity: 0;
+      @include scale(1);
+      @include transition(.5s);
+    }
+    .case-title {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      padding: 0 rhythm(1);
+      color: white;
+      text-align: center;
+      @include box-sizing(border-box);
+      @include translateY(-50%); // IE8 need hack.
+    }
+    .case-item-photo {
+      position: relative;
+      height: 0;
+      padding-top: 100%;
+      background-color: lighten(black, 30%);
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        vertical-align: middle;
+        @include scale(1);
+        @include transition(.5s);
+      }
+    }
+  }
+}
+@include at-breakpoint($pad) {
+  .showcase {
+    .case-item {
+      width: 25%;
+    }
+  }
+}

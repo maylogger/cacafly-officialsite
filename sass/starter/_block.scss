@@ -26,14 +26,37 @@
 
 .block {
   @include pie-clearfix;
-  padding: rhythm(2) 0 0;
+  padding: rhythm(2) 0 rhythm(1);
 
-  &:nth-child(2n+1) {
-    background-color: #f9f9f7;
+  // &:nth-child(2n+1) {
+  //   background-color: #f9f9f7;
+  // }
+  .block-header {
+    @include trailer(2);
   }
-
-  .block-content {
+  .block-title {
     @include trailer(1);
+  }
+  .block-sub-title {
+    @include leader(.5);
+    @include pie-clearfix;
+    @include trailer(.5);
+    .sub-title {
+      float: left;
+      @include trailer(0);
+      @include adjust-font-size-to(20px, 2);
+    }
+    .readmore {
+      float: right;
+      @include adjust-font-size-to(16px, 2);
+    }
+  }
+  .block-content {
+    max-width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+    @include trailer(1);
+    text-align: center; // for cacaFly
   }
 
   .block-image {
@@ -46,7 +69,7 @@
 
   // 特殊排版區塊
   &.center {
-    .intro {
+    .headline {
       text-align: center;
       margin: 0 auto;
       max-width: 260px;
@@ -55,13 +78,13 @@
 
 
   @include at-breakpoint($pad) {
-    padding: rhythm(3) 0 rhythm(1);
+    padding: rhythm(2) 0 rhythm(1);
     .block-content {
-      @include trailer(2);
+      @include trailer(1);
     }
 
     &.center {
-      .intro {
+      .headline {
         max-width: 440px;
       }
     }
@@ -74,9 +97,12 @@
   } // end pad
 
   @include at-breakpoint($desktop) {
-    padding: rhythm(4) 0 rhythm(2);
+    padding: rhythm(3) 0 rhythm(2);
+    .block-header {
+      @include trailer(3);
+    }
     &.center {
-      .intro {
+      .headline {
         max-width: 560px;
       }
     }

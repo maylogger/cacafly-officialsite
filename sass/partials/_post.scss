@@ -1,0 +1,76 @@
+.list-post {
+  @include padding-trailer(2);
+  border-bottom: 1px dotted $global-divider;
+  .post-text {
+    color: $color-black;
+  }
+  .post-title {
+    @include trailer(.25);
+  }
+  .post-date {
+    @include adjust-font-size-to(12px, .75);
+    font-weight: bold;
+    color: lighten($color-gray, 10%);
+    @include trailer(.5);
+  }
+}
+
+.post {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  .post-photo {
+    position: relative;
+    padding-top: 62.5%;
+    height: 0;
+    background-color: $color-gray;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .post-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(black, .35);
+    .post-content-inner {
+      padding: rhythm(.5);
+      @include transition(.25s);
+    }
+  }
+  .post-date {
+    @include adjust-font-size-to(12px, .75);
+    font-weight: bold;
+    color: lighten($color-gray, 20%);
+  }
+  .post-title {
+    @include ellipsis;
+    @include adjust-font-size-to(14px, .75);
+
+  }
+  &:hover .post-title {
+    white-space: normal;
+    overflow: visible;
+  }
+}
+
+ul.other-post {
+  padding: 0;
+  list-style: none;
+  li {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid $global-divider;
+    &:last-child {
+      border-bottom: none;
+    }
+    &.readmore {
+      text-align: right;
+    }
+  }
+
+}

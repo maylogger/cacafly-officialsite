@@ -1,0 +1,40 @@
+.article {
+  @include leader(2);
+
+  h3, h4 {
+    color: $color-darken-black;
+  }
+
+  h3 {
+    @include leader(2);
+    @include trailer(1);
+  }
+
+  h4 {
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  .lead {
+    margin-top: 0;
+  }
+
+
+
+  @include at-breakpoint($pad) {
+    p {
+      @include adjust-font-size-to(16px);
+    }
+
+    & .lead {
+      p {
+        @include adjust-font-size-to(18px);
+      }
+    }
+
+  }
+
+}

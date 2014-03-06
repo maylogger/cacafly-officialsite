@@ -1,0 +1,19 @@
+.main-title {
+  @include trailer(1);
+  @include adjust-font-size-to(28px);
+  text-align: center;
+  &.white {
+    color: white;
+  }
+  @include at-breakpoint($pad) {
+    @include adjust-font-size-to(36px);
+  }
+}
+.sub-title {
+  // @include adjust-font-size-to(28px);
+  // @include trailer(1);
+  // text-align: center;
+  // &.white {
+  //   color: white;
+  // }
+}

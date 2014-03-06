@@ -8,7 +8,7 @@
     @include trailer(.75);
   }
 
-  .label {
+  .label, .list-title {
     color: $color-black;
     font-weight: bold;
     @include trailer(.125);

@@ -3,24 +3,25 @@ html lang="zh-TW" class="no-js"
   head
     = render "/layout_head"
     = render "/layout_og"
-  body.off-canvas
+  body.off-canvas.home
     .wrapper
 
       .outside
         .outside-inner
           .main-nav data-set="main-nav"
             ul
-              li: a href="/" 關於 cacaFly
-              li: a href="/" Facebook 廣告
-              li: a href="/" MSN 廣告
-              li: a href="/" Google / Youtube
-              li: a href="/" 行銷工具
-              li: a href="/" 聯絡
+              li: a href="/about" 關於 cacaFly
+              li: a href="/facebook" Facebook
+              li: a href="/microsoft" Microsoft
+              li: a href="/google" Google
+              li: a href="/marketing" 行銷工具
+              li: a href="/contact" 聯絡我們
 
       .page
         = render "/partials/header"
         .main
-          .container= yield
+          = yield
+        = render "/partials/footer"
         .off-canvas-mask
 
     = render "/layout_foot"

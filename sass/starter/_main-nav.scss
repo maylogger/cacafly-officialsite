@@ -1,34 +1,73 @@
 .main-nav {
   @include reset-box-model;
-  list-style: none;
-  padding: 36px;
   @include pie-clearfix;
+  padding: 36px;
+  ul {
+    @include reset-box-model;
+    list-style: none;
+  }
+  li {
+    margin: .5em 0;
+  }
+  a {
+    padding: 6px 3px; // for cacaFly.
+    margin: 0 6px; // for cacaFly.
+    color: $main-nav-color;
+    @extend %subpixel;
+    @include adjust-font-size-to(16px);
+    border-bottom: 2px solid transparent;
+    @include transition(.5s);
+
+    &:hover {
+      color: $color-orange; // for cacaFly.
+      text-decoration: none;
+      border-bottom: 2px solid $color-orange;
+    }
+    &.active {
+      color: $color-brown; // for cacaFly.
+    }
+  }
+
+  .pad-hide {
+    display: inline;
+  }
+
+  // append-around
+  .header & {
+    display: none;
+  }
+
   @include at-breakpoint($pad) {
     padding: 0 24px;
     text-align: center;
-  }
-  ul {
-    @include reset-box-model;
-  }
-  li {
-    @include at-breakpoint($pad) {
-      display: inline-block;
-      margin: 0 .5em;
+    li {
+      display: block;
+      float: left;
+      margin: 0 .25em;
+    }
+    a {
+      @include adjust-font-size-to(14px);
+    }
+    // append-around
+    .outside & {
+      display: none;
+    }
+    .header & {
+      display: block;
+    }
+    .pad-hide {
+      display: none;
     }
   }
-  li + li {
-    padding-top: 12px;
-    @include at-breakpoint($pad) {
-      padding-top: 0;
+  @include at-breakpoint($desktop) {
+    a {
+      @include adjust-font-size-to(14px);
     }
-  }
-  a {
-    color: #333;
-    font-weight: bold;
-    @include adjust-font-size-to(16px);
-    &:hover {
-      color: #555;
-      text-decoration: none;
+    .pad-hide {
+      display: inline;
     }
   }
 }
+
+
+

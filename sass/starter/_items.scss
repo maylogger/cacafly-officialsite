@@ -20,19 +20,17 @@
 
   }
   .item-title {
-    font-size: 18px;
-    line-height: 1.125em;
-    color: $color-black;
+    @include adjust-font-size-to(18px);
+    @include trailer(.5);
     small {
       display: block;
-      color: $global-color;
+      color: lighten($item-title-color, 30%);
     }
   }
   .item-title + .item-text {
     @include leader(.5);
   }
   .item-text {
-    color: $global-color;
     font-size: 14px;
     line-height: 1.5em;
     margin: 0 auto;
@@ -58,9 +56,34 @@
   // 左縮圖右內容
   &.image-left {
     .item-image {
-      width: 48px;
       float: left;
       margin: 0 1em 0 0;
+    }
+    .item-content {
+      overflow: hidden;
+    }
+  }
+
+  &.image-top {
+    .item-image {
+      img {
+        margin: 0 auto;
+      }
+    }
+    .item-content {
+      text-align: center;
+      overflow: hidden;
+    }
+  }
+
+  &.image-top-left {
+    .item-image {
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: rhythm(.5);
+      }
     }
     .item-content {
       overflow: hidden;
@@ -76,7 +99,7 @@
     .item-content {
     }
     .item-title {
-      $item-image-height: 36px;
+      $item-image-height: 24px;
       font-size: 18px;
       line-height: $item-image-height;
       @include trailer(.5);
@@ -84,6 +107,32 @@
     }
     .item-text {
       clear: both;
+    }
+  }
+
+  @include at-breakpoint($wide-mobile) {
+    .item {
+
+    }
+    .item-icon {
+      img {
+
+      }
+    }
+    .item-content {
+
+    }
+    .item-text {
+
+    }
+    &.image-top-left {
+      .item-image {
+        float: left;
+        margin: 0 1em 0 0;
+      }
+      .item-content {
+        overflow: hidden;
+      }
     }
   }
 
@@ -117,7 +166,7 @@
 
     }
     .item-text {
-      @include adjust-font-size-to(16px);
+      @include adjust-font-size-to(14px);
     }
     .item-action {
       @include adjust-font-size-to(16px);

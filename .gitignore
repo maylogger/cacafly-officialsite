@@ -1,0 +1,8 @@
+
+partial-dev.html.slim
+
+templates/post-list.html.slim
+
+templates/post-page.html.slim
+
+templates/sub-nav.html.slim

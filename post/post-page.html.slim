@@ -1,0 +1,21 @@
+.page-header
+  .container
+    h2.page-header-title = zh_lorem_sentence
+
+.page-content
+  .page-content-article.article
+    .container
+      .page-content-inner.left
+        = render "/partials/article";
+        / h3.lead = zh_lorem_sentence
+        / - 2.times do
+        /   p = zh_lorem_paragraphs 3
+        / input.button type="button" value="下載 分析報告 PDF"
+      .aside.affix
+        h4 更多文章
+        ul.other-post
+          - 10.times do
+            li
+              a href="#" = zh_lorem_sentence
+          li.readmore
+            a href="/post/post-list.html" Read more >

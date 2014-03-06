@@ -1,0 +1,32 @@
+.item.member {
+  .item-image {
+    img {
+      max-width: 250px;
+      max-height: 250px;
+      width: 100%;
+      height: auto;
+      margin: 10px auto;
+    }
+  }
+  .item-title {
+    @include leader(.5);
+  }
+}
+
+.auth {
+  @include leader(1);
+  @include trailer(1);
+  text-align: center;
+  img {
+    margin: rhythm(.6);
+  }
+  @include at-breakpoint($pad) {
+    text-align: right;
+  }
+}
+
+.big-events {
+  @include at-breakpoint($pad) {
+    @include trailer(3);
+  }
+}
