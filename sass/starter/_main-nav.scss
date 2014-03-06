@@ -1,3 +1,17 @@
+@mixin nav-with-icon($icon, $icon-hover) {
+  &:before {
+  content: "";
+  display: block;
+  margin:0 auto 3px;
+  @include replace-text-with-svg($icon);
+  }
+  &:hover {
+    &:before {
+      @include replace-text-with-svg($icon-hover);
+    }
+  }
+}
+
 .main-nav {
   @include reset-box-model;
   @include pie-clearfix;
@@ -25,85 +39,6 @@
     }
     &.active {
       color: $color-brown; // for cacaFly.
-    }
-  }
-
-  .about {
-    &:before {
-    content: "";
-    display: block;
-    margin:0 auto 3px;
-    @include replace-text-with-svg("nav-icon-about");
-    }
-    &:hover {
-      &:before {
-        @include replace-text-with-svg("nav-icon-about-hover");
-      }
-    }
-  }
-  .facebook {
-    &:before {
-    content: "";
-    display: block;
-    margin:0 auto 3px;
-    @include replace-text-with-svg("nav-icon-fb");
-    }
-    &:hover {
-      &:before {
-        @include replace-text-with-svg("nav-icon-fb-hover");
-      }
-    }
-  }
-  .msn {
-    &:before {
-    content: "";
-    display: block;
-    margin:0 auto 3px;
-    @include replace-text-with-svg("nav-icon-msn");
-    }
-    &:hover {
-      &:before {
-        @include replace-text-with-svg("nav-icon-msn-hover");
-      }
-    }
-  }
-  .google {
-    &:before {
-    content: "";
-    display: block;
-    margin:0 auto 3px;
-    @include replace-text-with-svg("nav-icon-google");
-    }
-    &:hover {
-      &:before {
-        @include replace-text-with-svg("nav-icon-google-hover");
-      }
-    }
-  }
-  .marketing {
-    &:before {
-    content: "";
-    display: block;
-    margin:0 auto 3px;
-    @include replace-text-with-svg("nav-icon-marketing");
-    }
-    &:hover {
-      &:before {
-        @include replace-text-with-svg("nav-icon-marketing-hover");
-      }
-    }
-  }
-  .contact {
-    &:before {
-    content: "";
-    display: block;
-    margin:0 auto 3px;
-    @include replace-text-with-svg("nav-icon-contact");
-    }
-    &:hover {
-      &:before {
-        @include replace-text-with-svg("nav-icon-contact-hover");
-      }
     }
   }
 
@@ -145,6 +80,25 @@
     .pad-hide {
       display: inline;
     }
+    .about {
+    @include nav-with-icon(nav-icon-about, nav-icon-about-hover);
+    }
+    .facebook {
+      @include nav-with-icon(nav-icon-fb, nav-icon-fb-hover);
+    }
+    .msn {
+      @include nav-with-icon(nav-icon-msn, nav-icon-msn-hover);
+    }
+    .google {
+      @include nav-with-icon(nav-icon-google, nav-icon-google-hover);
+    }
+    .marketing {
+      @include nav-with-icon(nav-icon-marketing, nav-icon-marketing-hover);
+    }
+    .contact {
+      @include nav-with-icon(nav-icon-contact, nav-icon-contact-hover);
+    }
+
   }
 }
 
