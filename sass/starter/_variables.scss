@@ -8,21 +8,26 @@ $color-darken-black: #252525;
 $color-black: #444;
 $color-gray: #999;
 $color-lighter-gray: #f0f2f0;
+$color-lightgray2: lighten(black, 97%);
 // $color-blue: #369;
-$color-red: #b91910;
-$color-green: #8fbe3e;
+// $color-red: #b91910;
+// $color-green: #8fbe3e;
 
-//======== Ci Colors =============
+//======== Web Colors =============
 $color-brown: #7C5122;
+$color-brown-light: #DCC0AA;
+$color-red: #D83E32;
 $color-orange: #F26522;
 $color-yellow: #F99D1C;
-
-//======== Match Colors ==========
-
-$color-deepblue: #0F95C8;
-$color-blue: #1CA3F9;
-$color-lightblue: #5BE6FA;
-$color-cyan: #22F2DF;
+$color-yellow-light: #FFE9A1;
+$color-blue-dark: #5E6A73;
+$color-blue-deep: #2779B7;
+$color-blue: #62A1D1;
+$color-ashblue: #92A3AC;
+$color-ashblue-light: #D1DCE0;
+$color-green-deep: #359900;
+$color-green: #A3BF3A;
+$color-green-light: #D7E385;
 
 
 //======== Global Setting ========
