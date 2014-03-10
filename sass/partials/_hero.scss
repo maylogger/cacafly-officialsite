@@ -1,20 +1,20 @@
-.hero {
-  position: relative;
-  background-color: white;
-  .hero-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    opacity: .75;
-    background-size: cover;
-    background-position: center;
-    background-color: lighten($color-gray, 30%);
-  }
-  .container {
-    position: relative;
-    z-index: 1000;
-  }
-}
+// .hero {
+//   position: relative;
+//   background-color: white;
+//   .hero-bg {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     bottom: 0;
+//     overflow: hidden;
+//     opacity: .75;
+//     background-size: cover;
+//     background-position: center;
+//     background-color: lighten($color-gray, 30%);
+//   }
+//   .container {
+//     position: relative;
+//     z-index: 1000;
+//   }
+// }
