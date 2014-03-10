@@ -1,23 +1,21 @@
-.hero
-  .hero-bg
+.page-header
+  .page-header-bg
   .container
     .block
-      .headline
+      .page-header-content
         h1 Facebook 廣告
         p 全球最多活躍用戶的社交媒體<br>12億全球用戶，台灣活躍用戶高達1,500萬
 
-.sub-nav
-  h3
-    a.sub-nav-title href="#" 目錄
-  ul
-    li: a href="#" Facebook 媒體特性
-    li: a href="#" 廣告類型
-    li: a href="#" 廣告版位
-    li: a href="#" 成功案例
-    li: a href="#" 聯絡我們
+.sub-nav.nav-sticky
+  h3: a.sub-nav-title href="#" 目錄
+  ul.nav
+    li: a href="#title1" Facebook 媒體特性
+    li: a href="#title2" 廣告版位
+    li: a href="#title3" 廣告類型
+    li: a href="#title4" 案例分享
 
 .page-content
-  .block
+  #title1.block
     .container
       .block-header
         h2.block-title.main-title Facebook 媒體特性
@@ -67,7 +65,14 @@
                 h4.item-title 口碑行銷
                 p.item-text 利用Facebook強大的口耳相傳特性，讓你的粉絲推薦給朋友，提高你的品牌宣傳力
 
-  .block.lightgray-block
+  #title2.block.lightgray-block
+    .container
+      .block-header
+        h2.block-title.main-title 廣告版位
+        p.block-content 各版位的優勢不同，類型與版位適切搭配，才能產生最大廣告效益
+      = image_tag lorem_image("1200x400")
+
+  #title3.block
     .container
       .block-header
         h2.block-title.main-title 廣告類型
@@ -102,26 +107,26 @@
                 h4.item-title 外連廣告
                 p.item-text 官網導流量的好幫手
 
-  .block
-    .container
-      .block-header
-        h2.block-title.main-title 廣告版位
-        p.block-content 各版位的優勢不同，類型與版位適切搭配，才能產生最大廣告效益
-      = image_tag lorem_image("1200x400")
-  .block.lightgray-block
+  #title4.block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title 案例分享
         p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
-      .showcase
-        - 8.times do
-          .case-item
-            .case-item-photo= image_tag lorem_image("400x400")
-            .case-item-info
-              h4.case-title Showcase
+      .collapse-wrap
+        #showcase.sp-collapse.collapse
+          .showcase.collapse-content
+            - 12.times do
+              .case-item
+                .case-item-photo= image_tag lorem_image("400x400")
+                .case-item-info
+                  h4.case-title Showcase
+        .collapse-toggle
+          a.collapse-toggle-button.collapsed data-toggle="collapse" href="#showcase" 展開
 
-  .block
+  .block.contact
     .container
-      .block-header
-        h2.block-title.main-title 聯絡我們
-      = render "/partials/contact-form"
+      .action-bar
+        .content
+          h3.slogan 若您有需要在 facebook 上進行廣告、行銷活動，歡迎與 cacaFly 連繫。
+        .action
+          a.btn href="/contact" 業務咨詢

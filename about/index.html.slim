@@ -1,23 +1,22 @@
-.hero
-  .hero-bg
+.page-header
+  .page-header-bg
   .container
     .block
-      .headline
+      .page-header-content
         h1 關於 cacaFly
         p cacaFly 始於社群行銷的新世代，建立了社群行銷平台 funP.com，最早擁有社群概念的專家，秉著 <span class="important">C</span>ustomized <span class="important">A</span>pplications & <span class="important">C</span>ommercial <span class="important">A</span>lignment 與 <span class="important">F</span>un, <span class="important">L</span>eading and <span class="important">Y</span>oung mindset 的經營理念，期盼為顧客打造各種專業服務，解決各類疑難雜症。
 
-.sub-nav
-  h3
-    a.sub-nav-title href="#" 目錄
-  ul
-    li: a href="#" 執行長介紹
-    li: a href="#" cacaFly 的優勢
-    li: a href="#" 經營團隊
-    li: a href="#" 重大記事
-    li: a href="#" 我們的團隊
+.sub-nav.nav-sticky
+  h3: a.sub-nav-title href="#" 目錄
+  ul.nav
+    li: a href="#title1" 執行長介紹
+    li: a href="#title2" 重大記事
+    li: a href="#title3" cacaFly 的優勢
+    li: a href="#title4" 經營團隊
+    li: a href="#title5" 我們的團隊
 
 .page-content
-  .block
+  #title1.block
     .container
       .block-header
         h2.block-title.main-title 執行長介紹
@@ -29,7 +28,36 @@
             h4.item-title 邱繼弘（Nathan）
             p.item-text 交通大學資訊工程研究所博士班畢業，曾經任職於 IBM Silicon Valley 和趨勢科技，對於網路無法忘情而選擇投身數位時代的浪潮。頂著淵博的知識與豐富的職場經歷，擁有敏銳的觀察力、策劃力與執行力，多年來深耕數位網路內容，年輕的他堪稱是台灣網路行銷的後起之秀。
 
-  .block.lightgray-block
+  #title2.block.lightgray-block
+    .container
+      .block-header
+        h2.block-title.main-title 重大記事
+      .big-events
+        .timeline
+        ul
+          li
+            span.year 2009
+            | 創立 funP. com
+          li
+            span.year 2011
+            | 正式與 Facebook 合作，成為廣告總代理
+          li
+            span.year 2012
+            | 成立中小企業部 – 台北、新竹據點
+          li
+            span.year 2012
+            | 成為台灣數位媒體領導廠商
+          li
+            span.year 2013
+            | 與日本知名企業 Torchlight、MindFree 共同合作協議
+          li
+            span.year 2013
+            | 正式成為微軟數位廣告總代理
+          li
+            span.year 2013
+            | 增設中小企業部 – 台中據點
+
+  #title3.block
     .container
       .block-header
         h2.block-title.main-title cacaFly 的優勢
@@ -47,7 +75,85 @@
           img src="/images/about/google-ad.jpg"
           img src="/images/about/fb-edge.png"
 
-  .block
+  #title4.block.lightgray-block
+    .container
+      .block-header
+        h2.block-title.main-title 我們的團隊
+        p.block-content cacaFly 就像是一個交響樂團，每個人都會在適當的時候扮演好自己的角色，<br>如果喜歡這樣的感覺與大家庭，歡迎加入我們
+        .button-group
+          a.button href="#" 104 徵才
+      .row.grid-1-3-3
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-1.jpg"
+              .item-content 2013 年 9 月份員工旅遊在花蓮
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-2.jpg"
+              .item-content 2013 年 6 月份公司員工餐敘
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-3.jpg"
+              .item-content 2013 年 6 月 日本員工旅遊
+      .row.grid-1-3-3
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-4.jpg"
+              .item-content 2013 年 2 月 cacaFly 尾牙聚餐
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-5.jpg"
+              .item-content 2012 年 12 月 cacaFly 滾球大賽
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-6.jpg"
+              .item-content 2012 年 10 月 新辦公司落成全員大合照
+      .row.grid-1-3-3
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-7.jpg"
+              .item-content 2012 年 4 月 泰國員工旅遊
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-8.jpg"
+              .item-content 2012 年 3 月 FMC 活動隨寫
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-9.jpg"
+              .item-content 2012 年 1 月 cacaFly kick off 年初聚會
+      .row.grid-1-3-3
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-10.jpg"
+              .item-content 2011 年 7 月 cacaFly x  Facebook Partner Day
+        .col
+          .items
+            .item
+              .item-image
+                img src="/images/about/team-photo-11.jpg"
+              .item-content 2011 年 3 月 cacaFly 成為 Facebook 台灣廣告總代理 媒體餐會
+
+  #title5.block
     .container
       .block-header
         h2.block-title.main-title 經營團隊
@@ -134,94 +240,3 @@
                 h4.item-title 林園森（Paul）
                 / p.item-text 現任 cacaFly 聖洋科技專業服務部總監，負責品牌社群經營、 應用程式開發服務，合作客戶包括：中國信託、漢堡王及 BenQ 等數十家全球知名品牌廠商，是 cacaFly 與品牌客戶之間不可或缺的溝通橋樑。
                 / p.item-text Paul 擁有超過 6 年網站開發經驗及 3 年以上專案經理經歷，累積網站介面設計、行銷活動規劃與網站建置等豐富經驗，身兼開發者與專案經理身份，為客戶同時解決程式問題並量身訂作社群行銷活動。期許未來帶領 cacaFly 專業服務部為更多品牌提供社群行銷規劃。
-
-  .block.lightgray-block
-    .container
-      .block-header
-        h2.block-title.main-title 重大記事
-      ul.big-events
-        li 2009年 創立 funP. com
-        li 2011年 正式與 Facebook 合作，成為廣告總代理
-        li 2012年 成立中小企業部 – 台北、新竹據點
-        li 2012年 成為台灣數位媒體領導廠商
-        li 2013年 與日本知名企業 Torchlight、MindFree 共同合作協議
-        li 2013年 正式成為微軟數位廣告總代理
-        li 2013年 增設中小企業部 – 台中據點
-
-  .block
-    .container
-      .block-header
-        h2.block-title.main-title 我們的團隊
-        p.block-content cacaFly 就像是一個交響樂團，每個人都會在適當的時候扮演好自己的角色，<br>如果喜歡這樣的感覺與大家庭，歡迎加入我們
-        .button-group
-          a.button href="#" 104 徵才
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-1.jpg"
-              .item-content 2013 年 9 月份員工旅遊在花蓮
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-2.jpg"
-              .item-content 2013 年 6 月份公司員工餐敘
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-3.jpg"
-              .item-content 2013 年 6 月 日本員工旅遊
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-4.jpg"
-              .item-content 2013 年 2 月 cacaFly 尾牙聚餐
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-5.jpg"
-              .item-content 2012 年 12 月 cacaFly 滾球大賽
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-6.jpg"
-              .item-content 2012 年 10 月 新辦公司落成全員大合照
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-7.jpg"
-              .item-content 2012 年 4 月 泰國員工旅遊
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-8.jpg"
-              .item-content 2012 年 3 月 FMC 活動隨寫
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-9.jpg"
-              .item-content 2012 年 1 月 cacaFly kick off 年初聚會
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-10.jpg"
-              .item-content 2011 年 7 月 cacaFly x  Facebook Partner Day
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-11.jpg"
-              .item-content 2011 年 3 月 cacaFly 成為 Facebook 台灣廣告總代理 媒體餐會

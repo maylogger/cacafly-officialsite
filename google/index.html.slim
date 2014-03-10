@@ -1,27 +1,23 @@
-.hero
-  .hero-bg
+.page-header
+  .page-header-bg
   .container
     .block
-      .headline
+      .page-header-content
         h1 Google 廣告
         p 科技與數位媒體改變了消費者的決定行為
 
-.sub-nav
-  h3
-    a.sub-nav-title href="#" 目錄
-  ul
-    li: a href="#" 前言
-    li: a href="#" Google 廣告類型
-    li: a href="#" YouTube 廣告類型
-    li: a href="#" Google 特點
-    li: a href="#" 成功案例
-    li: a href="#" 聯絡我們
+.sub-nav.nav-sticky
+  h3: a.sub-nav-title href="#" 目錄
+  ul.nav
+    li: a href="#title1" Google 廣告類型
+    li: a href="#title2" YouTube 廣告類型
+    li: a href="#title3" Google 特點
+    li: a href="#title4" 案例分享
 
 .page-content
   .block
     .container
       .block-header
-        h2.block-title.main-title 前言
         p.block-content 利用 Google 廣告在消費者的第一次接觸前給予正向、消費者有興趣的資訊，使消費者主動搜尋資訊，改變消費決策模式而提高你的訂單量
       .row.grid-1-2-2
         .col
@@ -37,7 +33,7 @@
                 h4.item-title 新的購買流程
                 p.item-text 刺激→給予消費者正向的資訊→第一次消費經驗→第二次消費經驗
 
-  .block.lightgray-block
+  #title1.block
     .container
       .block-header
         h2.block-title.main-title Google 廣告類型
@@ -64,11 +60,11 @@
                 h4.item-title YouTube 影音廣告
                 p.item-text 台灣 YouTube 的 99% 高到達率，曝光量最大的網站之一，有影音素材的你，試試 YouTube 廣告為你產品的溝通方式更活潑、具渲染力
 
-  .block
+  #title2.block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title YouTube 廣告類型
-      .row.grid-1-2-2
+      .row.grid-1-3-3
         .col
           .items
             .item
@@ -83,7 +79,6 @@
               .item-content
                 h4.item-title TrueView 搜尋廣告
                 p.item-text YouTube 搜尋結果的上方或旁邊，觀眾會在搜尋相關影片時看到您的廣告，只有在使用者點擊廣告並開始觀看您的影片時才需付費
-      .row.grid-1-2-2
         .col
           .items
             .item
@@ -91,6 +86,7 @@
               .item-content
                 h4.item-title TrueView 展示廣告
                 p.item-text 在影片播放時顯示，在使用者瀏覽影片後開始收費
+      .row.grid-1-3-3
         .col
           .items
             .item
@@ -98,7 +94,6 @@
               .item-content
                 h4.item-title 第一眼廣告
                 p.item-text 消費者不管進入哪個 YouTube 頁面都優先看到此廣告，限定一天只有一客戶能購買此廣告，讓你的影片有最大的曝光、抓住客戶第一眼的印象
-      .row.grid-1-2-2
         .col
           .items
             .item
@@ -114,7 +109,7 @@
                 h4.item-title 品牌頻道
                 p.item-text 為你的影片頁面設計獨特的介面，為你的品牌加分
 
-  .block.lightgray-block
+  #title3.block
     .container
       .block-header
         h2.block-title.main-title Google 特點
@@ -152,20 +147,26 @@
               .item-content
                 h4.item-title 大量的合作網站，為你的品牌在各大網站上曝光
 
-  .block
+  #title4.block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title 案例分享
         p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
-      .showcase
-        - 8.times do
-          .case-item
-            .case-item-photo= image_tag lorem_image("400x400")
-            .case-item-info
-              h4.case-title Showcase
+      .collapse-wrap
+        #showcase.sp-collapse.collapse
+          .showcase.collapse-content
+            - 12.times do
+              .case-item
+                .case-item-photo= image_tag lorem_image("400x400")
+                .case-item-info
+                  h4.case-title Showcase
+        .collapse-toggle
+          a.collapse-toggle-button.collapsed data-toggle="collapse" href="#showcase" 展開
 
-  .block
+  .block.contact
     .container
-      .block-header
-        h2.block-title.main-title 聯絡我們
-      = render "/partials/contact-form"
+      .action-bar
+        .content
+          h3.slogan 若您有需要在 facebook 上進行廣告、行銷活動，歡迎與 cacaFly 連繫。
+        .action
+          a.btn href="/contact" 業務咨詢
