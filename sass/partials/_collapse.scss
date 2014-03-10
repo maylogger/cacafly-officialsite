@@ -1,0 +1,63 @@
+.collapse-wrap {
+  position: relative;
+  @include trailer(3);
+}
+.sp-collapse.collapse {
+  height: 400px;
+  overflow-y: hidden;
+}
+.collapse {
+  height: 0;
+  overflow-y: hidden;
+}
+.in {
+}
+.collapsing {
+  overflow-y: hidden;
+  @include transition(height .5s);
+}
+.collapse-toggle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, rgba($color-lightgray2, 1) 15%, rgba($color-lightgray2, .75) 50%, rgba($color-lightgray2, 0) 100% );
+  pointer-events: none;
+  .collapse-toggle-button {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    margin-left: -28px;
+    padding: rhythm(.15) rhythm(.5);
+    text-decoration: none;
+    pointer-events: auto;
+    @include border-radius(5px 5px 0 0);
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      margin-left: -20px;
+      border-right: 1px solid $color-blue;
+      border-bottom: 1px solid $color-blue;
+      @include rotate(45deg);
+      @include transition(.5s);
+    }
+    &.close:after {
+      top: -10px;
+      @include rotate(-135deg);
+    }
+    &:hover {
+      @include transition(all ease-in .1s);
+    }
+  }
+  .in + & {
+    background-image: none;
+  }
+}
+
+.collapse-content {
+  @include pie-clearfix;
+}
