@@ -44,7 +44,7 @@
     .sub-title {
       float: left;
       @include trailer(0);
-      @include adjust-font-size-to(20px, 2);
+      @include adjust-font-size-to(22px, 2);
     }
     .readmore {
       float: right;
@@ -76,6 +76,10 @@
     }
   }
 
+  &.contact {
+    padding: 0;
+    background-color: $color-orange;
+  }
 
   @include at-breakpoint($pad) {
     padding: rhythm(2) 0 rhythm(1);
