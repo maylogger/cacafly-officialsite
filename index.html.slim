@@ -1,10 +1,35 @@
 .hero
-  .hero-bg
-  .container
-    .block
-      .headline
-        h1 cacaFly 聖洋科技<br>台灣數位網路領域的領先者與耕耘者
-        p cacaFly 聖洋科技2009 年創立，獲業界前輩詹宏志先生等的肯定與指導，深耕數位行銷領域。cacaFly 秉持用最好的服務與專業知識幫客戶創造價值，服務據點分佈於台北、新竹與台中，服務團隊人數超過 80 人，使 cacaFly 成為客戶最信賴的數位媒體廠商。
+  #hero-carousel.carousel.slide data-ride="carousel"
+    ol.carousel-indicators
+      li.active data-target="#hero-carousel" data-slide-to="0"
+      li data-target="#hero-carousel" data-slide-to="1"
+      li data-target="#hero-carousel" data-slide-to="2"
+    .carousel-inner
+      .item.active
+        = image_tag lorem_image("1280x400")
+        .carousel-caption
+          h3 First slide label
+          p Nulla vitae elit libero, a pharetra augue mollis interdum.
+      .item
+        = image_tag lorem_image("1280x400")
+        .carousel-caption
+          h3 Second slide label
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      .item
+        = image_tag lorem_image("1280x400")
+        .carousel-caption
+          h3 Third slide label
+          p Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+    a.left.carousel-control href="#hero-carousel" data-slide="prev"
+      span.glyphicon.icon-prev
+    a.right.carousel-control href="#hero-carousel" data-slide="next"
+      span.glyphicon.icon-next
+  / .hero-bg
+  / .container
+  /   .block
+  /     .headline
+  /       h1 cacaFly 聖洋科技<br>台灣數位網路領域的領先者與耕耘者
+  /       p cacaFly 聖洋科技2009 年創立，獲業界前輩詹宏志先生等的肯定與指導，深耕數位行銷領域。cacaFly 秉持用最好的服務與專業知識幫客戶創造價值，服務據點分佈於台北、新竹與台中，服務團隊人數超過 80 人，使 cacaFly 成為客戶最信賴的數位媒體廠商。
 .block
   .container
     .block-header
@@ -54,21 +79,21 @@
             .item-content
               h4.item-title Youtube 廣告
               p.item-text 多種類型影音廣告，非常適合作為品牌力的宣傳
-    .row.grid-1-2-2
-      .col
-        .items.image-left
-          .item.service
-            .item-image= image_tag lorem_image("72x72")
-            .item-content
-              h4.item-title A 獎獎
-              p.item-text 多功能獎勵機制、更精準的廣告模式，圍榜必備的好幫手
-      .col
-        .items.image-left
-          .item.service
-            .item-image= image_tag lorem_image("72x72")
-            .item-content
-              h4.item-title 粉絲好康
-              p.item-text 透過粉絲好康建立「好康活動」達成招募粉絲之效果，讓你無預算也能製作行銷活動並整合粉絲專頁
+    / .row.grid-1-2-2
+    /   .col
+    /     .items.image-left
+    /       .item.service
+    /         .item-image= image_tag lorem_image("72x72")
+    /         .item-content
+    /           h4.item-title A 獎獎
+    /           p.item-text 多功能獎勵機制、更精準的廣告模式，圍榜必備的好幫手
+    /   .col
+    /     .items.image-left
+    /       .item.service
+    /         .item-image= image_tag lorem_image("72x72")
+    /         .item-content
+    /           h4.item-title 粉絲好康
+    /           p.item-text 透過粉絲好康建立「好康活動」達成招募粉絲之效果，讓你無預算也能製作行銷活動並整合粉絲專頁
 
 .block.lightgray-block
   .container
@@ -78,35 +103,36 @@
     .row.grid-2-2-4
       .col
         .items.image-top
-          .item
-            .item-image= image_tag lorem_image("72x72")
-            .item-content
-              h4.item-title 品牌客戶
+          .case-item
+            .case-item-photo= image_tag lorem_image("400x400")
+            .case-item-info
+              h4.case-title Showcase
+          .item-content
+            h4.item-title 品牌客戶
       .col
         .items.image-top
-          .item
-            .item-image= image_tag lorem_image("72x72")
-            .item-content
+          .case-item
+            .case-item-photo= image_tag lorem_image("400x400")
+            .case-item-info
+              h4.case-title Showcase
+          .item-content
               h4.item-title 中小企業主
       .col
         .items.image-top
-          .item
-            .item-image= image_tag lorem_image("72x72")
-            .item-content
+          .case-item
+            .case-item-photo= image_tag lorem_image("400x400")
+            .case-item-info
+              h4.case-title Showcase
+          .item-content
               h4.item-title 遊戲廠商/代理商
       .col
         .items.image-top
-          .item
-            .item-image= image_tag lorem_image("72x72")
-            .item-content
+          .case-item
+            .case-item-photo= image_tag lorem_image("400x400")
+            .case-item-info
+              h4.case-title Showcase
+          .item-content
               h4.item-title 電子商務
-    .showcase
-      - 8.times do
-        .case-item
-          .case-item-photo= image_tag lorem_image("400x400")
-          .case-item-info
-            h4.case-title Showcase
-
 .block
   .container
     .block-header
@@ -114,7 +140,7 @@
     .block-sub-title
       h3.sub-title 最新消息
       a.readmore href="/post/post-list.html" Read more >
-    .row.grid-1-3-3
+    .row.grid-1-2-2
       .col
         a.post href="/post/post-page.html"
           .post-photo
@@ -131,20 +157,12 @@
             .post-content-inner
               .post-date = lorem_date.to_date
               h4.post-title cacaFly 與日本知名企業 Torchlight、MindFree 達成業務合作協議
-      .col
-        a.post href="/post/post-page.html"
-          .post-photo
-            img= image_tag lorem_image("400x250")
-          .post-content
-            .post-content-inner
-              .post-date = lorem_date.to_date
-              h4.post-title cacaFly 成立專頁 - 卡卡愛台灣，希望能為台灣盡一份心力
 
   .container
     .block-sub-title
       h3.sub-title 課程活動
       a.readmore href="/post/post-list.html" Read more >
-    .row.grid-1-3-3
+    .row.grid-1-2-2
       .col
         a.post href="/post/post-page.html"
           .post-photo
@@ -162,20 +180,12 @@
               .post-date = lorem_date.to_date
               h4.post-title
                 | [ 活動資訊 ] Facebook 行銷淘金術 - 讚術解密，成就每筆訂單
-      .col
-        a.post href="/post/post-page.html"
-          .post-photo
-            img= image_tag lorem_image("400x250")
-          .post-content
-            .post-content-inner
-              .post-date = lorem_date.to_date
-              h4.post-title cacaFly 與微軟一起打造數位廣告嘉年華，在玩樂中共同體驗數位行銷
 
   .container
     .block-sub-title
       h3.sub-title cacaFly 市場動態
       a.readmore href="/post/post-list.html" Read more >
-    .row.grid-1-3-3
+    .row.grid-1-2-2
       .col
         a.post href="/post/post-page.html"
           .post-photo
@@ -192,27 +202,19 @@
             .post-content-inner
               .post-date = lorem_date.to_date
               h4.post-title 更改粉絲專頁名稱小撇步
-      .col
-        a.post href="/post/post-page.html"
-          .post-photo
-            img= image_tag lorem_image("400x250")
-          .post-content
-            .post-content-inner
-              .post-date = lorem_date.to_date
-              h4.post-title 付費的 Facebook 動態時報貼文同時提升了自發與病毒式的擴散
 
   .container
     .block-sub-title
       h3.sub-title cacaFly 市場分析報告
       a.readmore href="/post/post-list.html" Read more >
-    .row.grid-1-2-2
-      - 2.times do |i|
+    .row.grid-1-2-3.mktreport
+      - 3.times do |i|
         .col
           .items
             .item
               .item-content
                 h4.item-title #{i+1}月份市場分析報告
-                p.item-text= zh_lorem_paragraph
+                p.item-text= zh_lorem_sentences 3
                 input.button type="button" value="下載 分析報告 PDF"
 
 .block
