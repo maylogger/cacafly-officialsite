@@ -3,16 +3,17 @@
   content: "";
   position: absolute;
   top: 30px;
-  left: 33.5%;
+  left: 50%;
   display: block;
   opacity: 0;
-  margin:3px auto 0;
+  margin-top: 3px;
+  margin-left: -12px;
   @include replace-text-with-svg($icon-name);
   @include transition(.5s);
   }
   &:hover {
     &:after {
-      top: 25px;
+      top: 22px;
       opacity: 1;
     }
   }
