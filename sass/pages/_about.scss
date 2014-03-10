@@ -26,7 +26,65 @@
 }
 
 .big-events {
-  @include at-breakpoint($pad) {
-    @include trailer(3);
+  position: relative;
+  ul {
+    list-style: none;
+    padding-left: 72px;
+  }
+  .timeline {
+    position: absolute;
+    top: 15px;
+    bottom: -5px;
+    left: 66px;
+    width: 2px;
+    background-color: $color-gray;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: -5px;
+      border: 6px solid transparent;
+      border-top-color: $color-gray;
+    }
+  }
+  li {
+    position: relative;
+    padding: 6px 12px;
+    margin: 6px 12px;
+    background-color: white;
+    @include border-radius(5px);
+    &:before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: -20px;
+      margin-top: -10px;
+      border: 10px solid transparent;
+      border-right-color: white;
+    }
+  }
+  .year {
+    position: absolute;
+    width: 48px;
+    left: -72px;
+    margin-top: -12px;
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      margin-top: -5px;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border: 2px solid $color-gray;
+      @include border-radius(10px);
+    }
+  }
+  @include at-breakpoint($desktop) {
+    margin: 24px 120px;
   }
 }
