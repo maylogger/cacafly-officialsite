@@ -1,34 +1,118 @@
-.page-header {
-  padding: rhythm(1) 0;
-  background: lighten($color-gray, 30%);
-  background-size: cover;
+// .page-header {
+//   padding: rhythm(1) 0;
+//   background: lighten($color-gray, 30%);
+//   background-size: cover;
 
-  .page-header-title {
-    font-size: 20px;
-    line-height: 24px;
-    // @extend %subpixel;
-    small {
-      white-space: nowrap;
-    }
+//   .page-header-title {
+//     font-size: 20px;
+//     line-height: 24px;
+//     // @extend %subpixel;
+//     small {
+//       white-space: nowrap;
+//     }
+//   }
+
+//   .page-header-text {
+//     @include adjust-font-size-to(14px, 4/5);
+//     max-width: 30em;
+//     margin: rhythm(.5) auto 0;
+//   }
+
+//   @include at-breakpoint($pad) {
+//     padding: rhythm(2) 0;
+//     .page-header-title {
+//       font-size: 24px;
+//       line-height: 1em;
+//       @extend %subpixel;
+//     }
+//     .page-header-text {
+//       @include adjust-font-size-to(16px);
+//     }
+
+//   }
+
+// }
+
+.page-header {
+  position: relative;
+  background-color: white;
+  .page-header-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: .75;
+    background-size: cover;
+    background-position: center;
+    background-color: lighten($color-gray, 30%);
+  }
+  .container {
+    position: relative;
+    z-index: 1000;
+  }
+  .page-header-content {
+  max-width: 40em;
+  margin: 0 auto;
+  @include trailer(1);
+  text-align: center;
+
+  h1 {
+    @include trailer(.75);
+    line-height: 1.5em;
+    color: $intro-title-color;
   }
 
-  .page-header-text {
-    @include adjust-font-size-to(14px, 4/5);
-    max-width: 30em;
-    margin: rhythm(.5) auto 0;
+  h2 {
+    @include trailer(.75);
+    font-size: 20px;
+    line-height: 1.5em;
+    color: $intro-title-color;
+  }
+
+  h3 {
+    @include trailer(.75);
+    font-size: 16px;
+    line-height: 1.1em;
+    color: $intro-title-color;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5em;
+    @include leader(0);
   }
 
   @include at-breakpoint($pad) {
-    padding: rhythm(2) 0;
-    .page-header-title {
-      font-size: 24px;
-      line-height: 1em;
-      @extend %subpixel;
+    h2 {
+      font-size: 30px;
+      @include trailer(1);
     }
-    .page-header-text {
-      @include adjust-font-size-to(16px);
+    h3 {
+      font-size: 24px;
+      @include trailer(1);
+    }
+    p {
+
     }
 
-  }
+  } // end pad
+
+  @include at-breakpoint($desktop) {
+
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+
+  } // end desktop
+
+}
 
 }
