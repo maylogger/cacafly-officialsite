@@ -12,7 +12,6 @@
 
   .slogan {
     @include adjust-font-size-to(20px);
-    @extend %subpixel;
     color: $action-bar-color;
     text-align: center;
   }
@@ -26,9 +25,9 @@
     line-height: 1em;
     border: 2px solid $action-bar-color;
     color: $action-bar-color;
-    @extend %subpixel;
     &:hover {
       text-decoration: none;
+      background: lighten($color-orange, 5%);
     }
   }
 
