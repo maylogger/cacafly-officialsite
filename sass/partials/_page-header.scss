@@ -43,10 +43,9 @@
     left: 0;
     bottom: 0;
     overflow: hidden;
-    opacity: .75;
     background-size: cover;
     background-position: center;
-    background-color: lighten($color-gray, 30%);
+    background-color: lighten($color-gray, 35%);
   }
   .container {
     position: relative;
