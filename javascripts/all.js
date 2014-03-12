@@ -1,3 +1,10 @@
+// image tag svg fallback with modernizr
+if(!Modernizr.svg) {
+    $('img[src*="svg"]').attr('src', function() {
+        return $(this).attr('src').replace('.svg', '.png');
+    });
+}
+
 // 移動 dom
 $( ".main-nav ul" ).appendAround();
 
