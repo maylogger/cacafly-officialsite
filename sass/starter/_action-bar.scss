@@ -1,7 +1,7 @@
 .action-bar {
   @include pie-clearfix;
+  @extend %subpixel;
   padding: rhythm(1.5) 0 rhythm(.5);
-
   .content {
     @include trailer(1);
   }
