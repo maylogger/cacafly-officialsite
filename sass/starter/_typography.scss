@@ -10,7 +10,7 @@
 }
 
 %helvetica-light-with-msjh {
-  font-family: "HelveticaNeue-Light", "Helvetica", "Arial", "Heiti TC", "Microsoft JhengHei", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica", "Arial", "STHeitiTC-Light",  "Microsoft JhengHei", "微軟正黑體", sans-serif;
   font-weight: 300;
 }
 
@@ -19,7 +19,7 @@
 }
 
 body {
-  @extend %helvetica-light;
+  @extend %helvetica-light-with-msjh;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
