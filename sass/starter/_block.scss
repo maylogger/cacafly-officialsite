@@ -35,7 +35,7 @@
     @include trailer(2);
   }
   .block-title {
-    @include trailer(1);
+    @include trailer(.5);
   }
   .block-sub-title {
     @include leader(.5);
@@ -96,7 +96,7 @@
   @include at-breakpoint($pad) {
     padding: rhythm(2) 0 rhythm(1);
     .block-content {
-      @include trailer(1);
+      @include adjust-font-size-to(18px);
     }
 
     &.center {
