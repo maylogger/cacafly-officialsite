@@ -1,0 +1,36 @@
+.facebook-number {
+  .col {
+    @include box-sizing(border-box);
+    text-align: center;
+    border-bottom: 1px solid $global-divider;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .marketing-number {
+  color: $color-blue-deep;
+    .count {
+      padding-right: 6px;
+      font-size: 60px;
+      line-height: 72px;
+      font-weight: bold;
+    }
+    .unit {
+      position: relative;
+      top: -2px;
+      font-size: 24px;
+    }
+  }
+
+  .marketing-desc {
+    @include trailer(.5);
+  }
+
+  @include at-breakpoint($pad) {
+    .col {
+      border-bottom: none;
+      border-right: 1px solid $global-divider;
+    }
+  }
+}
