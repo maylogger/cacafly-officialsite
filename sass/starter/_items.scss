@@ -20,7 +20,7 @@
 
   }
   .item-title {
-    @include adjust-font-size-to(18px);
+    @include adjust-font-size-to(20px);
     @include trailer(.5);
     &.align-line {
       padding-left: 9px;
