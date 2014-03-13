@@ -9,6 +9,20 @@
     @include adjust-font-size-to(36px);
   }
 }
+.main-eng-title {
+    @extend %subpixel;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    opacity: .5;
+    &:before {
+      content: "－";
+    }
+    &:after {
+      content: "－";
+    }
+  }
 .sub-title {
   // @include adjust-font-size-to(28px);
   // @include trailer(1);
