@@ -1,5 +1,5 @@
 .lightgray-block {
-  background-color: lighten(black, 97%);
+  background-color: #f7f7f4;
 }
 
 .orange-block {
@@ -25,7 +25,7 @@
 
 .blue-deep-block {
   color: white;
-  background-color: desaturate($color-blue-deep, 10%);
+  background-color: desaturate($color-blue-deep, 15%);
 }
 
 .blue-block {
