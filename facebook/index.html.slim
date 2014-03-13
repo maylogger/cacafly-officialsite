@@ -4,7 +4,7 @@
     .block
       .page-header-content
         h1 Facebook 廣告
-        p 全球最多活躍用戶的社交媒體<br>12億全球用戶，台灣活躍用戶高達1,500萬
+        p 全球最多活躍用戶的社交媒體<br>真實名單能作最精準的鎖定
 
 .sub-nav.nav-sticky
   h3: a.sub-nav-title href="#" 目錄
@@ -15,10 +15,33 @@
     li: a href="#title4" 案例分享
 
 .page-content
-  #title1.block
+  .block
+    .container
+      .row.grid-1-3-3.facebook-number
+        .col
+          .item
+            .marketing-number
+              span.count.stepper data-digit="0" data-step="0.25" 12
+              span.unit 億
+            .marketing-desc 全球活躍用戶
+        .col
+          .item
+            .marketing-number
+              span.count.stepper data-digit="0" data-step="27" 1500
+              span.unit 萬
+            .marketing-desc 台灣活躍用戶
+        .col
+          .item
+            .marketing-number
+              span.count.stepper data-digit="0" data-step="43" 2500
+              span.unit 家
+            .marketing-desc cacaFly 服務客戶數
+  #title1.block.blue-deep-block
     .container
       .block-header
-        h2.block-title.main-title Facebook 媒體特性
+        h2.block-title.main-title
+          | Facebook 媒體特性
+          .main-eng-title FEATURE
       .row.grid-1-2-2
         .col
           .items.image-left
@@ -68,34 +91,36 @@
   #title2.block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title 廣告類型
+        h2.block-title.main-title
+          | 廣告類型
+          .main-eng-title TYPE
         p.block-content 選擇適合的廣告類型達到不同的行銷目標
       .row.grid-1-2-4
         .col
-          .items.image-top
+          .items.image-top.fb-type-card
             .item.service
-              .item-image= image_tag lorem_image("72x72")
+              .item-image= image_tag("facebook/type-like.svg")
               .item-content
                 h4.item-title 讚廣告
                 p.item-text 為你的專頁招募大量新粉絲<br>提高品牌知名度
         .col
-          .items.image-top
+          .items.image-top.fb-type-card
             .item.service
-              .item-image= image_tag lorem_image("72x72")
+              .item-image= image_tag("facebook/type-post.svg")
               .item-content
                 h4.item-title 貼文廣告
                 p.item-text 提昇你品牌的黏著度與互動率
         .col
-          .items.image-top
+          .items.image-top.fb-type-card
             .item.service
-              .item-image= image_tag lorem_image("72x72")
+              .item-image= image_tag("facebook/type-app.svg")
               .item-content
                 h4.item-title APP安裝廣告
                 p.item-text 提供使用者更多應用程式資訊<br>增加下載量
         .col
-          .items.image-top
+          .items.image-top.fb-type-card
             .item.service
-              .item-image= image_tag lorem_image("72x72")
+              .item-image= image_tag("facebook/type-link.svg")
               .item-content
                 h4.item-title 外連廣告
                 p.item-text 官網導流量的好幫手
@@ -103,14 +128,26 @@
   #title3.block
     .container
       .block-header
-        h2.block-title.main-title 廣告版位
+        h2.block-title.main-title
+          | 廣告版位
+          .main-eng-title POSITION
         p.block-content 各版位的優勢不同，類型與版位適切搭配，才能產生最大廣告效益
-      = image_tag lorem_image("1200x400")
+      .row.grid-1-2-2
+        .col
+          .items.image-top
+            .item
+              .item-image= image_tag("facebook/position-news")
+        .col
+          .items.image-top
+            .item
+              .item-image= image_tag("facebook/position-aside")
 
   #title4.block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title 案例分享
+        h2.block-title.main-title
+          | 案例分享
+          .main-eng-title CASE
         p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
       .collapse-wrap
         #showcase.sp-collapse.collapse
