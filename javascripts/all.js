@@ -62,3 +62,6 @@ $('.mktreport').each(function(){
   });
   $('.item-text',this).height(highestBox);
 });
+
+// number counter for facebook page with bonana king's stepper.js
+$('.stepper').zero().play();
