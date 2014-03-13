@@ -1,0 +1,7 @@
+.fb-type-card {
+  min-height: 255px;
+  @include padding-leader(1);
+  background-color: white;
+  @include border-radius(5px);
+  @include box-shadow(0px 1px 3px rgba($color-blue-dark, .2));
+}
