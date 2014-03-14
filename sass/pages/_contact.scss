@@ -1,41 +1,74 @@
-.contact-map {
-  margin-bottom: rhythm(.5);
-  .google-map {
-    position: relative;
-    padding-top: 67.5%;
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+.item.location {
+  @include trailer(1);
+}
+.location {
+  //background-color: $color-lightgray2;
+  .contact-map {
+    margin-bottom: rhythm(.5);
+    .google-map {
+      position: relative;
+      padding-top: 67.5%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .contact-info {
+    margin: rhythm(1);
+    .item-title {
+      padding-bottom: 11px;
+      font-size: 24px;
+      // color: $color-orange;
+      border-bottom: 1px solid $global-divider;
+    }
+    ul {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+      font-size: 14px;
+    }
+    .label {
+      display: inline-block;
+      min-width: 110px;
+      &:after {
+        content: "：";
+        float: right;
+      }
+    }
+    .address {
+      margin-bottom: rhythm(.5);
     }
   }
 }
-.contact-info {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-  .address {
-    margin-bottom: rhythm(.5);
-  }
-}
+
 .contact-form {
-  margin: 0 auto rhythm(2);
+  margin-bottom: rhythm(2);
   padding: rhythm(1);
-  background-color: lighten(black, 97%);
+  background-color: $color-lightgray2;
   input {
-    width: 100%;
+    width: 95%;
+    padding: 6px;
   }
   textarea {
-    width: 100%;
-    @include box-sizing(border-box);
+    width: 95%;
+    min-height: 224px;
+    padding: 6px;
+  }
+  select {
+    width: 95%;
+    height: 38px;
+    padding: 8px 0;
   }
   .submit {
     width: 100%;
-    color: white;
     @include leader(1);
     padding: 12px 0;
+    color: white;
     border: none;
     background-color: $color-gray;
     &:hover {
@@ -47,14 +80,28 @@
   margin-bottom: 0;
 }
 @include at-breakpoint($pad) {
+  .location {
+    .contact-map {
+      float: left;
+      width: 40%;
+      margin-bottom: 0;
+    }
+    .contact-info {
+      float: right;
+      width: 55%;
+      margin: rhythm(1) rhythm(1) 0 0;
+    }
+  }
   .contact-form {
-    max-width: 45em;
-    padding: rhythm(2);
+    padding: rhythm(1) rhythm(2);
     input {
-      width: 85%;
+      width: 90%;
+    }
+    select {
+      width: 90%;
     }
     textarea {
-      width: 100%;
+      width: 95%;
     }
     .submit {
       width: auto;
