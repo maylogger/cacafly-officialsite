@@ -2,7 +2,7 @@
   &:after {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 56px;
   left: 50%;
   display: block;
   opacity: 0;
@@ -13,7 +13,7 @@
   }
   &:hover {
     &:after {
-      top: 22px;
+      top: 48px;
       opacity: 1;
     }
   }
@@ -83,6 +83,7 @@
   }
   @include at-breakpoint($desktop) {
     a {
+      padding: rhythm(1) 6px;
       @include adjust-font-size-to(14px);
       &:hover {
         top: -15px;
