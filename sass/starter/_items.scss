@@ -173,7 +173,7 @@
 
     }
     .item-text {
-      @include adjust-font-size-to(14px);
+      @include adjust-font-size-to(15px);
     }
     .item-action {
       @include adjust-font-size-to(16px);
