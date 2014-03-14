@@ -35,7 +35,7 @@
     @include trailer(2);
   }
   .block-title {
-    @include trailer(.5);
+    @include trailer(.75);
   }
   .block-sub-title {
     @include leader(.5);
