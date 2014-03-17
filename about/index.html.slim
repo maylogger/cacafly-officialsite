@@ -19,19 +19,23 @@
   #title1.block
     .container
       .block-header
-        h2.block-title.main-title 執行長介紹
+        h2.block-title.main-title
+          | 執行長介紹
+          .main-eng-title CEO
       .items.image-top-left
-        .item.member
+        .item
           .item-image
             img src="/images/about/Nathan.jpg"
           .item-content
             h4.item-title 邱繼弘（Nathan）
             p.item-text 交通大學資訊工程研究所博士班畢業，曾經任職於 IBM Silicon Valley 和趨勢科技，對於網路無法忘情而選擇投身數位時代的浪潮。頂著淵博的知識與豐富的職場經歷，擁有敏銳的觀察力、策劃力與執行力，多年來深耕數位網路內容，年輕的他堪稱是台灣網路行銷的後起之秀。
 
-  #title2.block.lightgray-block
+  #title2.block.orange-block
     .container
       .block-header
-        h2.block-title.main-title 重大記事
+        h2.block-title.main-title
+          | 重大記事
+          .main-eng-title HISTORY
       .big-events
         .timeline
         ul
@@ -63,103 +67,124 @@
   #title3.block
     .container
       .block-header
-        h2.block-title.main-title cacaFly 的黃金金三角優勢<br>速度力x專業力x技術力
-      .row.grid-1-2-2
+        .block-image= image_tag("about/cacafly-corepower.png")
+        h2.block-title.main-title cacaFly 的黃金金三角優勢<br>速度力 x 專業力 x 技術力
+      .row.grid-1-3-3
         .col
-          ul
-            li 擁有強大的銷售網路
-            li 深度掌握網路媒體特性與知識
-            li 服務過不勝枚舉的客戶而累積豐富的經驗
-            li 深耕廣告分析、優化與資料統整的能力
-            li 自有廣告系統後台，方便管理、查詢廣告
-            li 提供多元的媒體服務，串連各媒體不同的優點，組合適切方案給客戶
-            li 擁有通過認證的專業媒體行銷大軍，協助客戶在網路領域開將闢土
-        .col.auth
-          img src="/images/about/google-ad.jpg"
-          img src="/images/about/fb-edge.png"
+          .items.image-left
+            .item
+              .item-image= image_tag("about/core-speed.svg")
+              .item-content
+                h4.item-title 速度力
+                .item-text
+                  ul.positive-list
+                    li Facebook、Google、Microsoft 深入配合
+                    li 數位新資訊即時掌握
+                    li 市場趨勢無縫接軌
+                    li 分享正規的行銷策略
 
-  #title4.block.lightgray-block
+        .col
+          .items.image-left
+            .item
+              .item-image= image_tag("about/core-pro.svg")
+              .item-content
+                h4.item-title 專業力
+                .item-text
+                  ul.positive-list
+                    li 強大的媒體銷售體系，提供客戶最合適的媒體配置
+                    li 靈活運用各媒體優勢，作精準的廣告佈局
+                    li 擁有豐富的媒體操作經驗
+                    li 給予客戶專業的行銷企劃諮商
+                    li 統整廣告分析、優化與產業趨勢資訊
+                    li 擁有一群通過認證的專業媒體行銷大軍，協助客戶在網路領域開將闢土
+
+        .col
+          .items.image-left
+            .item
+              .item-image= image_tag("about/core-tech.svg")
+              .item-content
+                h4.item-title 技術力
+                .item-text
+                  ul.positive-list
+                    li 自有廣告系統後台，方便管理廣告
+                    li 以技術起家，解決客戶所面臨的技術難題
+
+
+  #title4.team-photo-block.red-block
     .container
       .block-header
-        h2.block-title.main-title 我們的團隊
-        p.block-content cacaFly 就像是一個交響樂團，每個人都會在適當的時候扮演好自己的角色，<br>如果喜歡這樣的感覺與大家庭，歡迎加入我們
-        .button-group
-          a.button href="#" 104 徵才
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-1.jpg"
-              .item-content 2013 年 9 月份員工旅遊在花蓮
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-2.jpg"
-              .item-content 2013 年 6 月份公司員工餐敘
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-3.jpg"
-              .item-content 2013 年 6 月 日本員工旅遊
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-4.jpg"
-              .item-content 2013 年 2 月 cacaFly 尾牙聚餐
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-5.jpg"
-              .item-content 2012 年 12 月 cacaFly 滾球大賽
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-6.jpg"
-              .item-content 2012 年 10 月 新辦公司落成全員大合照
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-7.jpg"
-              .item-content 2012 年 4 月 泰國員工旅遊
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-8.jpg"
-              .item-content 2012 年 3 月 FMC 活動隨寫
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-9.jpg"
-              .item-content 2012 年 1 月 cacaFly kick off 年初聚會
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-10.jpg"
-              .item-content 2011 年 7 月 cacaFly x  Facebook Partner Day
-        .col
-          .items
-            .item
-              .item-image
-                img src="/images/about/team-photo-11.jpg"
-              .item-content 2011 年 3 月 cacaFly 成為 Facebook 台灣廣告總代理 媒體餐會
+        h2.block-title.main-title
+          | 我們的團隊
+          .main-eng-title TEAM
+    #team-carousel.carousel.slide data-ride="carousel"
+      ol.carousel-indicators
+        li.active data-target="#team-carousel" data-slide-to="0"
+        li data-target="#team-carousel" data-slide-to="1"
+        li data-target="#team-carousel" data-slide-to="2"
+        li data-target="#team-carousel" data-slide-to="3"
+        li data-target="#team-carousel" data-slide-to="4"
+        li data-target="#team-carousel" data-slide-to="5"
+        li data-target="#team-carousel" data-slide-to="6"
+        li data-target="#team-carousel" data-slide-to="7"
+        li data-target="#team-carousel" data-slide-to="8"
+        li data-target="#team-carousel" data-slide-to="9"
+        li data-target="#team-carousel" data-slide-to="10"
+      .carousel-inner
+        .item.active
+          .team-photo style="background-image: url('/images/about/team-photo-1.jpg');"
+          .carousel-caption
+            h3 2013 年 9 月份員工旅遊在花蓮
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-2.jpg');"
+          .carousel-caption
+            h3 2013 年 6 月份公司員工餐敘
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-3.jpg');"
+          .carousel-caption
+            h3 2013 年 6 月 日本員工旅遊
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-4.jpg');"
+          .carousel-caption
+            h3 2013 年 2 月 cacaFly 尾牙聚餐
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-5.jpg');"
+          .carousel-caption
+            h3 2012 年 12 月 cacaFly 滾球大賽
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-6.jpg');"
+          .carousel-caption
+            h3 2012 年 10 月 新辦公司落成全員大合照
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-7.jpg');"
+          .carousel-caption
+            h3 2012 年 4 月 泰國員工旅遊
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-8.jpg');"
+          .carousel-caption
+            h3 2012 年 3 月 FMC 活動隨寫
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-9.jpg');"
+          .carousel-caption
+            h3 2012 年 1 月 cacaFly kick off 年初聚會
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-10.jpg');"
+          .carousel-caption
+            h3 2011 年 7 月 cacaFly x  Facebook Partner Day
+        .item
+          .team-photo style="background-image: url('/images/about/team-photo-11.jpg');"
+          .carousel-caption
+            h3 2011 年 3 月 cacaFly 成為 Facebook 台灣廣告總代理 媒體餐會
+      a.left.carousel-control href="#team-carousel" data-slide="prev"
+        span.glyphicon.icon-prev
+      a.right.carousel-control href="#team-carousel" data-slide="next"
+        span.glyphicon.icon-next
 
   #title5.block
     .container
       .block-header
-        h2.block-title.main-title 經營團隊
+        h2.block-title.main-title
+          | 經營團隊
+          .main-eng-title MEMBER
       .row.grid-1-3-3
         .col
           .items.image-top
@@ -167,54 +192,25 @@
               .item-image
                 img src="/images/about/Anderson.jpg"
               .item-content
-                h4.item-title 梁凱智（Anderson）
-                / p.item-text 深諳各媒體的技術應用，協助客戶產品企劃與服務流程標準化管理。
-                / p.item-text 擁有 10 年的企業應用軟體開發整合的顧問經驗，與 3 年的大型網站開發/企劃/管理經驗，是少數能橫跨企業資訊應用與網際網路應用的專業顧問。
+                h4.item-title.align-line 梁凱智（Anderson）
+                p.item-text 深諳各媒體的技術應用，協助客戶產品企劃與服務流程標準化管理。<br>擁有 10 年的企業應用軟體開發整合的顧問經驗，與 3 年的大型網站開發/企劃/管理經驗，是少數能橫跨企業資訊應用與網際網路應用的專業顧問。
         .col
           .items.image-top
             .item.member
               .item-image
                 img src="/images/about/Stacie.jpg"
               .item-content
-                h4.item-title 游欣瑩（Stacie）
-                / p.item-text 擁有 10 年以上消費性、精品、零售業，數位行銷經驗，在媒體、公關活動等相關產業耕耘已久，洞悉網路市場趨勢，提供客戶完整網路行銷建議與規劃。
+                h4.item-title.align-line 游欣瑩（Stacie）
+                p.item-text 擁有 10 年以上消費性、精品、零售業，數位行銷經驗，在媒體、公關活動等相關產業耕耘已久，洞悉網路市場趨勢，提供客戶完整網路行銷建議與規劃。
 
         .col
           .items.image-top
             .item.member
               .item-image
-                img src="/images/about/photo-empty.png"
+                img src="/images/about/Joanna.jpg"
               .item-content
-                h4.item-title 李中琪（Joanna）
-                / p.item-text 豐富的廣告優化操作經驗，參與過 cacaFly 在台灣 Facebook 中小型企業的業務推廣、客戶服務與管理，並擁有規劃 Facebook 相關課程的經驗，對數位媒體行銷上擁有不同的建議。
-
-      .row.grid-1-3-3
-        .col
-          .items.image-top
-            .item.member
-              .item-image
-                img src="/images/about/Ruey.jpg"
-              .item-content
-                h4.item-title 吳瑞祥（Ruey）
-                / p.item-text 為 cacaFly 的技術推手，建置最人性化的系統，給予 cacaFly 最大的技術後勤支援。
-
-        .col
-          .items.image-top
-            .item.member
-              .item-image
-                img src="/images/about/Gennie.jpg"
-              .item-content
-                h4.item-title 陳施均（Gennie）
-                / p.item-text 10 年以上的媒體業務經驗，為中小企業主解決許多數位行銷上的疑難雜症，對中小企業市場有高度的洞察力。Gennie 非常熱愛開發客戶及引導團隊潛力，創造業績。曾在亞普達國際電子商務股份有限公司，帶領業務團隊並獲得 Google 台灣區最佳代理商殊榮。
-
-        .col
-          .items.image-top
-            .item.member
-              .item-image
-                img src="/images/about/Arthur.jpg"
-              .item-content
-                h4.item-title 何典諭（Arthur Ho）
-                / p.item-text 曾任寶僑家品有限公司資深客戶經理，擅長異業結盟與資源整合創造雙贏，並於 2013 年榮獲寶僑家品有限公司客戶發展部門白金與金獎肯定。在 cacaFly 負責整合業務部門資源，提供整體銷售策略，強化客戶服務滿意度，設定目標管理以及後續追蹤考核。
+                h4.item-title.align-line 李中琪（Joanna）
+                p.item-text 豐富的廣告優化操作經驗，參與過 cacaFly 在台灣 Facebook 中小型企業的業務推廣、客戶服務與管理，並擁有規劃 Facebook 相關課程的經驗，對數位媒體行銷上擁有不同的建議。
 
       .row.grid-1-3-3
         .col
@@ -223,6 +219,42 @@
               .item-image
                 img src="/images/about/Paul.jpg"
               .item-content
-                h4.item-title 林園森（Paul）
-                / p.item-text Paul 擁有超過 6 年網站開發經驗及 3 年以上專案經理經歷，累積網站介面設計、行銷活動規劃與網站建置等豐富經驗。
-                / p.item-text Paul 開發者與專案經理雙重經驗，為客戶在品牌社群經營上，量身訂作社群行銷活動並解決技術上問題，是 cacaFly 與品牌客戶之間不可或缺的溝通橋樑。
+                h4.item-title.align-line 林園森（Paul）
+                p.item-text Paul 擁有超過 6 年網站開發經驗及 3 年以上專案經理經歷，累積網站介面設計、行銷活動規劃與網站建置等豐富經驗。<br>Paul 開發者與專案經理雙重經驗，為客戶在品牌社群經營上，量身訂作社群行銷活動並解決技術上問題，是 cacaFly 與品牌客戶之間不可或缺的溝通橋樑。
+
+        .col
+          .items.image-top
+            .item.member
+              .item-image
+                img src="/images/about/Gennie.jpg"
+              .item-content
+                h4.item-title.align-line 陳施均（Gennie）
+                p.item-text 10 年以上的媒體業務經驗，為中小企業主解決許多數位行銷上的疑難雜症，對中小企業市場有高度的洞察力。Gennie 非常熱愛開發客戶及引導團隊潛力，創造業績。曾在亞普達國際電子商務股份有限公司，帶領業務團隊並獲得 Google 台灣區最佳代理商殊榮。
+
+        .col
+          .items.image-top
+            .item.member
+              .item-image
+                img src="/images/about/Arthur.jpg"
+              .item-content
+                h4.item-title.align-line 何典諭（Arthur Ho）
+                p.item-text 曾任寶僑家品有限公司資深客戶經理，擅長異業結盟與資源整合創造雙贏，並於 2013 年榮獲寶僑家品有限公司客戶發展部門白金與金獎肯定。在 cacaFly 負責整合業務部門資源，提供整體銷售策略，強化客戶服務滿意度，設定目標管理以及後續追蹤考核。
+
+      .row.grid-1-3-3
+        .col
+          .items.image-top
+            .item.member
+              .item-image
+                img src="/images/about/Ruey.jpg"
+              .item-content
+                h4.item-title.align-line 吳瑞祥（Ruey）
+                p.item-text 為 cacaFly 的技術推手，建置最人性化的系統，給予 cacaFly 最大的技術後勤支援。
+        .col
+          .items.image-top
+            .item.member
+              .item-image
+                img src="/images/about/photo-you.png"
+              .item-content
+                h4.item-title.align-line This could be YOU!
+                p.item-text cacaFly 就像是一個交響樂團，每個人都會在適當的時候扮演好自己的角色，如果喜歡這樣的感覺與大家庭，歡迎加入我們。
+                a.button.joinus-btn href="http://www.104.com.tw/jobbank/custjob/index.php?r=cust&amp;j=383a44253c463e6856583a1d1d1d1d5f2443a363189j56&amp;jobsource=n104bank1" target="_blank" 104 徵才

@@ -406,9 +406,9 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #e6e
 .button-group { text-align: center; }
 .button-group button, .button-group .button, .button-group a.button { display: inline-block; }
 
-button, .button, a.button { color: inherit; text-decoration: inherit; cursor: inherit; text-align: center; margin: 12px 0; padding: .75em 24px; border: none; background-color: #eee; background-image: none; color: #444; text-shadow: none; font-size: 13px; line-height: 24px; font-family: "AvenirNext-Regular", "Helvetica", "Arial", sans-serif; font-weight: 300; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+button, .button, a.button { color: inherit; text-decoration: inherit; cursor: inherit; text-align: center; margin: 12px 0; padding: .75em 24px; border: none; background-color: #f26522; background-image: none; color: white; text-shadow: none; font-size: 13px; line-height: 24px; font-family: "AvenirNext-Regular", "Helvetica", "Arial", sans-serif; font-weight: 300; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 button:active, button:focus, .button:active, .button:focus, a.button:active, a.button:focus { outline: none; }
-button:hover, .button:hover, a.button:hover { background-image: none; background-color: #ccc; color: #444; }
+button:hover, .button:hover, a.button:hover { background-image: none; background-color: #f58752; color: white; }
 button.action, .button.action, a.button.action { background-color: black; color: white; }
 button.action:hover, .button.action:hover, a.button.action:hover { background-color: #a3bf3a; color: white; }
 button.danger, .button.danger, a.button.danger { background-color: #d83e32; }
@@ -654,12 +654,12 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 
 .carousel-indicators .active { margin: 0; width: 12px; height: 12px; background-color: #ffffff; }
 
-.carousel-caption { position: absolute; left: 15%; right: 15%; bottom: 20px; z-index: 10; padding-top: 20px; padding-bottom: 0; color: #ffffff; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+.carousel-caption { position: absolute; left: 0; right: 0; bottom: 0; z-index: 10; padding-top: 20px; padding-bottom: 48px; color: #ffffff; text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); background-color: rgba(0, 0, 0, 0.6); }
 
 .carousel-caption .btn { text-shadow: none; }
 
 @media (min-width: 760px) { .carousel-control .icon-prev, .carousel-control .icon-next { width: 30px; height: 30px; margin-top: -15px; margin-left: -15px; font-size: 30px; }
-  .carousel-caption { left: 20%; right: 20%; padding-bottom: 0; }
+  .carousel-caption { left: 0; right: 0; padding-bottom: 48px; }
   .carousel-indicators { bottom: 0; } }
 .collapse-wrap { position: relative; margin-bottom: 72px; }
 
@@ -682,22 +682,31 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 
 .items .item.service { margin-bottom: 24px; }
 
-.item.member .item-image img { max-width: 250px; max-height: 250px; width: 100%; height: auto; margin: 10px auto; }
+.item.member .item-image img { max-width: 300px; max-height: 300px; width: 100%; height: auto; margin: 0 auto; }
+.item.member .item-content { max-width: 300px; margin: 0 auto; text-align: left; }
 .item.member .item-title { margin-top: 12px; }
-
-.auth { margin-top: 24px; margin-bottom: 24px; text-align: center; }
-.auth img { margin: 14px; }
-@media (min-width: 760px) { .auth { text-align: right; } }
 
 .big-events { position: relative; }
 .big-events ul { list-style: none; padding-left: 72px; }
-.big-events .timeline { position: absolute; top: 15px; bottom: -5px; left: 66px; width: 2px; background-color: #999999; }
-.big-events .timeline:after { content: ""; position: absolute; bottom: -8px; left: -5px; border: 6px solid transparent; border-top-color: #999999; }
-.big-events li { position: relative; padding: 6px 12px; margin: 6px 12px; background-color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+.big-events .timeline { position: absolute; top: 15px; bottom: -5px; left: 66px; width: 2px; background-color: white; }
+.big-events .timeline:after { content: ""; position: absolute; bottom: -8px; left: -5px; border: 6px solid transparent; border-top-color: white; }
+.big-events li { position: relative; padding: 6px 12px; margin: 6px 12px; color: black; background-color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
 .big-events li:before { content: ""; position: absolute; top: 18px; left: -20px; margin-top: -10px; border: 10px solid transparent; border-right-color: white; }
-.big-events .year { position: absolute; width: 48px; left: -72px; margin-top: -12px; padding: 12px 0; font-size: 20px; font-weight: bold; }
-.big-events .year:after { content: ""; position: absolute; top: 50%; right: -12px; margin-top: -5px; width: 6px; height: 6px; background: white; border: 2px solid #999999; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
+.big-events .year { position: absolute; width: 48px; left: -72px; margin-top: -12px; padding: 12px 0; font-size: 20px; font-weight: bold; color: white; }
+.big-events .year:after { content: ""; position: absolute; top: 50%; right: -12px; margin-top: -5px; width: 6px; height: 6px; background: #f26522; border: 2px solid white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
 @media (min-width: 940px) { .big-events { margin: 24px 120px; } }
+
+.positive-list { margin: 0; padding: 0; list-style: none; }
+.positive-list li { margin: 6px 0; }
+
+.team-photo-block { padding-top: 48px; }
+
+.team-photo { width: 100%; height: 320px; background-position: 50% 50%; background-size: cover; }
+@media (min-width: 760px) { .team-photo { height: 560px; } }
+
+.team-photo-desc { position: absolute; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); }
+
+.joinus-btn { display: block; }
 
 .facebook-number .col { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; border-bottom: 1px solid #e6e6e6; }
 .facebook-number .col:last-child { border: none; }
