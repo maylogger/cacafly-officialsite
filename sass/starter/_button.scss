@@ -10,9 +10,9 @@ button, .button, a.button {
   margin: rhythm(.5) 0;
   padding: .75em 24px;
   border: none;
-  background-color: #eee;
+  background-color: $color-orange;
   background-image: none;
-  color: #444;
+  color: white;
   text-shadow: none;
   @include adjust-font-size-to(13px);
   font-family: "AvenirNext-Regular", "Helvetica", "Arial", sans-serif;
@@ -23,8 +23,8 @@ button, .button, a.button {
   // 狀態
   &:hover {
     background-image: none;
-    background-color: #ccc;
-    color: #444;
+    background-color: lighten($color-orange, 10%);
+    color: white;
   }
   &.action {
     background-color: black;
