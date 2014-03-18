@@ -182,3 +182,15 @@
   }
 
 }
+
+.grid-1-3-3 {
+  .items {
+    max-width: 400px;
+    margin: auto;
+  }
+  @include at-breakpoint($desktop) {
+    .items {
+      max-width: none;
+    }
+  }
+}
