@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400px" height="250px" viewBox="0 0 400 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <radialGradient cx="50%" cy="8.04058525%" fx="50%" fy="8.04058525%" r="100%" id="radialGradient-1">
+            <stop stop-color="#1E9ACF" offset="0%"></stop>
+            <stop stop-color="#021016" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup">
+            <rect id="Rectangle-1" fill="#F9F9F9" sketch:type="MSShapeGroup" x="0" y="0" width="400" height="250"></rect>
+            <rect id="Rectangle-4" stroke="#75BAEF" stroke-width="4" fill="url(#radialGradient-1)" sketch:type="MSShapeGroup" x="22" y="22.3899371" width="357.226859" height="208.064656"></rect>
+            <rect id="Rectangle-4" fill="#75BAEF" sketch:type="MSShapeGroup" x="21" y="21.3899371" width="358.230274" height="19.5616661"></rect>
+            <rect id="Rectangle-4" fill="#D4D4D4" sketch:type="MSShapeGroup" x="149.966797" y="201.7101" width="14.2898996" height="14.2898996"></rect>
+            <rect id="Rectangle-4" fill="#D4D4D4" sketch:type="MSShapeGroup" x="178.546596" y="201.7101" width="14.2898996" height="14.2898996"></rect>
+            <rect id="Rectangle-4" fill="#D4D4D4" sketch:type="MSShapeGroup" x="207.126395" y="201.7101" width="14.2898996" height="14.2898996"></rect>
+            <rect id="Rectangle-4" fill="#D64038" sketch:type="MSShapeGroup" x="235.706194" y="201.7101" width="14.2898996" height="14.2898996"></rect>
+            <rect id="Rectangle-4" fill="#75BAEF" sketch:type="MSShapeGroup" x="220" y="59" width="100" height="100"></rect>
+            <rect id="Rectangle-4" fill="#D4D4D4" sketch:type="MSShapeGroup" x="80" y="59" width="100" height="100"></rect>
+            <path d="M246.073614,159 L246.989145,159 L280.616842,146.938145 L297.382732,159 L310.223397,159 L309.395815,131.6361 L320,123.855762 L320,104.283086 L303.7359,99.5370707 L292.193104,64.5687732 L271.458899,95.0008258 L234.635152,95.1728799 L257.170534,124.296308 L246.073614,159 Z" id="Rectangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <circle id="Oval-1" fill="#D64038" sketch:type="MSShapeGroup" cx="365" cy="31" r="5"></circle>
+            <path d="M130.771186,111.542371 C140.585941,111.542371 148.542371,103.585941 148.542371,93.7711857 C148.542371,83.9564303 140.585941,76 130.771186,76 C120.95643,76 113,83.9564303 113,93.7711857 C113,103.585941 120.95643,111.542371 130.771186,111.542371 Z" id="Oval-4" fill="#737373" sketch:type="MSShapeGroup"></path>
+            <path d="M169.72559,159.185562 C169.72559,133.125694 152.102268,112 130.362795,112 C108.623323,112 91,133.125694 91,159.185562" id="Oval-5" fill="#737373" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-5" fill="#D4D4D4" sketch:type="MSShapeGroup" x="100" y="169" width="60" height="10"></rect>
+        </g>
+    </g>
+</svg>
