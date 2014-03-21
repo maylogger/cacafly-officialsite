@@ -50,6 +50,10 @@
     }
   }
 
+  .fb-page, .phone {
+    display: none;
+  }
+
   .pad-hide {
     display: inline;
   }
@@ -77,6 +81,19 @@
     .header & {
       display: block;
     }
+    .fb-page {
+      display: block;
+      margin: -3px 6px;
+      padding: 0;
+      background-color: rgba(black, .45);
+      @include replace-text-with-svg(nav-extra-icon-fb);
+      border: none;
+      @include border-radius(16px);
+      &:hover {
+        top: 0;
+        background-color: $color-orange;
+      }
+    }
     .pad-hide {
       display: none;
     }
@@ -87,6 +104,33 @@
       @include adjust-font-size-to(14px);
       &:hover {
         top: -15px;
+      }
+    }
+    .fb-page {
+      margin: 20px 6px;
+    }
+    .phone {
+      display: block;
+      position: relative;
+      margin: 20px 6px;
+      padding: 0 12px 0 32px;
+      font-size: 14px;
+      line-height: 32px;
+      color: white;
+      background-color: rgba(black, .45);
+      border:none;
+      @include border-radius(16px);
+      @include transition(.5s);
+      &:before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        @include replace-text-with-svg(nav-extra-icon-phone);
+      }
+      &:hover {
+        top: 0;
+        color: white;
+        background-color: $color-orange;
       }
     }
     .pad-hide {
