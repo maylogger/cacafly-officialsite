@@ -2,7 +2,7 @@
   position: relative;
   z-index: 100;
   text-align: center;
-  background-color: $color-black;
+  background-color: darken($color-brown, 15%);
   @extend %subpixel;
   @include box-shadow(0px 1px 3px rgba(black, .2));
   .sub-nav-title {
@@ -35,7 +35,7 @@
     display: none;
     padding: 0 12px;
     @include adjust-font-size-to(14px, 1.5);
-    background-color: $color-red;
+    background-color: darken($color-orange, 5%);
     a {
       display: block;
       color: white;
@@ -62,14 +62,14 @@
       }
     }
     li.active {
-      background-color: $color-red;
+      background-color: darken($color-orange, 5%);
       &:after {
         content: "";
         position: absolute;
         left: 50%;
         margin-left: -8px;
         border: 8px solid transparent;
-        border-top: 8px solid $color-red;
+        border-top: 8px solid darken($color-orange, 5%);
       }
     }
   }
