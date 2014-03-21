@@ -27,9 +27,14 @@
   background-color: desaturate($color-blue-deep, 15%);
 }
 
+.blue-mid-block {
+  color: white;
+  background-color: $color-blue-deep;
+}
+
 .blue-block {
   color: white;
-  background-color: desaturate($color-blue, 10%);
+  background-color: $color-blue;
 }
 
 .ashblue-block {
