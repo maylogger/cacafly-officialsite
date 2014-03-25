@@ -36,9 +36,12 @@
 }
 
 .fb-card-style {
-  min-height: 255px;
-  @include padding-leader(1);
+  min-height: 280px;
+  padding: 36px 36px 0;
   background-color: white;
   @include border-radius(5px);
   @include box-shadow(0px 1px 3px rgba($color-blue-dark, .2));
+  .item {
+    @include trailer(1);
+  }
 }
