@@ -1,23 +1,48 @@
 .item.member {
+  padding: 12px;
+  background-color: white;
+  border-top: 2px solid $color-lighter-gray;
   .item-image {
+    position: relative;
     img {
-      max-width: 300px;
-      max-height: 300px;
       width: 100%;
       height: auto;
       margin: 0 auto;
     }
+    .item-title {
+      position: absolute;
+      padding: 6px 6px 6px 12px;
+      left: 12px;
+      bottom: 0;
+      background-color: rgba(white, .92);
+      border-left-color: $color-yellow;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -6px;
+        border: 6px solid transparent;
+        border-left-color: $color-yellow;
+      }
+    }
   }
   .item-content {
-    max-width: 300px;
-    margin: 0 auto;
-    // padding: 0 10px 10px 10px;
-    // color: white;
+    padding: 6px 0;
     text-align: left;
-    // background-color: $color-black;
   }
   .item-title {
-    @include leader(.5);
+    @include trailer(.5);
+  }
+  @include at-breakpoint($pad) {
+    .item-title {
+      font-size: 16px;
+    }
+  }
+  @include at-breakpoint($desktop) {
+    .item-title {
+      font-size: 20px;
+    }
   }
 }
 
@@ -25,65 +50,84 @@
   position: relative;
   ul {
     list-style: none;
-    padding-left: 72px;
+    @include pie-clearfix;
+    padding-left: 0;
   }
   .timeline {
     position: absolute;
-    top: 15px;
+    top: -10px;
     bottom: -5px;
-    left: 66px;
-    width: 2px;
-    background-color: white;
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -8px;
-      left: -5px;
-      border: 6px solid transparent;
-      border-top-color: white;
-    }
-  }
-  li {
-    position: relative;
-    padding: 6px 12px;
-    margin: 6px 12px;
-    color: black;
-    background-color: white;
-    @include border-radius(5px);
+    left: 50%;
+    width: 6px;
+    margin-left: -3px;
+    @include background(linear-gradient(top, white, lighten($color-yellow, 30%)));
     &:before {
       content: "";
       position: absolute;
-      top: 18px;
-      left: -20px;
-      margin-top: -10px;
-      border: 10px solid transparent;
-      border-right-color: white;
+      top: -10px;
+      left: -4px;
+      width: 14px;
+      height: 14px;
+      background-color: white;
+      @include border-radius(10px);
     }
-  }
-  .year {
-    position: absolute;
-    width: 48px;
-    left: -72px;
-    margin-top: -12px;
-    padding: 12px 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
     &:after {
       content: "";
       position: absolute;
-      top: 50%;
-      right: -12px;
-      margin-top: -5px;
-      width: 6px;
-      height: 6px;
-      background: $color-orange;
-      border: 2px solid white;
-      @include border-radius(10px);
+      bottom: -20px;
+      left: -7px;
+      border: 10px solid transparent;
+      border-top-color: lighten($color-yellow, 30%);
+    }
+  }
+  li.eventgroup {
+    position: relative;
+    padding: 12px;
+    margin: 12px 0;
+    color: black;
+    background-color: white;
+    @include border-radius(5px);
+    @include box-shadow(0px 1px 3px rgba(black, .25));
+    ul {
+      list-style-type: disc;
+      padding-left: 24px;
+    }
+  }
+  .year {
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    color: $color-orange;
+    border-bottom: 1px solid $color-yellow;
+  }
+  @include at-breakpoint($pad) {
+    li.eventgroup {
+      float: left;
+      width: 45%;
+      margin: 6px 0;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        margin-top: -10px;
+        border: 10px solid transparent;
+        border-left-color: white;
+      }
+      &:nth-child(even) {
+        float: right;
+        &:before {
+          left: -20px;
+          right: auto;
+          border: 10px solid transparent;
+          border-right-color: white;
+        }
+      }
     }
   }
   @include at-breakpoint($desktop) {
-    margin: 24px 120px;
+    margin: 24px;
   }
 }
 
