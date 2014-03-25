@@ -12,7 +12,7 @@
     li: a href="#title1" Facebook 媒體特性
     li: a href="#title2" 廣告類型
     li: a href="#title3" 廣告版位
-    / li: a href="#title4" 案例分享
+    li: a href="#title4" Facebook 為什麼如此精準
 
 .page-content
   .block
@@ -97,28 +97,28 @@
         p.block-content 選擇適合的廣告類型達到不同的行銷目標
       .row.grid-1-2-4
         .col
-          .items.image-top.fb-type-card
+          .items.image-top.fb-card-style
             .item.service
               .item-image= image_tag("facebook/type-like.svg")
               .item-content
                 h4.item-title 讚廣告
                 p.item-text 為你的專頁招募大量新粉絲<br>提高品牌知名度
         .col
-          .items.image-top.fb-type-card
+          .items.image-top.fb-card-style
             .item.service
               .item-image= image_tag("facebook/type-post.svg")
               .item-content
                 h4.item-title 貼文廣告
                 p.item-text 提昇你品牌的黏著度與互動率
         .col
-          .items.image-top.fb-type-card
+          .items.image-top.fb-card-style
             .item.service
               .item-image= image_tag("facebook/type-app.svg")
               .item-content
                 h4.item-title APP安裝廣告
                 p.item-text 提供使用者更多應用程式資訊<br>增加下載量
         .col
-          .items.image-top.fb-type-card
+          .items.image-top.fb-card-style
             .item.service
               .item-image= image_tag("facebook/type-link.svg")
               .item-content
@@ -142,24 +142,6 @@
             .item
               .item-image= image_tag("facebook/position-aside.png")
 
-  / #title4.block.lightgray-block
-  /   .container
-  /     .block-header
-  /       h2.block-title.main-title
-  /         | 案例分享
-  /         .main-eng-title CASE
-  /       p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
-  /     .collapse-wrap
-  /       #showcase.sp-collapse.collapse
-  /         .showcase.collapse-content
-  /           - 12.times do
-  /             .case-item
-  /               .case-item-photo= image_tag lorem_image("400x400")
-  /               .case-item-info
-  /                 h4.case-title Showcase
-  /       .collapse-toggle
-  /         a.collapse-toggle-button.collapsed data-toggle="collapse" href="#showcase" 展開
-
   .block.contact
     .container
       .action-bar
@@ -167,3 +149,29 @@
           h3.slogan 若您有需要在 facebook 上進行廣告、行銷活動，歡迎與 cacaFly 連繫。
         .action
           a.btn href="/contact" 業務咨詢
+
+  #title4.block.blue-deep-block
+    .container
+      h2.block-title.main-title Facebook 為什麼如此精準
+
+  .block
+    .container
+      .block-header
+        h2.block-title.main-title 精確多樣化的受眾設定
+        p.block-content Facebook 擁有全世界最多的真實資料，廣告選擇設定多樣性，讓行銷預算花在刀口上
+      .row
+        .col
+          .items.image-top
+            .item
+              .item-image= image_tag lorem_image("1200x400")
+
+  .block.lightgray-block
+    .container
+      .block-header
+        h2.block-title.main-title 精確多樣化的受眾設定
+        p.block-content Facebook 擁有全世界最多的真實資料，廣告選擇設定多樣性，讓行銷預算花在刀口上
+      .row
+        .col
+          .items.image-top
+            .item
+              .item-image= image_tag lorem_image("1200x400")
