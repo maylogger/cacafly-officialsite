@@ -5,44 +5,71 @@
 .orange-block {
   color: white;
   background-color: desaturate($color-orange, 10%);
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .red-block {
   color: white;
   background-color: desaturate($color-red, 10%);
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .yellow-block {
   color: white;
   background-color: desaturate($color-yellow, 10%);
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .blue-dark-block {
   color: white;
   background-color: $color-blue-dark;
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .blue-deep-block {
   color: white;
   background-color: desaturate($color-blue-deep, 15%);
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .blue-mid-block {
   color: white;
   background-color: $color-blue-deep;
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .blue-block {
   color: white;
   background-color: $color-blue;
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .ashblue-block {
   color: white;
   background-color: desaturate($color-ashblue, 10%);
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
 
 .green-deep-block {
   color: white;
   background-color: $color-green-deep;
+  background-image: url(/images/block-mask.png);
+  @include background-size(cover);
+  background-position: center;
 }
