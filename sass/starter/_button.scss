@@ -19,11 +19,12 @@ button, .button, a.button {
   font-weight: 300;
   @extend %subpixel;
   @include border-radius(0);
+  @include transition(.5s);
 
   // 狀態
   &:hover {
     background-image: none;
-    background-color: lighten($color-orange, 10%);
+    background-color: $color-yellow;
     color: white;
   }
   &.action {
