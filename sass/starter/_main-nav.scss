@@ -85,7 +85,7 @@
       display: block;
       margin: -3px 6px;
       padding: 0;
-      background-color: rgba(black, .45);
+      background-color: #BBBBB7;
       @include replace-text-with-svg(nav-extra-icon-fb);
       border: none;
       @include border-radius(16px);
@@ -113,24 +113,30 @@
       display: block;
       position: relative;
       margin: 20px 6px;
-      padding: 0 12px 0 32px;
+      padding: 0 12px 0 40px;
       font-size: 14px;
       line-height: 32px;
-      color: white;
-      background-color: rgba(black, .45);
+      color: black;
+      background-color: $color-lightgray2;
       border:none;
       @include border-radius(16px);
       @include transition(.5s);
       &:before {
         content: "";
         position: absolute;
-        left: 2px;
+        left: 0;
+        width: 32px;
+        height: 32px;
         @include replace-text-with-svg(nav-extra-icon-phone);
+        background-color: #BBBBB7;
+        @include border-radius(16px);
+        @include transition(.5s);
       }
       &:hover {
         top: 0;
-        color: white;
-        background-color: $color-orange;
+        &:before {
+          background-color: $color-orange;
+        }
       }
     }
     .pad-hide {
