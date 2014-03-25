@@ -1,0 +1,22 @@
+// post-list
+.list-post {
+  @include padding-trailer(2);
+  border-bottom: 1px dotted $global-divider;
+  .post-text {
+    color: $color-black;
+  }
+  .post-title {
+    @include trailer(.25);
+  }
+  .post-date {
+    @include adjust-font-size-to(12px, .75);
+    font-weight: bold;
+    color: lighten($color-gray, 10%);
+    @include trailer(.5);
+  }
+  .read-more {
+    @include adjust-font-size-to(15px);
+    display: block;
+    @include leader(.5);
+  }
+}
