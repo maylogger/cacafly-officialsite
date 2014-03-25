@@ -38,17 +38,19 @@
     @include trailer(.75);
   }
   .block-sub-title {
-    @include leader(.5);
+    @include leader(1);
     @include pie-clearfix;
     @include trailer(.5);
+    @include adjust-font-size-to(26px, 2);
+    text-align: center;
     .sub-title {
       float: left;
       @include trailer(0);
-      @include adjust-font-size-to(22px, 2);
+      @include adjust-font-size-to(24px, 2);
     }
     .readmore {
       float: right;
-      @include adjust-font-size-to(16px, 2);
+      @include adjust-font-size-to(18px, 2);
     }
   }
   .block-headline {
