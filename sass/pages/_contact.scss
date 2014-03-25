@@ -32,13 +32,8 @@
       list-style: none;
       font-size: 14px;
     }
-    .label {
+    .phone {
       display: inline-block;
-      min-width: 110px;
-      &:after {
-        content: "：";
-        float: right;
-      }
     }
     .address {
       margin-bottom: rhythm(.5);
@@ -47,32 +42,42 @@
 }
 
 .contact-form {
-  margin-bottom: rhythm(2);
   padding: rhythm(1);
-  background-color: $color-lightgray2;
-  input {
-    width: 95%;
-    padding: 6px;
+  color: white;
+  background-color: lighten(black, 25%);
+  @include pie-clearfix;
+  .contact-input {
+    @include reset-box-model;
+    @include box-sizing(border-box);
+    width: 100%;
+    height: 34px !important;
+    padding: 0 6px;
   }
-  textarea {
-    width: 95%;
-    min-height: 224px;
+  .contact-text {
+    @include reset-box-model;
+    @include box-sizing(border-box);
+    width: 100%;
+    min-height: 218px;
     padding: 6px;
   }
   select {
-    width: 95%;
-    height: 38px;
+    @include reset-box-model;
+    @include box-sizing(border-box);
+    width: 100%;
+    height: 34px;
     padding: 8px 0;
   }
   .submit {
+    position: relative;
     width: 100%;
-    @include leader(1);
     padding: 12px 0;
     color: white;
     border: none;
-    background-color: $color-gray;
+    background-color: $color-blue-dark;
+    @include transition(background-color .5s);
+    @include border-radius(5px);
     &:hover {
-      background-color: lighten($color-gray, 10%);
+      background-color: $color-blue-deep;
     }
   }
 }
@@ -81,31 +86,32 @@
 }
 @include at-breakpoint($pad) {
   .location {
-    .contact-map {
-      float: left;
-      width: 40%;
-      margin-bottom: 0;
-    }
     .contact-info {
-      float: right;
-      width: 55%;
-      margin: rhythm(1) rhythm(1) 0 0;
+      ul {
+        font-size: 16px;
+      }
     }
   }
+
   .contact-form {
     padding: rhythm(1) rhythm(2);
-    input {
-      width: 90%;
-    }
-    select {
-      width: 90%;
-    }
-    textarea {
-      width: 95%;
-    }
     .submit {
-      width: auto;
-      padding: 12px 48px;
+      height: 218px;
+      padding: 128px 48px 0;
+    }
+    .sent {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        margin-top: -72px;
+        margin-left: -64px;
+        @include replace-text-with-svg("contact-form-sent");
+      }
     }
   }
 }
