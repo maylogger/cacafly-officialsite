@@ -18,7 +18,7 @@ button, .button, a.button {
   font-family: "AvenirNext-Regular", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   @extend %subpixel;
-  @include border-radius(0);
+  @include border-radius(5px);
   @include transition(.5s);
 
   // 狀態
