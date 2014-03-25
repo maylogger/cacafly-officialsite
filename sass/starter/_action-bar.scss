@@ -25,9 +25,12 @@
     line-height: 1em;
     border: 2px solid $action-bar-color;
     color: $action-bar-color;
+    @include border-radius(5px);
+    @include transition(background .5s);
+
     &:hover {
       text-decoration: none;
-      background: lighten($color-orange, 5%);
+      background: $color-yellow;
     }
   }
 
@@ -35,7 +38,9 @@
     width: 100%;
     .slogan {
       text-align: left;
-      br {display: none}
+      br {
+        display: none;
+      }
     }
     .content {
       @include leader(.5);
