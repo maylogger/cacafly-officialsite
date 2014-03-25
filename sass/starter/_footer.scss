@@ -53,12 +53,14 @@
 
   .copyright {
     @include adjust-font-size-to(13px, 3/4);
+    text-align: center;
     color: $footer-color;
     @include trailer(1);
   }
 
   .company-info {
     @include adjust-font-size-to(13px, 3/4);
+    text-align: center;
     color: $footer-color;
     @include trailer(1);
   }
@@ -85,7 +87,7 @@
   }
 
 
-  @include at-breakpoint($pad) {
+  @include at-breakpoint($desktop) {
     .copyright {
       float: right;
     }
