@@ -1,7 +1,38 @@
 .aside {
   width: 100%;
   float: right;
+  .aside-title {
+    @include adjust-font-size-to(20px);
+    font-weight: bold;
+  }
+  ul.aside-list {
+    padding: 0;
+    list-style: none;
+    @include trailer(1.75);
+
+    li {
+      @include ellipsis;
+      margin-bottom: 6px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid $global-divider;
+      &:last-child {
+        border-bottom: none;
+      }
+      &.readmore {
+        @include padding-leader(.25);
+        text-align: right;
+      }
+    }
+
+  }
   @include at-breakpoint($desktop) {
     @include span-columns(4 omega);
   }
+
+
+
+
 }
+
+
+

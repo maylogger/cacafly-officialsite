@@ -1,17 +1,24 @@
-.page-content
-  .page-content-article.article
-    .container
-      .page-content-inner.left
+.container
+  .post
+    .post-content
+      .post-header
+        h1.post-header-title: a href="#"= zh_lorem_sentence
+        .post-date= lorem_date
+      .post-body.article
         = render "/partials/article";
-        / h3.lead = zh_lorem_sentence
-        / - 2.times do
-        /   p = zh_lorem_paragraphs 3
-        / input.button type="button" value="下載 分析報告 PDF"
-      .aside.aside-sticky
-        h4 更多文章
-        ul.other-post
-          - 10.times do
-            li
-              a href="#" = zh_lorem_sentence
-          li.readmore
-            a href="/post/post-list.html" Read more >
+      .post-switch
+        a.prev> href="#" « 上一篇消息
+        a.back-top> href="#" 返回頂部
+        a.next> href="#" 下一篇消息 »
+      / h3.lead = zh_lorem_sentence
+      / - 2.times do
+      /   p = zh_lorem_paragraphs 3
+      / input.button type="button" value="下載 分析報告 PDF"
+    .aside.aside-sticky
+      h4.aside-title 更多文章
+      ul.aside-list
+        - 10.times do
+          li
+            a href="#" = zh_lorem_sentence
+        li.readmore
+          a href="/post/post-list.html" Read more »

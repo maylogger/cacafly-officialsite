@@ -1,0 +1,78 @@
+// 文章主要區塊
+.post {
+  @include pie-clearfix;
+  @include leader(1);
+  .post-header {
+    @include padding-trailer(.25);
+    border-bottom: 1px solid $global-divider;
+    @include trailer(1);
+  }
+  .post-header-title {
+    @include adjust-font-size-to(24px, 1.25);
+  }
+  .post-date {
+    @include adjust-font-size-to(13px);
+    color: $global-muted-color;
+  }
+  .article {
+    @include leader(0);
+  }
+
+  .post-switch {
+    border-top: 1px solid $global-divider;
+    @include padding-leader(.5);
+
+    text-align: justify;
+    @include adjust-font-size-to(13px);
+    &:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+    }
+    a {
+      display: inline-block;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include at-breakpoint($pad) {
+    @include leader(2);
+    .post-content {
+      max-width: 100%;
+      @include span-columns(8);
+    }
+    .post-header {
+
+    }
+    .post-header-title {
+      @include adjust-font-size-to(30px, 1.5);
+    }
+    .post-switch {
+      @include trailer(1);
+      @include adjust-font-size-to(15px);
+    }
+  }
+
+  @include at-breakpoint($desktop) {
+    .post-content {
+      @include span-columns(8);
+    }
+    .post-header {
+      @include padding-trailer(.75);
+    }
+    .post-date {
+      @include adjust-font-size-to(15px);
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
