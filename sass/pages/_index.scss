@@ -7,3 +7,46 @@
 .items .item.service {
   margin-bottom: rhythm(1);
 }
+
+.post-preview {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  .preview-photo {
+    position: relative;
+    padding-top: 62.5%;
+    height: 0;
+    background-color: $color-gray;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .preview-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(black, .35);
+    .preview-content-inner {
+      padding: rhythm(.5);
+      @include transition(.25s);
+    }
+  }
+  .preview-date {
+    @include adjust-font-size-to(12px, .75);
+    font-weight: bold;
+    color: lighten($color-gray, 20%);
+  }
+  .preview-title {
+    @include ellipsis;
+    @include adjust-font-size-to(14px, .75);
+
+  }
+  &:hover .preview-title {
+    white-space: normal;
+    overflow: visible;
+  }
+}
