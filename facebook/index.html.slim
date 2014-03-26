@@ -12,7 +12,6 @@
     li: a href="#title1" Facebook 媒體特性
     li: a href="#title2" 廣告類型
     li: a href="#title3" 廣告版位
-    li: a href="#title4" Facebook 為什麼如此精準
 
 .page-content
   .block
@@ -46,14 +45,20 @@
         .col
           .items.image-left
             .item
-              .item-image= image_tag("facebook/feature-interactive.svg")
+              .item-image
+                = image_tag("facebook/feature-interactive.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-interactive.png")
               .item-content
                 h4.item-title 互動性強
                 p.item-text 創造粉絲與品牌的對話機會，與粉絲更深入溝通
         .col
           .items.image-left
             .item
-              .item-image= image_tag("facebook/feature-like.svg")
+              .item-image
+                = image_tag("facebook/feature-like.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-like.png")
               .item-content
                 h4.item-title 正向行銷
                 p.item-text 按讚模式，為你的品牌的增加好感度
@@ -61,14 +66,20 @@
         .col
           .items.image-left
             .item
-              .item-image= image_tag("facebook/feature-target.svg")
+              .item-image
+                = image_tag("facebook/feature-target.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-target.png")
               .item-content
                 h4.item-title 精準目標
                 p.item-text 擁有最多真實用戶資料的Facebook，協助你精準地找到消費者
         .col
           .items.image-left
             .item
-              .item-image= image_tag("facebook/feature-multiscreen.svg")
+              .item-image
+                = image_tag("facebook/feature-multiscreen.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-multiscreen.png")
               .item-content
                 h4.item-title 多螢曝光
                 p.item-text 橫跨桌機、手機與平板，讓廣告資訊同時呈現，幫你找到所有的客戶
@@ -76,14 +87,20 @@
         .col
           .items.image-left
             .item
-              .item-image= image_tag("facebook/feature-multivariate.svg")
+              .item-image
+                = image_tag("facebook/feature-multivariate.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-multivariate.png")
               .item-content
                 h4.item-title 多元廣告類型
                 p.item-text 提供廣告多種類型，讓您靈活運用，滿足你的不同行銷目標
         .col
           .items.image-left
             .item
-              .item-image= image_tag("facebook/feature-mouth.svg")
+              .item-image
+                = image_tag("facebook/feature-mouth.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-mouth.png")
               .item-content
                 h4.item-title 口碑行銷
                 p.item-text Facebook 擁有強大的口耳相傳特性，提高你的品牌宣傳力
@@ -99,28 +116,40 @@
         .col
           .items.image-top.fb-card-style
             .item.service
-              .item-image= image_tag("facebook/type-like.svg")
+              .item-image
+                = image_tag("facebook/type-like.svg")
+                /[if IE]
+                  = image_tag("facebook/type-like.png")
               .item-content
                 h4.item-title 讚廣告
                 p.item-text 為你的專頁招募大量新粉絲提高品牌知名度
         .col
           .items.image-top.fb-card-style
             .item.service
-              .item-image= image_tag("facebook/type-post.svg")
+              .item-image
+                = image_tag("facebook/type-post.svg")
+                /[if IE]
+                  = image_tag("facebook/type-post.png")
               .item-content
                 h4.item-title 貼文廣告
                 p.item-text 提昇你品牌的黏著度與互動率
         .col
           .items.image-top.fb-card-style
             .item.service
-              .item-image= image_tag("facebook/type-app.svg")
+              .item-image
+                = image_tag("facebook/type-app.svg")
+                /[if IE]
+                  = image_tag("facebook/type-app.png")
               .item-content
                 h4.item-title APP安裝廣告
                 p.item-text 提供使用者更多應用程式資訊增加下載量
         .col
           .items.image-top.fb-card-style
             .item.service
-              .item-image= image_tag("facebook/type-link.svg")
+              .item-image
+                = image_tag("facebook/type-link.svg")
+                /[if IE]
+                  = image_tag("facebook/type-link.png")
               .item-content
                 h4.item-title 外連廣告
                 p.item-text 官網導流量的好幫手
@@ -150,7 +179,7 @@
         .action
           a.btn href="/contact" 聯絡我們
 
-  #title4.block.blue-deep-block
+  .block.blue-deep-block
     .container
       h2.block-title.main-title Facebook 為什麼如此精準
 
@@ -163,7 +192,10 @@
         .col
           .items.image-top
             .item
-              .item-image= image_tag("facebook/feature-target-content.svg")
+              .item-image
+                = image_tag("facebook/feature-target-content.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-target-content.png")
 
   .block.blue-dark-block
     .container
@@ -179,21 +211,30 @@
         .col
           .items.image-top.fb-card-style
             .item
-              .item-image= image_tag("facebook/step-confirm.svg")
+              .item-image
+                = image_tag("facebook/step-confirm.svg")
+                /[if IE]
+                  = image_tag("facebook/step-confirm.png")
               .item-content
                 h4.item-title 確認
                 p.item-text 在客戶資料庫中確認誰是你想溝通的對象
         .col
           .items.image-top.fb-card-style
             .item
-              .item-image= image_tag("facebook/step-find.svg")
+              .item-image
+                = image_tag("facebook/step-find.svg")
+                /[if IE]
+                  = image_tag("facebook/step-find.png")
               .item-content
                 h4.item-title 找出
                 p.item-text 利用自訂受眾服務在 Facebook 上找到他們
         .col
           .items.image-top.fb-card-style
             .item
-              .item-image= image_tag("facebook/step-touching.svg")
+              .item-image
+                = image_tag("facebook/step-touching.svg")
+                /[if IE]
+                  = image_tag("facebook/step-touching.png")
               .item-content
                 h4.item-title 觸及
                 p.item-text 投遞他們有興趣的廣告訊息與擬定廣告策略
@@ -205,7 +246,10 @@
         .col
           .items.image-top
             .item
-              .item-image= image_tag("facebook/feature-target-sorting.svg")
+              .item-image
+                = image_tag("facebook/feature-target-sorting.svg")
+                /[if IE]
+                  = image_tag("facebook/feature-target-sorting.png")
 
   .block.lightgray-block
     .container
@@ -214,21 +258,30 @@
         .col
           .items.image-top.fb-card-style
             .item
-              .item-image= image_tag("facebook/positive-target.svg")
+              .item-image
+                = image_tag("facebook/positive-target.svg")
+                /[if IE]
+                  = image_tag("facebook/positive-target.png")
               .item-content
                 h4.item-title 目標精確
                 p.item-text 已是顧客，對產品資訊的反應較高，擁有較高轉換率
         .col
           .items.image-top.fb-card-style
             .item
-              .item-image= image_tag("facebook/positive-bounce.svg")
+              .item-image
+                = image_tag("facebook/positive-bounce.svg")
+                /[if IE]
+                  = image_tag("facebook/positive-bounce.png")
               .item-content
                 h4.item-title 內容彈性
                 p.item-text 規劃不同廣告訊息給老客戶，提高對廣告訊息的興趣
         .col
           .items.image-top.fb-card-style
             .item
-              .item-image= image_tag("facebook/positive-calc.svg")
+              .item-image
+                = image_tag("facebook/positive-calc.svg")
+                /[if IE]
+                  = image_tag("facebook/positive-calc.png")
               .item-content
                 h4.item-title 精打細算
                 p.item-text 涵蓋受眾已是回頭客，廣告資訊接受度高，完美掌控行銷預算
