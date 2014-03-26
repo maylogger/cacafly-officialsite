@@ -693,7 +693,7 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 
 .items .item.service { margin-bottom: 24px; }
 
-.item.member { padding: 12px; background-color: white; border-top: 2px solid #f0f2f0; }
+.item.member { padding: 24px; background-color: white; border-top: 2px solid #f0f2f0; }
 .item.member .item-image { position: relative; }
 .item.member .item-image img { width: 100%; height: auto; margin: 0 auto; }
 .item.member .item-image .item-title { position: absolute; padding: 6px 6px 6px 12px; left: 12px; bottom: 0; background-color: rgba(255, 255, 255, 0.92); border-left-color: #f99d1c; }
