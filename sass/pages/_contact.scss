@@ -42,7 +42,7 @@
 }
 
 .contact-form {
-  padding: rhythm(1);
+  padding: rhythm(1) 0;
   color: white;
   background-color: lighten(black, 25%);
   @include pie-clearfix;
