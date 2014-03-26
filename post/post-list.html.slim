@@ -1,6 +1,12 @@
-.container
-  .block
-    h3.block-title cacaFly 市場動態
+.page-header
+  .page-header-bg
+  .container
+    .block
+      .page-header-content
+        h1 cacaFly 市場動態
+
+.block
+  .container
     .row
       - 10.times do
         .col
@@ -11,4 +17,5 @@
                 .item-title.post-title = zh_lorem_words( rand(3) + 3 )
                 .post-date = lorem_date.to_date
                 p.item-text.post-text = zh_lorem_paragraphs 2
+                span.read-more Read More »
     = render "/partials/pagination"
