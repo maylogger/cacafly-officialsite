@@ -1,15 +1,15 @@
 @mixin nav-icon-animation($icon-name) {
   &:after {
-  content: "";
-  position: absolute;
-  top: 56px;
-  left: 50%;
-  display: block;
-  opacity: 0;
-  margin-top: 3px;
-  margin-left: -12px;
-  @include replace-text-with-svg($icon-name);
-  @include transition(.5s);
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    display: block;
+    opacity: 0;
+    margin-top: 3px;
+    margin-left: -12px;
+    @include replace-text-with-svg($icon-name);
+    @include transition(.5s);
   }
   &:hover {
     &:after {
@@ -32,7 +32,6 @@
   }
   a {
     position: relative;
-    top: 0;
     display: inline-block;
     padding: 0 6px; // for cacaFly.
     margin: 0 6px; // for cacaFly.
@@ -40,7 +39,11 @@
     @extend %subpixel;
     @include adjust-font-size-to(16px);
     border-bottom: 2px solid transparent;
-    @include transition(.5s);
+    span {
+      position: relative;
+      top: 0;
+      @include transition(.5s);
+    }
     &:hover {
       color: $color-orange; // for cacaFly.
       text-decoration: none;
@@ -72,6 +75,7 @@
       margin: 0 .25em;
     }
     a {
+      padding: 12px 6px;
       @include adjust-font-size-to(14px);
     }
     // append-around
@@ -83,12 +87,13 @@
     }
     .fb-page {
       display: block;
-      margin: -3px 6px;
+      margin: 9px 6px;
       padding: 0;
       background-color: #BBBBB7;
       @include replace-text-with-svg(nav-extra-icon-fb);
       border: none;
       @include border-radius(16px);
+      @include transition(background-color .5s);
       &:hover {
         top: 0;
         background-color: $color-orange;
@@ -100,19 +105,21 @@
   }
   @include at-breakpoint($desktop) {
     a {
-      padding: rhythm(1) 6px;
+      padding: rhythm(1.5) 6px;
       @include adjust-font-size-to(14px);
-      &:hover {
-        top: -15px;
+       &:hover {
+        span {
+          top: -15px;
+        }
       }
     }
     .fb-page {
-      margin: 20px 6px;
+      margin: 32px 6px;
     }
     .phone {
       display: block;
       position: relative;
-      margin: 20px 6px;
+      margin: 32px 6px;
       padding: 0 12px 0 40px;
       font-size: 14px;
       line-height: 32px;
