@@ -59,6 +59,10 @@
       background-color: transparent;
       a {
         padding: 0 18px;
+        &:hover {
+          text-decoration: none;
+          background-color: $color-brown;
+        }
       }
     }
     li.active {
