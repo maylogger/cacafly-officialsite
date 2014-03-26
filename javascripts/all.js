@@ -1,10 +1,3 @@
-// image tag svg fallback with modernizr
-if(!Modernizr.svg) {
-    $('img[src*="svg"]').attr('src', function() {
-        return $(this).attr('src').replace('.svg', '.png');
-    });
-}
-
 // 移動 dom
 $( ".main-nav ul" ).appendAround();
 
@@ -96,3 +89,8 @@ $(window).resize(function(){
 
 // number counter for facebook page with bonana king's stepper.js
 $('.stepper').zero().play();
+
+
+// $('.adtype').on('activate.bs.scrollspy', function () {
+//   $(".fb-card-style").addClass("active");
+// });
