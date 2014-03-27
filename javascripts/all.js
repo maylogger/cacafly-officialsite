@@ -90,6 +90,110 @@ $(window).resize(function(){
 // number counter for facebook page with bonana king's stepper.js
 $('.stepper').zero().play();
 
+// google map API
+function taipeiMap() {
+    var myLatlng = new google.maps.LatLng(25.0424799, 121.564947);
+    var mapOptions = {
+        zoom: 14,
+        center: myLatlng,
+        scrollwheel: false,
+        streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('taipei-map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'marker'
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: "台北據點"
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+function taipeiMap() {
+    var myLatlng = new google.maps.LatLng(25.0424799, 121.564947);
+    var mapOptions = {
+        zoom: 15,
+        center: myLatlng,
+        scrollwheel: false,
+        streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('taipei-map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'marker'
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: "台北據點"
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+function hsinchuMap() {
+    var myLatlng = new google.maps.LatLng(24.7847633, 121.0182392);
+    var mapOptions = {
+        zoom: 15,
+        center: myLatlng,
+        scrollwheel: false,
+        streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('hsinchu-map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'marker'
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: "新竹據點"
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+function taichungMap() {
+    var myLatlng = new google.maps.LatLng(24.1830855, 120.6139413);
+    var mapOptions = {
+        zoom: 15,
+        center: myLatlng,
+        scrollwheel: false,
+        streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('taichung-map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'marker'
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: "台中據點"
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', taipeiMap);
+google.maps.event.addDomListener(window, 'load', hsinchuMap);
+google.maps.event.addDomListener(window, 'load', taichungMap);
 
 // $('.adtype').on('activate.bs.scrollspy', function () {
 //   $(".fb-card-style").addClass("active");
