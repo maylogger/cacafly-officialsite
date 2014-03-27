@@ -11,9 +11,10 @@
   ul.nav
     li: a href="#title1" 執行長介紹
     li: a href="#title2" 重大記事
-    li: a href="#title3" cacaFly 的優勢
-    li: a href="#title4" 我們的團隊
-    li: a href="#title5" 經營團隊
+    li: a href="#title3" 社會企業責任
+    li: a href="#title4" cacaFly 的優勢
+    / li: a href="#title5" 廣告策略週期
+    li: a href="#title6" 經營團隊
 
 .page-content
   #title1.block
@@ -21,21 +22,21 @@
       .block-header
         h2.block-title.main-title
           | 執行長介紹
-          .main-eng-title CEO
+          .main-sub-title CEO
       .items.image-top-left
         .item
           .item-image
             img src="/images/about/Nathan.jpg"
           .item-content
             h4.item-title 邱繼弘 Nathan
-            p.item-text 畢業於交通大學資訊工程研究所博士班，曾在IBM Silicon Valley和趨勢科技任職，帶著技術的底子，推動數位媒體行銷，頂著淵博的知識與豐富的職場經歷，擁有敏銳的觀察力、策劃力與執行力，多年來深耕數位網路內容，為數位媒體領域中的代表人物。
+            p.item-text 畢業於交通大學資訊工程研究所博士班，曾在 IBM Silicon Valley 和趨勢科技任職，帶著技術的底子，推動數位媒體行銷，頂著淵博的知識與豐富的職場經歷，擁有敏銳的觀察力、策劃力與執行力，多年來深耕數位網路內容，為數位媒體領域中的代表人物。
 
   #title2.block.orange-block
     .container
       .block-header
         h2.block-title.main-title
           | 重大記事
-          .main-eng-title HISTORY
+          .main-sub-title HISTORY
       .big-events
         .timeline
         ul
@@ -61,16 +62,48 @@
           li.eventgroup
             .year 2014
             ul
-              li 取得Google廣告媒體代理，整合三大媒體
+              li 取得 Google 廣告媒體代理，整合三大媒體
 
-  #title3.block
+  #title3.block.red-block
+    .container
+      .block-header
+        h2.block-title.main-title
+          | cacaFly的社會企業責任
+          .main-sub-title 回饋社會，努力讓社會變更好
+        p.block-content cacaFly 運用網路行銷經驗與媒體的優勢，從事公益慈善、人才培育企劃
+      .row.grid-1-2-2.feature
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("about/icon-charity.svg")
+                /[if IE]
+                  = image_tag("about/icon-charity.png")
+              .item-content
+                h4.item-title 公益慈善宣傳計畫
+                .item-text cacaFly 投身於公益慈善並運用數位媒體行銷工具影響更多人一起作慈善、幫助更多人。
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("about/icon-person.svg")
+                /[if IE]
+                  = image_tag("about/icon-person.png")
+              .item-content
+                h4.item-title 人才培育計畫
+                .item-text
+                  ul.clear-list
+                    li 數位媒體產業的深耕與人才培育，cacaFly 給予應屆畢業生培育機會
+                    li 提供東南亞學生獎學金
+                    li 贊助學生研討會、活動
+  #title4.block
     .container
       .block-header
         .block-image= image_tag("about/cacafly-corepower.png")
         h2.block-title.main-title cacaFly 的黃金金三角優勢<br>速度力 x 專業力 x 技術力
-      .row.grid-1-3-3.feature
+      .row.grid-1-3-3.positive
         .col
-          .items.image-left
+          .items.image-top
             .item
               .item-image
                 = image_tag("about/core-speed.svg")
@@ -88,7 +121,7 @@
                     li 協助客戶掌握新資訊與市場趨勢
 
         .col
-          .items.image-left
+          .items.image-top
             .item
               .item-image
                 = image_tag("about/core-pro.svg")
@@ -106,7 +139,7 @@
                     li 統整廣告分析、優化與產業趨勢資訊
 
         .col
-          .items.image-left
+          .items.image-top
             .item
               .item-image
                 = image_tag("about/core-tech.svg")
@@ -122,13 +155,49 @@
                     li 讓技術與數位廣告完美結合
                     li 強大的技術支援，解決客戶所面臨的技術難題
 
+  / #title5.block.lightgray-block
+  /   .container
+  /     .block-header
+  /       h2.block-title.main-title cacaFly 擁有完整的廣告策略週期
+  /       p.block-content cacaFly 如同軍火庫，供給客戶源源不絕的行銷子彈、擬定行銷作戰策略，選擇適合的媒體武器，與客戶並肩作戰，一同拿下一場漂亮的勝仗。
+  /     .row.grid-1-3-3.ad-flow
+  /       .col
+  /         .items.image-top
+  /           .item
+  /             .item-content
+  /               h4.item-title 產品分析
+  /               .item-text
+  /                 ul.positive-list
+  /                   li 釐清客戶真正的行銷目標
+  /                   li 分析產品吸引力
+  /                   li 競爭產品的比較
+  /                   li 行銷策略分析
 
-  #title4.team-photo-block.red-block
+  /       .col
+  /         .items.image-top
+  /           .item
+  /             .item-content
+  /               h4.item-title 操作優化
+  /               .item-text
+  /                 ul.positive-list
+  /                   li 擁有個產業目標族群資料系統
+  /                   li 深受優化廣告經驗素材風格建議
+
+  /       .col
+  /         .items.image-top
+  /           .item
+  /             .item-content
+  /               h4.item-title 專業咨詢
+  /               .item-text
+  /                 ul.positive-list
+  /                   li 完整的廣告成效分析報告
+  /                   li 廣告素材成效比較
+  /                   li 粉絲專頁經營方向
+
+  .team-photo-block.blue-deep-block
     .container
       .block-header
-        h2.block-title.main-title
-          | 我們的團隊
-          .main-eng-title TEAM
+        h2.block-title.main-title 我們的團隊
     #team-carousel.carousel.slide data-ride="carousel"
       ol.carousel-indicators
         li.active data-target="#team-carousel" data-slide-to="0"
@@ -217,12 +286,12 @@
       a.right.carousel-control href="#team-carousel" data-slide="next"
         span.glyphicon.icon-next
 
-  #title5.block.lightgray-block
+  #title6.block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title
           | 經營團隊
-          .main-eng-title MEMBER
+          .main-sub-title MEMBER
       .row.grid-1-3-3
         .col
           .items.image-top
