@@ -29,6 +29,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 0;
     text-align: center;
   }
   li {
@@ -61,12 +62,15 @@
         padding: 0 18px;
         &:hover {
           text-decoration: none;
-          background-color: $color-brown;
+          background-color: darken($color-brown, 5%);
         }
       }
     }
     li.active {
       background-color: darken($color-orange, 5%);
+      & a:hover {
+        background-color: darken($color-orange, 5%);
+      }
       &:after {
         content: "";
         position: absolute;
