@@ -44,4 +44,7 @@
   .item {
     @include trailer(1);
   }
+  .item-content {
+    text-align: center;
+  }
 }
