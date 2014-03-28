@@ -2,74 +2,47 @@
   background-color: #f7f7f4;
 }
 
-.orange-block {
+@mixin block-background-style($color) {
   color: white;
-  background-color: desaturate($color-orange, 10%);
+  background-color: desaturate($color, 10%);
   background-image: url(/images/block-mask.png);
   @include background-size(cover);
   background-position: center;
+}
+
+.orange-block {
+  @include block-background-style($color-orange);
 }
 
 .red-block {
-  color: white;
-  background-color: desaturate($color-red, 10%);
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-red);
 }
 
 .yellow-block {
-  color: white;
-  background-color: desaturate($color-yellow, 10%);
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-yellow);
 }
 
 .blue-dark-block {
-  color: white;
-  background-color: $color-blue-dark;
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-blue-dark);
 }
 
 .blue-deep-block {
-  color: white;
-  background-color: desaturate($color-blue-deep, 15%);
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-blue-deep);
 }
 
 .blue-mid-block {
-  color: white;
+  @include block-background-style($color-blue-deep);
   background-color: $color-blue-deep;
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
 }
 
 .blue-block {
-  color: white;
-  background-color: $color-blue;
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-blue);
 }
 
 .ashblue-block {
-  color: white;
-  background-color: desaturate($color-ashblue, 10%);
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-ashblue);
 }
 
 .green-deep-block {
-  color: white;
-  background-color: $color-green-deep;
-  background-image: url(/images/block-mask.png);
-  @include background-size(cover);
-  background-position: center;
+  @include block-background-style($color-green-deep);
 }
