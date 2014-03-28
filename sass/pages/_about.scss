@@ -1,3 +1,22 @@
+.ceo-intro {
+  max-width: 45em;
+  margin: 0 auto;
+  .item {
+    padding: 24px;
+    background-color: white;
+    .item-title {
+      @include adjust-font-size-to(24px);
+    }
+    .item-image {
+      img {
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .positive {
   .item-content {
     text-align: center;
@@ -36,7 +55,62 @@
 }
 
 .ad-flow {
-
+  .col {
+    @include box-sizing(border-box);
+    position: relative;
+    padding: 24px;
+    color: white;
+    background-color: desaturate($color-blue-deep, 15%);
+    background-image: url(/images/block-mask.png);
+    @include background-size(cover);
+    background-position: center;
+    @include border-radius(5px);
+    &:after {
+      content: "";
+      position: absolute;
+      top: 102%;
+      right: 50%;
+      margin-right: -15px;
+      border: 15px solid transparent;
+      border-top-color: $color-blue-deep;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .item {
+    @include trailer(1);
+  }
+  .item-title {
+    span {
+      position: absolute;
+      bottom: -24px;
+      right: 0;
+      font-size: 42px;
+      line-height: 48px;
+      font-weight: bold;
+      color: darken($color-blue-deep, 12.5%);
+    }
+  }
+  @include at-breakpoint($pad) {
+    .col {
+      &:after {
+        top: 50%;
+        right: -35px;
+        margin-top: -15px;
+        margin-right: 0;
+        border: 15px solid transparent;
+        border-left-color: $color-blue-deep;
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .big-events {
@@ -87,12 +161,10 @@
     }
   }
   .year {
-    padding-bottom: 6px;
     margin-bottom: 6px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: $color-orange;
-    border-bottom: 1px solid $color-yellow;
   }
   @include at-breakpoint($pad) {
     li.eventgroup {
@@ -123,54 +195,79 @@
     margin: 24px;
   }
 }
-
-.item.member {
-  padding: 24px;
-  background-color: white;
-  border-top: 2px solid $color-lighter-gray;
-  .item-image {
+.member {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  @include perspective(1500px);
+  .member-photo {
     position: relative;
-    img {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
+    z-index: 1;
+    height: 296px;
+    padding: 36px;
+    background-color: white;
+    border-bottom: 2px solid $color-lighter-gray;
+    @include transition(.5s);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    .item-image {
+      position: relative;
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
     }
     .item-title {
-      position: absolute;
-      padding: 6px 6px 6px 12px;
-      left: 12px;
-      bottom: 0;
-      background-color: rgba(white, .92);
-      border-left-color: $color-yellow;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        margin-top: -6px;
-        border: 6px solid transparent;
-        border-left-color: $color-yellow;
+      text-align: center;
+    }
+    .item-content {
+      padding: 6px 0;
+      text-align: left;
+    }
+    .item-title {
+      @include trailer(.5);
+    }
+    @include at-breakpoint($pad) {
+      .item-title {
+        font-size: 16px;
+      }
+    }
+    @include at-breakpoint($desktop) {
+      .item-title {
+        font-size: 20px;
       }
     }
   }
-  .item-content {
-    padding: 6px 0;
-    text-align: left;
-  }
-  .item-title {
-    @include trailer(.5);
-  }
-  .joinus-btn {
-    display: block;
-  }
-  @include at-breakpoint($pad) {
+  .member-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 320px;
+    padding: 24px;
+    background-color: white;
+    border-bottom: 2px solid $color-lighter-gray;
+    @include rotateY(180deg);
+    @include transition(.5s);
+    .item-image {
+      img {
+        max-width: 80px;
+        height: auto;
+      }
+    }
     .item-title {
-      font-size: 16px;
+      text-align: center;
+    }
+    .joinus-btn {
+      display: block;
     }
   }
-  @include at-breakpoint($desktop) {
-    .item-title {
-      font-size: 20px;
+  &:hover {
+    .member-photo {
+      @include rotateY(-180deg);
+    }
+    .member-intro {
+      @include rotateY(0deg);
     }
   }
 }
