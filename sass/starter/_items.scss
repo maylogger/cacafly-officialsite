@@ -17,7 +17,9 @@
     }
   }
   .item-content {
-
+    &.center {
+      text-align: center;
+    }
   }
   .item-title {
     @include adjust-font-size-to(20px);
