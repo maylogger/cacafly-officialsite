@@ -271,7 +271,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #e6e
 
 .block { padding: 48px 0 24px; }
 .block:after { content: ""; display: table; clear: both; }
-.block .block-header { margin-bottom: 48px; }
+.block .block-header { margin-bottom: 24px; }
 .block .block-title { margin-bottom: 18px; }
 .block .block-sub-title { margin-top: 24px; margin-bottom: 12px; font-size: 26px; line-height: 48px; text-align: center; }
 .block .block-sub-title:after { content: ""; display: table; clear: both; }
@@ -298,8 +298,8 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #e6e
   .block.content-2-image-1 .block-image { width: 30.43478%; float: right; margin-right: 0; }
   .block.image-2-content-1 .block-content { width: 30.43478%; float: right; margin-right: 0; }
   .block.image-2-content-1 .block-image { width: 65.21739%; float: left; margin-right: 4.34783%; } }
-@media (min-width: 940px) { .block { padding: 72px 0 48px; }
-  .block .block-header { margin-bottom: 72px; }
+@media (min-width: 940px) { .block { padding: 72px 0 24px; }
+  .block .block-header { margin-bottom: 48px; }
   .block.center .headline { max-width: 560px; } }
 
 .grid-1-2-2 .col { margin-bottom: 24px; width: 100%; float: left; margin-right: 6.66667%; }
@@ -388,6 +388,7 @@ hr, .divider { margin-top: 24px; margin-bottom: 24px; border-top: 1px solid #e6e
 .items .item:hover { text-decoration: none; }
 .items .item-image { margin-bottom: 12px; }
 .items .item-image img { margin: 0; display: block; }
+.items .item-content.center { text-align: center; }
 .items .item-title { font-size: 20px; line-height: 24px; margin-bottom: 12px; }
 .items .item-title.align-line { padding-left: 9px; border-left: 3px solid; }
 .items .item-title.center { text-align: center; }
@@ -520,6 +521,7 @@ button.left, .button.left, a.button.left { float: left; }
 .sub-nav ul { list-style: none; margin: 0; padding: 0; font-size: 0; text-align: center; }
 .sub-nav li { display: none; padding: 0 12px; font-size: 14px; line-height: 36px; background-color: #ed560e; }
 .sub-nav li a { display: block; color: white; }
+.sub-nav li.hide { display: none; }
 .sub-nav.open li { display: block; }
 
 @media (min-width: 760px) { .sub-nav .sub-nav-title { display: none; }
@@ -684,6 +686,8 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 .list-post .post-date { font-size: 12px; line-height: 18px; font-weight: bold; color: #b3b3b3; margin-bottom: 12px; }
 .list-post .read-more { font-size: 15px; line-height: 24px; display: block; margin-top: 12px; }
 
+.chart { max-width: 100% !important; height: auto !important; }
+
 .home .header { background-color: rgba(255, 255, 255, 0.85); border-bottom: 1px solid #e6e6e6; }
 
 .items .item.service { margin-bottom: 24px; }
@@ -697,10 +701,14 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 .post-preview .preview-title { white-space: nowrap; overflow: hidden; -ms-text-overflow: ellipsis; -o-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 14px; line-height: 18px; }
 .post-preview:hover .preview-title { white-space: normal; overflow: visible; }
 
-.ceo-intro { max-width: 45em; margin: 0 auto; }
-.ceo-intro .item { padding: 24px; background-color: white; }
+.ceo-intro { max-width: 50em; margin: 0 auto; }
+.ceo-intro .item { padding: 36px; background-color: white; border-bottom: 2px solid #f0f2f0; }
 .ceo-intro .item .item-title { font-size: 24px; line-height: 48px; }
-.ceo-intro .item .item-image img { max-width: 250px; height: auto; margin-bottom: 0; }
+.ceo-intro .item .item-image img { max-width: 280px; height: auto; margin: 0 auto; }
+.ceo-intro .item .item-content { max-width: 280px; margin: 0 auto; }
+@media (min-width: 540px) { .ceo-intro .item .item-image img { max-width: 220px; height: auto; margin: 0 auto; }
+  .ceo-intro .item .item-content { max-width: none; margin: 0 auto; } }
+@media (min-width: 760px) { .ceo-intro .item .item-image img { max-width: 250px; height: auto; margin: 0 auto; } }
 
 .positive .item-content { text-align: center; }
 .positive .item-content ul { text-align: left; }
@@ -735,7 +743,7 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 @media (min-width: 940px) { .big-events { margin: 24px; } }
 
 .member { position: relative; max-width: 300px; margin: 0 auto; -webkit-perspective: 1500px; -moz-perspective: 1500px; -ms-perspective: 1500px; -o-perspective: 1500px; perspective: 1500px; }
-.member .member-photo { position: relative; z-index: 1; height: 296px; padding: 36px; background-color: white; border-bottom: 2px solid #f0f2f0; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+.member .member-photo { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: relative; z-index: 1; height: 370px; padding: 36px; background-color: white; border-bottom: 2px solid #f0f2f0; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 .member .member-photo .item-image { position: relative; }
 .member .member-photo .item-image img { max-width: 100%; height: auto; margin: 0 auto; }
 .member .member-photo .item-title { text-align: center; }
@@ -743,7 +751,7 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 .member .member-photo .item-title { margin-bottom: 12px; }
 @media (min-width: 760px) { .member .member-photo .item-title { font-size: 16px; } }
 @media (min-width: 940px) { .member .member-photo .item-title { font-size: 20px; } }
-.member .member-intro { position: absolute; top: 0; left: 0; height: 320px; padding: 24px; background-color: white; border-bottom: 2px solid #f0f2f0; -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
+.member .member-intro { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 0; left: 0; height: 370px; padding: 24px; background-color: white; border-bottom: 2px solid #f0f2f0; -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); transform: rotateY(180deg); -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; }
 .member .member-intro .item-image img { max-width: 80px; height: auto; }
 .member .member-intro .item-title { text-align: center; }
 .member .member-intro .joinus-btn { display: block; }
@@ -755,8 +763,9 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 @media (min-width: 760px) { .team-photo-block .team-photo { height: 560px; } }
 .team-photo-block .team-photo-desc { position: absolute; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); }
 
-.facebook-number .col { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; border-bottom: 1px solid #e6e6e6; }
+.facebook-number .col { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 48px; text-align: center; border-bottom: 1px solid #e6e6e6; }
 .facebook-number .col:last-child { border: none; }
+.facebook-number .col .items .item { margin-bottom: 0; }
 .facebook-number .marketing-number { color: #2779b7; }
 .facebook-number .marketing-number .count { padding-right: 6px; font-size: 60px; line-height: 72px; font-weight: bold; }
 .facebook-number .marketing-number .unit { position: relative; top: -2px; font-size: 24px; }
@@ -766,6 +775,8 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 .fb-card-style { min-height: 280px; padding: 36px 36px 0; background-color: white; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0px 1px 3px rgba(94, 106, 115, 0.2); -moz-box-shadow: 0px 1px 3px rgba(94, 106, 115, 0.2); box-shadow: 0px 1px 3px rgba(94, 106, 115, 0.2); }
 .fb-card-style .item { margin-bottom: 24px; }
 .fb-card-style .item-content { text-align: center; }
+
+.chart-label { position: relative; top: 2px; display: inline-block; width: 16px; height: 16px; margin-right: 6px; background-color: #92a3ac; }
 
 .item.location { margin-bottom: 24px; }
 
