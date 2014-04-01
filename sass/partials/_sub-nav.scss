@@ -41,6 +41,9 @@
       display: block;
       color: white;
     }
+    &.hide {
+      display: none;
+    }
   }
   &.open li {
     display: block;

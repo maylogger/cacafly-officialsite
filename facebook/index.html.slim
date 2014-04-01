@@ -12,29 +12,34 @@
     li: a href="#title1" Facebook 媒體特性
     li: a href="#title2" 廣告類型
     li: a href="#title3" 廣告版位
+    li.hide: a href="#title4" Facebook 為什麼如此精準
+    li: a href="#title5" Facebook Retargeting
 
 .page-content
   .block
     .container
       .row.grid-1-3-3.facebook-number
         .col
-          .item
-            .marketing-number
-              span.count.stepper data-digit="0" data-step="0.25" 12
-              span.unit 億
-            .marketing-desc 全球活躍用戶
+          .items
+            .item
+              .marketing-number
+                span.count.stepper data-digit="0" data-step="0.25" 12
+                span.unit 億
+              .marketing-desc 全球活躍用戶
         .col
-          .item
-            .marketing-number
-              span.count.stepper data-digit="0" data-step="27" 1500
-              span.unit 萬
-            .marketing-desc 台灣活躍用戶
+          .items
+            .item
+              .marketing-number
+                span.count.stepper data-digit="0" data-step="27" 1500
+                span.unit 萬
+              .marketing-desc 台灣活躍用戶
         .col
-          .item
-            .marketing-number
-              span.count.stepper data-digit="0" data-step="43" 2500
-              span.unit 家
-            .marketing-desc cacaFly 服務客戶數
+          .items
+            .item
+              .marketing-number
+                span.count.stepper data-digit="0" data-step="43" 2500
+                span.unit 家
+              .marketing-desc cacaFly 服務客戶數
   #title1.block.blue-deep-block
     .container
       .block-header
@@ -179,9 +184,10 @@
         .action
           a.btn href="/contact" 聯絡我們
 
-  .block.blue-deep-block
+  #title4.block.blue-deep-block
     .container
-      h2.block-title.main-title Facebook 為什麼如此精準
+      .block-header
+        h2.block-title.main-title Facebook 為什麼如此精準
 
   .block.lightgray-block
     .container
@@ -206,7 +212,8 @@
 
   .block.lightgray-block
     .container
-      h3.block-sub-title 自訂受眾成功三步驟
+      .block-header
+        h3.block-sub-title 自訂受眾成功三步驟
       .row.grid-1-3-3
         .col
           .items.image-top.fb-card-style
@@ -239,9 +246,8 @@
                 h4.item-title 觸及
                 p.item-text 投遞他們有興趣的廣告訊息與擬定廣告策略
 
-  .block.lightgray-block
-    .container
-      h3.block-sub-title 自訂受眾服務如何運作？
+      .block-header
+        h3.block-sub-title 自訂受眾服務如何運作？
       .row
         .col
           .items.image-top
@@ -251,9 +257,8 @@
                 /[if IE]
                   = image_tag("facebook/feature-target-sorting.png")
 
-  .block.lightgray-block
-    .container
-      h3.block-sub-title 三大優勢
+      .block-header
+        h3.block-sub-title 三大優勢
       .row.grid-1-3-3
         .col
           .items.image-top.fb-card-style
@@ -285,3 +290,148 @@
               .item-content
                 h4.item-title 精打細算
                 p.item-text 涵蓋受眾已是回頭客，廣告資訊接受度高，完美掌控行銷預算
+
+  #title5.block.blue-deep-block
+    .container
+      .block-header
+        h2.block-title.main-title Facebook Retargeting
+        p.block-content 與過去離開你網站的訪客再次接觸，提高轉換率
+
+  .block.lightgray-block
+    .container
+      .block-header
+        p.block-headline 90~98% 的訪客不會單純的在第一次拜訪時，就進行站內任何行為轉換
+      .row.grid-1-2-2
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-1.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-1.png")
+              .item-content.center
+                p.item-text Jeremy 正在逛 ABC 網拍，正在看一件他很想買的襯衫
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-2.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-2.png")
+              .item-content.center
+                p.item-text 然而，總是有各種事情可以讓 Jeremy 分心
+
+      .block-header
+        p.block-headline 你知道熟悉你的品牌產品的到訪網站客戶貢獻了 90% 的營收，初次到訪的客戶貢獻不到 1% 的營收嗎？
+      .row.grid-1-3-3
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#fb-ecweb-chart width="400" height="250"
+              .item-content.center
+                h4.item-title 電子商務網站
+                p.item-text <span class="chart-label"></span>跳出率：20~40%
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#fb-eventweb-chart width="400" height="250"
+              .item-content.center
+                h4.item-title 活動網站
+                p.item-text <span class="chart-label"></span>跳出率：70~90%
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#fb-activeweb-chart width="400" height="250"
+              .item-content.center
+                h4.item-title 內容網站
+                p.item-text <span class="chart-label"></span>跳出率：40~60%
+
+      .row.grid-1-3-3
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag lorem_image("400x300")
+              .item-content.center
+                p.item-text 96% 的網站訪客不會完成任何預期行銷動作
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag lorem_image("400x300")
+              .item-content.center
+                p.item-text 70% 的訪客未完成購買即離開購物車
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag lorem_image("400x300")
+              .item-content.center
+                p.item-text 50% 的使用者是處於有購買需求但未決定購買
+
+  .block
+    .container
+      .block-header
+        h2.block-title.main-title 已經離開的客戶不代表對網站營運沒有貢獻！
+        p.block-headline Facebook Retargeting 幫你把這群有購買需求卻未完成購買的族群，在黏著度最高的 Facebook 上，投遞他們曾看過的產品訊息
+      .row.grid-1-2-2
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-3.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-3.png")
+              .item-content.center
+                p.item-text 透過 Retargeting，Jeremy 上 Facebook 時，居然看到他在 ABC 網站看的襯衫的廣告
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-4.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-4.png")
+              .item-content.center
+                p.item-text 於是 Jeremy 開心下單囉！
+
+      .block-header
+        h3.block-sub-title Facebook Retargeting 如何運作？
+      .row
+        = image_tag lorem_image("1200x400")
+
+      .block-header
+        h3.block-sub-title Facebook Retargeting 好處
+      .row.grid-1-2-4
+        .col
+          .items.image-top.fb-card-style
+            .item.service
+              .item-image
+                = image_tag lorem_image("128x128")
+              .item-content
+                h4.item-title 產品記憶度提升
+        .col
+          .items.image-top.fb-card-style
+            .item.service
+              .item-image
+                = image_tag lorem_image("128x128")
+              .item-content
+                h4.item-title 回訪客經營
+        .col
+          .items.image-top.fb-card-style
+            .item.service
+              .item-image
+                = image_tag lorem_image("128x128")
+              .item-content
+                h4.item-title 提高轉換率
+        .col
+          .items.image-top.fb-card-style
+            .item.service
+              .item-image
+                = image_tag lorem_image("128x128")
+              .item-content
+                h4.item-title 提高廣告ROI

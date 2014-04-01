@@ -1,10 +1,16 @@
 .facebook-number {
   .col {
     @include box-sizing(border-box);
+    margin-bottom: 48px;
     text-align: center;
     border-bottom: 1px solid $global-divider;
     &:last-child {
       border: none;
+    }
+    .items {
+      .item {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -47,4 +53,14 @@
   .item-content {
     text-align: center;
   }
+}
+
+.chart-label {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-color: $color-ashblue;
 }
