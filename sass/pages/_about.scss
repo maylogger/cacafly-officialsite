@@ -1,17 +1,48 @@
 .ceo-intro {
-  max-width: 45em;
+  max-width: 50em;
   margin: 0 auto;
   .item {
-    padding: 24px;
+    padding: 36px;
     background-color: white;
+    border-bottom: 2px solid $color-lighter-gray;
     .item-title {
       @include adjust-font-size-to(24px);
     }
     .item-image {
       img {
-        max-width: 250px;
+        max-width: 280px;
         height: auto;
-        margin-bottom: 0;
+        margin: 0 auto;
+      }
+    }
+    .item-content {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+  @include at-breakpoint($wide-mobile) {
+    .item {
+      .item-image {
+        img {
+          max-width: 220px;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+      .item-content {
+        max-width: none;
+        margin: 0 auto;
+      }
+    }
+  }
+  @include at-breakpoint($pad) {
+    .item {
+      .item-image {
+        img {
+          max-width: 250px;
+          height: auto;
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -201,9 +232,10 @@
   margin: 0 auto;
   @include perspective(1500px);
   .member-photo {
+    @include box-sizing(border-box);
     position: relative;
     z-index: 1;
-    height: 296px;
+    height: 370px;
     padding: 36px;
     background-color: white;
     border-bottom: 2px solid $color-lighter-gray;
@@ -240,10 +272,11 @@
     }
   }
   .member-intro {
+    @include box-sizing(border-box);
     position: absolute;
     top: 0;
     left: 0;
-    height: 320px;
+    height: 370px;
     padding: 24px;
     background-color: white;
     border-bottom: 2px solid $color-lighter-gray;
