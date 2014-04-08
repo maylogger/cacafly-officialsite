@@ -55,14 +55,6 @@
       text-align: left;
     }
   }
-  .positive-list {
-    margin: 0;
-    padding: 0 24px 0 42px;
-    list-style: disc;
-    li {
-      margin: 6px 0;
-    }
-  }
   @include at-breakpoint($pad) {
     .item-text {
       p {
@@ -79,6 +71,15 @@
   }
 }
 
+.positive-list {
+  margin: 0;
+  padding: 0 24px;
+  list-style: disc;
+  li {
+    margin: 6px 0;
+  }
+}
+
 .clear-list {
   margin: 0;
   padding: 0;
@@ -86,9 +87,21 @@
 }
 
 .ad-flow {
+  position: relative;
+  @include trailer(4);
+  .ad-flow-step {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    @include replace-text-with-svg("ad-flow-step-mobile");
+    height: auto;
+    @include background-size(contain);
+  }
   .col {
     @include box-sizing(border-box);
     position: relative;
+    max-width: 80%;
     padding: 24px;
     color: white;
     background-color: desaturate($color-blue-deep, 15%);
@@ -105,7 +118,7 @@
       border: 15px solid transparent;
       border-top-color: $color-blue-deep;
     }
-    &:last-child {
+    &:nth-child(3) {
       &:after {
         display: none;
       }
@@ -117,7 +130,7 @@
   .item-title {
     span {
       position: absolute;
-      bottom: -24px;
+      bottom: -28px;
       right: 0;
       font-size: 42px;
       line-height: 48px;
@@ -126,6 +139,14 @@
     }
   }
   @include at-breakpoint($pad) {
+    .ad-flow-step {
+      top: auto;
+      bottom: -80px;
+      left: auto;
+      @include replace-text-with-svg("ad-flow-step");
+      width: 100%;
+      @include background-size(contain);
+    }
     .col {
       &:after {
         top: 50%;
