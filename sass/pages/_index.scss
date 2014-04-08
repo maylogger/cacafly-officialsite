@@ -43,10 +43,14 @@
   .preview-title {
     @include ellipsis;
     @include adjust-font-size-to(14px, .75);
-
   }
   &:hover .preview-title {
     white-space: normal;
     overflow: visible;
+  }
+  @include at-breakpoint($pad) {
+    .preview-title {
+      @include adjust-font-size-to(16px, 1);
+    }
   }
 }
