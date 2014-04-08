@@ -2,6 +2,7 @@
 
   background-color: $footer-bg-color;
   padding: rhythm(2) 0 rhythm(0);
+  font-weight: 800;
 
   .footer-info-group {
     @include pie-clearfix;
@@ -52,33 +53,48 @@
   }
 
   .copyright {
-    @include adjust-font-size-to(13px, 3/4);
+    @include adjust-font-size-to(14px);
     text-align: center;
     color: $footer-color;
     @include trailer(1);
   }
 
   .company-info {
-    @include adjust-font-size-to(13px, 3/4);
+    @include adjust-font-size-to(14px);
     text-align: center;
     color: $footer-color;
     @include trailer(1);
+    ul {
+      @include reset-box-model;
+      @include pie-clearfix;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
 
 
   .footer-links {
     @include reset-box-model;
-    list-style: none;
     @include pie-clearfix;
-    @include trailer(1);
+    list-style: none;
+    text-align: center;
     li {
-      @include adjust-font-size-to(13px, 3/4);
-      float: left;
+      @include adjust-font-size-to(14px);
+      display: inline-block;
       margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
     }
     a {
-      color: darken($footer-color, 25%);
+      color: darken($footer-color, 15%);
       &:hover {
         text-decoration: none;
         color: lighten($footer-color, 25%);
@@ -88,14 +104,17 @@
 
 
   @include at-breakpoint($desktop) {
-    .copyright {
+    .left-info {
+      float: left;
+    }
+    .right-info {
       float: right;
     }
     .footer-links {
-      float: left;
+      text-align: left;
     }
     .company-info {
-      float: left;
+      text-align: right;
     }
   }
 
