@@ -221,8 +221,8 @@
   @include at-breakpoint($pad) {
     li.eventgroup {
       float: left;
-      width: 45%;
-      margin: 6px 0;
+      width: 43.5%;
+      margin: 12px 0;
       &:before {
         content: "";
         position: absolute;
@@ -240,6 +240,9 @@
           border: 10px solid transparent;
           border-right-color: white;
         }
+      }
+      &:nth-child(2) {
+        margin-top: rhythm(2.5);
       }
     }
   }
