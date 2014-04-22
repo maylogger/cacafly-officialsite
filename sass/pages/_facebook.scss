@@ -15,7 +15,7 @@
   }
 
   .marketing-number {
-  color: $color-blue-deep;
+  color: white;
     .count {
       padding-right: 6px;
       font-size: 60px;
@@ -38,20 +38,6 @@
       border-bottom: none;
       border-right: 1px solid $global-divider;
     }
-  }
-}
-
-.fb-card-style {
-  min-height: 280px;
-  padding: 36px 36px 0;
-  background-color: white;
-  @include border-radius(5px);
-  @include box-shadow(0px 1px 3px rgba($color-blue-dark, .2));
-  .item {
-    @include trailer(1);
-  }
-  .item-content {
-    text-align: center;
   }
 }
 
