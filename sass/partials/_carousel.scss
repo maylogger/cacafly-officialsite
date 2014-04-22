@@ -56,8 +56,8 @@
   left: 0;
   bottom: 0;
   width: 15%;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: .8;
+  filter: alpha(opacity=80);
   font-size: 20px;
   color: #ffffff;
   text-align: center;
@@ -95,23 +95,25 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: -24px;
+  margin-left: -24px;
   z-index: 5;
   display: inline-block;
 }
-.carousel-control .icon-prev,
+.carousel-control .icon-prev {
+  display: inline-block;
+  @include replace-text-with-svg(carousel-arrow-prev);
+}
 .carousel-control .icon-next {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  font-family: serif;
+  display: inline-block;
+  @include replace-text-with-svg(carousel-arrow-next);
 }
-.carousel-control .icon-prev:before {
-  content: '\2039';
-}
-.carousel-control .icon-next:before {
-  content: '\203a';
-}
+// .carousel-control .icon-prev:before {
+//   content: '\2039';
+// }
+// .carousel-control .icon-next:before {
+//   content: '\203a';
+// }
 ol.carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -158,13 +160,15 @@ ol.carousel-indicators {
   text-shadow: none;
 }
 @include at-breakpoint($pad) {
-  .carousel-control .icon-prev,
   .carousel-control .icon-next {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    margin-left: -15px;
-    font-size: 30px;
+    margin-top: -24px;
+    margin-left: -24px;
+    @include replace-text-with-svg(carousel-arrow-next);
+  }
+  .carousel-control .icon-prev {
+    margin-top: -24px;
+    margin-left: -24px;
+    @include replace-text-with-svg(carousel-arrow-prev);
   }
   .carousel-caption {
     left: 0;
