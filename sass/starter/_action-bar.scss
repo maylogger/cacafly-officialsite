@@ -26,7 +26,7 @@
     border: 2px solid $action-bar-color;
     color: $action-bar-color;
     @include border-radius(5px);
-    @include transition(background .5s);
+    @include transition(background .25s);
 
     &:hover {
       text-decoration: none;
@@ -34,7 +34,7 @@
     }
   }
 
-  @include at-breakpoint($pad) {
+  @include at-breakpoint($desktop) {
     width: 100%;
     .slogan {
       text-align: left;
