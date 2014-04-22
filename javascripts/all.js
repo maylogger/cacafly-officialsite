@@ -89,12 +89,12 @@ var currentTallest = 0,
 };
 
 $(window).load(function() {
-  equalheight('.item.member, .mktreport .item-text, .location, .ad-flow .item');
+  equalheight('.item.member, .mktreport .item-text, .location, .ad-flow .item, .card-style');
 });
 
 
 $(window).resize(function(){
-  equalheight('.item.member, .mktreport .item-text, .location, .ad-flow .item');
+  equalheight('.item.member, .mktreport .item-text, .location, .ad-flow .item, .card-style');
 });
 
 // number counter for facebook page with bonana king's stepper.js
@@ -126,11 +126,6 @@ function buildMap(lat, lng, id, popcontent) {
   });
 }
 
-google.maps.event.addDomListener(window, 'load', buildMap(25.0424799, 121.564947, "taipei-map", "台北據點"));
+google.maps.event.addDomListener(window, 'load', buildMap(25.0329289, 121.548378, "taipei-map", "台北據點"));
 google.maps.event.addDomListener(window, 'load', buildMap(24.7847633, 121.0182392, "hsinchu-map", "新竹據點"));
 google.maps.event.addDomListener(window, 'load', buildMap(24.1830855, 120.6139413, "taichung-map", "台中據點"));
-
-// scrollspy active trigger
-// $('.adtype').on('activate.bs.scrollspy', function () {
-//   $(".fb-card-style").addClass("active");
-// });
