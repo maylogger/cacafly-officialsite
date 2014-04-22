@@ -5,51 +5,39 @@
       .page-header-content
         h1 全球最多活躍用戶的社交媒體
         p 真實名單能作最精準的鎖定
+.sub-nav.with-icon
+  h3: a.sub-nav-title href="#" 目錄
+  ul.nav
+    li.active
+      a href="/facebook/social.html"
+        span
+          = image_tag("facebook/product-social-small.svg")
+          /[if IE]
+            = image_tag("facebook/product-social-small.png")
+        | 社群經營
+
+    li
+      a href="/facebook/advertising.html"
+        span
+          = image_tag("facebook/product-advertising-small.svg")
+          /[if IE]
+            = image_tag("facebook/product-advertising-small.png")
+        | 廣告
+
+    li
+      a href="/facebook/remarketing.html"
+        span
+          = image_tag("facebook/product-remarketing-small.svg")
+          /[if IE]
+            = image_tag("facebook/product-remarketing-small.png")
+        | 再行銷
 
 .page-content
-  .block.blue-deep-block
-    .container
-      .row.grid-1-3-3.facebook-number
-        .col
-          .items
-            .item
-              .marketing-number
-                span.count.stepper data-digit="0" data-step="0.25" 12
-                span.unit 億
-              .marketing-desc 全球活躍用戶
-        .col
-          .items
-            .item
-              .marketing-number
-                span.count.stepper data-digit="0" data-step="27" 1500
-                span.unit 萬
-              .marketing-desc 台灣活躍用戶
-        .col
-          .items
-            .item
-              .marketing-number
-                span.count.stepper data-digit="0" data-step="43" 2500
-                span.unit 家
-              .marketing-desc cacaFly 服務客戶數
-
-  .block
-    .block-header
-      h2.block-title.main-title 媒體特性
-      p.block-headline 善用Facebook綿密的人際網路的力量，推廣品牌或商品
-    .row
-      .col
-        .items.image-top
-          .item
-            .item-image
-              = image_tag("facebook/feature-social-circle.svg")
-              /[if IE]
-                = image_tag("facebook/feature-social-circle.png")
-
-  .block.blue-deep-block
+  #title1.block.blue-deep-block
     .container
       .block-header
         h2.block-title.main-title
-          | 六大特性
+          | Facebook 媒體特性
           .main-sub-title FEATURE
       .row.grid-1-2-2.icon-style
         .col
@@ -115,38 +103,71 @@
                 h4.item-title 口碑行銷
                 p.item-text Facebook 擁有強大的口耳相傳特性，提高你的品牌宣傳力
 
-  .block.blue-dark-block
+  #title2.block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title Facebook 廣告形式
-      .row.grid-1-3-3
+        h2.block-title.main-title
+          | 廣告類型
+          .main-sub-title TYPE
+        p.block-content 選擇適合的廣告類型達到不同的行銷目標
+      .row.grid-1-2-4
         .col
-          a.items.image-top.card-style href="/facebook/social.html"
-            .item
+          .items.image-top.card-style
+            .item.service
               .item-image
-                = image_tag("facebook/product-social.svg")
+                = image_tag("facebook/type-like.svg")
                 /[if IE]
-                  = image_tag("facebook/product-social.png")
+                  = image_tag("facebook/type-like.png")
               .item-content
-                h4.item-title 社群經營
+                h4.item-title 讚廣告
+                p.item-text 為你的專頁招募大量新粉絲提高品牌知名度
         .col
-          a.items.image-top.card-style href="/facebook/advertising.html"
-            .item
+          .items.image-top.card-style
+            .item.service
               .item-image
-                = image_tag("facebook/product-advertising.svg")
+                = image_tag("facebook/type-post.svg")
                 /[if IE]
-                  = image_tag("facebook/product-advertising.png")
+                  = image_tag("facebook/type-post.png")
               .item-content
-                h4.item-title 廣告
+                h4.item-title 貼文廣告
+                p.item-text 提昇你品牌的黏著度與互動率
         .col
-          a.items.image-top.card-style href="/facebook/remarketing.html"
-            .item
+          .items.image-top.card-style
+            .item.service
               .item-image
-                = image_tag("facebook/product-remarketing.svg")
+                = image_tag("facebook/type-app.svg")
                 /[if IE]
-                  = image_tag("facebook/product-remarketing.png")
+                  = image_tag("facebook/type-app.png")
               .item-content
-                h4.item-title 再行銷
+                h4.item-title APP 安裝廣告
+                p.item-text 提供使用者更多應用程式資訊增加下載量
+        .col
+          .items.image-top.card-style
+            .item.service
+              .item-image
+                = image_tag("facebook/type-link.svg")
+                /[if IE]
+                  = image_tag("facebook/type-link.png")
+              .item-content
+                h4.item-title 外連廣告
+                p.item-text 官網導流量的好幫手
+
+  #title3.block
+    .container
+      .block-header
+        h2.block-title.main-title
+          | 廣告版位
+          .main-sub-title POSITION
+        p.block-content 各版位的優勢不同，類型與版位適切搭配，才能產生最大廣告效益
+      .row.grid-1-2-2
+        .col
+          .items.image-top
+            .item
+              .item-image= image_tag("facebook/position-news.png")
+        .col
+          .items.image-top
+            .item
+              .item-image= image_tag("facebook/position-aside.png")
 
   .block.contact
     .container

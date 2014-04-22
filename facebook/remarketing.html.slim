@@ -1,0 +1,228 @@
+.page-header
+  .page-header-bg
+  .container
+    .block
+      .page-header-content
+        h1 全球最多活躍用戶的社交媒體
+        p 真實名單能作最精準的鎖定
+.sub-nav.with-icon
+  h3: a.sub-nav-title href="#" 目錄
+  ul.nav
+    li
+      a href="/facebook/social.html"
+        span
+          = image_tag("facebook/product-social-small.svg")
+          /[if IE]
+            = image_tag("facebook/product-social-small.png")
+        | 社群經營
+
+    li
+      a href="/facebook/advertising.html"
+        span
+          = image_tag("facebook/product-advertising-small.svg")
+          /[if IE]
+            = image_tag("facebook/product-advertising-small.png")
+        | 廣告
+
+    li.active
+      a href="/facebook/remarketing.html"
+        span
+          = image_tag("facebook/product-remarketing-small.svg")
+          /[if IE]
+            = image_tag("facebook/product-remarketing-small.png")
+        | 再行銷
+
+.page-content
+  .block.blue-deep-block
+    .container
+      .block-header
+        h2.block-title.main-title Facebook Retargeting
+        p.block-content 與過去離開你網站的訪客再次接觸，提高轉換率
+
+  .block.lightgray-block
+    .container
+      .block-header
+        p.block-headline 90~98% 的訪客不會單純的在第一次拜訪時，就進行站內任何行為轉換
+      .row.grid-1-2-2
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-1.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-1.png")
+              .item-content.center
+                p.item-text Jeremy 正在逛 ABC 網拍，正在看一件他很想買的襯衫
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-2.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-2.png")
+              .item-content.center
+                p.item-text 然而，總是有各種事情可以讓 Jeremy 分心
+
+      .block-header
+        p.block-headline 你知道熟悉你的品牌產品的到訪網站客戶貢獻了 90% 的營收，初次到訪的客戶貢獻不到 1% 的營收嗎？
+      .row.grid-1-3-3
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#fb-ecweb-chart width="400" height="250"
+              .item-content.center
+                h4.item-title 電子商務網站
+                p.item-text <span class="chart-label"></span>跳出率：20~40%
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#fb-eventweb-chart width="400" height="250"
+              .item-content.center
+                h4.item-title 活動網站
+                p.item-text <span class="chart-label"></span>跳出率：70~90%
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#fb-activeweb-chart width="400" height="250"
+              .item-content.center
+                h4.item-title 內容網站
+                p.item-text <span class="chart-label"></span>跳出率：40~60%
+
+      .row.grid-1-3-3
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/retargeting-ana1.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-ana1.png")
+              .item-content.center
+                p.item-text 96% 的網站訪客不會完成任何預期行銷動作
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/retargeting-ana2.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-ana2.png")
+              .item-content.center
+                p.item-text 70% 的訪客未完成購買即離開購物車
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/retargeting-ana3.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-ana3.png")
+              .item-content.center
+                p.item-text 50% 的使用者是處於有購買需求但未決定購買
+
+  .block
+    .container
+      .block-header
+        h2.block-title.main-title 已經離開的客戶不代表對網站營運沒有貢獻！
+        p.block-headline Facebook Retargeting 幫你把這群有購買需求卻未完成購買的族群，在黏著度最高的 Facebook 上，投遞他們曾看過的產品訊息
+      .row.grid-1-2-2
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-3.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-3.png")
+              .item-content.center
+                p.item-text 透過 Retargeting，Jeremy 上 Facebook 時，居然看到他在 ABC 網站看的襯衫的廣告
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("facebook/comic-4.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-4.png")
+              .item-content.center
+                p.item-text 於是 Jeremy 開心下單囉！
+
+      .block-header
+        h3.block-sub-title Facebook Retargeting 如何運作？
+      .row
+        = image_tag("facebook/retargeting-flow.svg")
+        /[if IE]
+          = image_tag("facebook/retargeting-flow.png")
+      .block-header
+        h3.block-sub-title Facebook Retargeting 好處
+      .row.grid-1-2-4
+        .col
+          .items.image-top.card-style
+            .item.service
+              .item-image
+                = image_tag("facebook/retargeting-pos1.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-pos1.png")
+              .item-content
+                h4.item-title 產品記憶度提升
+        .col
+          .items.image-top.card-style
+            .item.service
+              .item-image
+                = image_tag("facebook/retargeting-pos2.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-pos2.png")
+              .item-content
+                h4.item-title 回訪客經營
+        .col
+          .items.image-top.card-style
+            .item.service
+              .item-image
+                = image_tag("facebook/retargeting-pos3.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-pos3.png")
+              .item-content
+                h4.item-title 提高轉換率
+        .col
+          .items.image-top.card-style
+            .item.service
+              .item-image
+                = image_tag("facebook/retargeting-pos4.svg")
+                /[if IE]
+                  = image_tag("facebook/retargeting-pos4.png")
+              .item-content
+                h4.item-title 提高廣告ROI
+
+  .block.contact
+    .container
+      .action-bar
+        .content
+          h3.slogan 若您有需要在 facebook 上進行廣告、行銷活動，歡迎與 cacaFly 連繫。
+        .action
+          a.btn href="/contact" 聯絡我們
+
+
+= javascript_include_tag "/vender/chart.min.js"
+javascript:
+  var fbEcwebData = [
+    { value : 40, color : "#92A3AC" },
+    { value : 60, color : "#2779B7" },
+  ];
+  var fbEventwebData = [
+    { value : 90, color : "#92A3AC" },
+    { value : 10, color : "#2779B7" },
+  ];
+  var fbActivewebData = [
+    { value : 60, color : "#92A3AC" },
+    { value : 40, color : "#2779B7" },
+  ];
+
+
+  var fbEcweb = document.getElementById("fb-ecweb-chart").getContext("2d");
+  new Chart(fbEcweb).Pie(fbEcwebData, { animationEasing : "easeOutQuart" });
+
+  var fbEventweb = document.getElementById("fb-eventweb-chart").getContext("2d");
+  new Chart(fbEventweb).Pie(fbEventwebData, { animationEasing : "easeOutQuart" });
+
+  var fbActiveweb = document.getElementById("fb-activeweb-chart").getContext("2d");
+  new Chart(fbActiveweb).Pie(fbActivewebData, { animationEasing : "easeOutQuart" });
