@@ -1,5 +1,5 @@
 .page-header
-  .page-header-bg
+  .page-header-bg.fb-banner
   .container
     .block
       .page-header-content
@@ -33,141 +33,109 @@
         | 再行銷
 
 .page-content
-  #title1.block.blue-deep-block
+  .block
     .container
       .block-header
-        h2.block-title.main-title
-          | Facebook 媒體特性
-          .main-sub-title FEATURE
-      .row.grid-1-2-2.icon-style
-        .col
-          .items.image-left
-            .item
-              .item-image
-                = image_tag("facebook/feature-interactive.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-interactive.png")
-              .item-content
-                h4.item-title 互動性強
-                p.item-text 創造粉絲與品牌的對話機會，與粉絲更深入溝通
-        .col
-          .items.image-left
-            .item
-              .item-image
-                = image_tag("facebook/feature-like.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-like.png")
-              .item-content
-                h4.item-title 正向行銷
-                p.item-text 按讚模式，為你的品牌的增加好感度
-      .row.grid-1-2-2.icon-style
-        .col
-          .items.image-left
-            .item
-              .item-image
-                = image_tag("facebook/feature-target.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-target.png")
-              .item-content
-                h4.item-title 精準目標
-                p.item-text 擁有最多真實用戶資料的Facebook，協助你精準地找到消費者
-        .col
-          .items.image-left
-            .item
-              .item-image
-                = image_tag("facebook/feature-multiscreen.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-multiscreen.png")
-              .item-content
-                h4.item-title 多螢曝光
-                p.item-text 橫跨桌機、手機與平板，讓廣告資訊同時呈現，幫你找到所有的客戶
-      .row.grid-1-2-2.icon-style
-        .col
-          .items.image-left
-            .item
-              .item-image
-                = image_tag("facebook/feature-multivariate.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-multivariate.png")
-              .item-content
-                h4.item-title 多元廣告類型
-                p.item-text 提供廣告多種類型，讓您靈活運用，滿足你的不同行銷目標
-        .col
-          .items.image-left
-            .item
-              .item-image
-                = image_tag("facebook/feature-mouth.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-mouth.png")
-              .item-content
-                h4.item-title 口碑行銷
-                p.item-text Facebook 擁有強大的口耳相傳特性，提高你的品牌宣傳力
+        h2.block-title.main-title 粉絲專頁
+        p.block-content 較官網更能拉近網友距離、養成死忠粉絲
+    .row
+      .col
+        .items.image-top
+          .item
+            .item-image
+              = image_tag("facebook/feature-fan-page.svg")
+              /[if IE]
+                = image_tag("facebook/feature-fan-page.png")
 
-  #title2.block.lightgray-block
+  .block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title
-          | 廣告類型
-          .main-sub-title TYPE
-        p.block-content 選擇適合的廣告類型達到不同的行銷目標
-      .row.grid-1-2-4
-        .col
-          .items.image-top.card-style
-            .item.service
-              .item-image
-                = image_tag("facebook/type-like.svg")
-                /[if IE]
-                  = image_tag("facebook/type-like.png")
-              .item-content
-                h4.item-title 讚廣告
-                p.item-text 為你的專頁招募大量新粉絲提高品牌知名度
-        .col
-          .items.image-top.card-style
-            .item.service
-              .item-image
-                = image_tag("facebook/type-post.svg")
-                /[if IE]
-                  = image_tag("facebook/type-post.png")
-              .item-content
-                h4.item-title 貼文廣告
-                p.item-text 提昇你品牌的黏著度與互動率
-        .col
-          .items.image-top.card-style
-            .item.service
-              .item-image
-                = image_tag("facebook/type-app.svg")
-                /[if IE]
-                  = image_tag("facebook/type-app.png")
-              .item-content
-                h4.item-title APP 安裝廣告
-                p.item-text 提供使用者更多應用程式資訊增加下載量
-        .col
-          .items.image-top.card-style
-            .item.service
-              .item-image
-                = image_tag("facebook/type-link.svg")
-                /[if IE]
-                  = image_tag("facebook/type-link.png")
-              .item-content
-                h4.item-title 外連廣告
-                p.item-text 官網導流量的好幫手
-
-  #title3.block
-    .container
-      .block-header
-        h2.block-title.main-title
-          | 廣告版位
-          .main-sub-title POSITION
-        p.block-content 各版位的優勢不同，類型與版位適切搭配，才能產生最大廣告效益
+        h2.block-title.main-title 小編的煩惱
       .row.grid-1-2-2
         .col
           .items.image-top
             .item
-              .item-image= image_tag("facebook/position-news.png")
+              .item-image
+                = image_tag("facebook/comic-editor-problem.svg")
+                /[if IE]
+                  = image_tag("facebook/comic-editor-problem.png")
         .col
-          .items.image-top
+          .items
             .item
-              .item-image= image_tag("facebook/position-aside.png")
+              .item-content
+                .item-title
+                  ul.fb-editor-problem
+                    li 粉絲專頁怎麼經營，粉絲數增加慢？
+                    li 粉絲數多但互動不佳？
+
+  #title1.block.blue-block
+    .container
+      .block-header
+        h2.block-title.main-title cacaFly 服務優勢
+      .row.grid-1-2-2.icon-style
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("facebook/social-positive-calc.svg")
+                /[if IE]
+                  = image_tag("facebook/social-positive-calc.png")
+              .item-content
+                h4.item-title 量身打造
+                p.item-text 依據品牌形象，提供質量兼具的內容
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("facebook/social-positive-preformance.svg")
+                /[if IE]
+                  = image_tag("facebook/social-positive-preformance.png")
+              .item-content
+                h4.item-title 成效回報
+                p.item-text 依據洞察報告調整專頁經營走向與方針
+
+      .row.grid-1-2-2.icon-style
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("facebook/social-positive-ad.svg")
+                /[if IE]
+                  = image_tag("facebook/social-positive-ad.png")
+              .item-content
+                h4.item-title 廣告操作優勢
+                p.item-text 讓專頁曝光與推廣極大化
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("facebook/social-positive-content.svg")
+                /[if IE]
+                  = image_tag("facebook/social-positive-content.png")
+              .item-content
+                h4.item-title 內容設計
+                p.item-text 設計提昇互動內容以提昇忠誠度
+      .row.grid-1-2-2.icon-style
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("facebook/social-positive-rule.svg")
+                /[if IE]
+                  = image_tag("facebook/social-positive-rule.png")
+              .item-content
+                h4.item-title 符合規範
+                p.item-text 符合Facebook專頁規章
+        .col
+          .items.image-left
+            .item
+              .item-image
+                = image_tag("facebook/social-positive-fb-sup.svg")
+                /[if IE]
+                  = image_tag("facebook/social-positive-fb-sup.png")
+              .item-content
+                h4.item-title Facebook 支援
+                p.item-text Facebook 最新服務使用
 
   .block.contact
     .container

@@ -1,5 +1,5 @@
 .page-header
-  .page-header-bg
+  .page-header-bg.fb-banner
   .container
     .block
       .page-header-content
@@ -33,17 +33,11 @@
         | 再行銷
 
 .page-content
-  .block.blue-deep-block
-    .container
-      .block-header
-        h2.block-title.main-title Facebook 為什麼如此精準
-
   .block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title 精確多樣化的受眾設定
-        p.block-content Facebook 擁有全世界最多的真實資料，廣告選擇設定多樣性，讓行銷預算花在刀口上
-      .row
+        h2.block-title.main-title Facebook 不只告訴你受眾基本輪廓，更讓你知道…
+      .row.grid-1-2-2
         .col
           .items.image-top
             .item
@@ -51,6 +45,17 @@
                 = image_tag("facebook/feature-target-content.svg")
                 /[if IE]
                   = image_tag("facebook/feature-target-content.png")
+        .col
+          .items
+            .item
+              .item-content
+                .item-title
+                  ul.fb-user-content
+                    li 品牌偏好與購物習慣
+                    li 旅遊計劃、偏好
+                    li 喜歡電影、音樂類型
+                    li 受眾感情狀態、家庭狀態
+                    li 行動裝置使用偏好與更新狀況
 
   .block.blue-dark-block
     .container
@@ -143,14 +148,12 @@
   .block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title
-          | 廣告類型
-          .main-sub-title TYPE
+        h2.block-title.main-title 廣告類型
         p.block-content 選擇適合的廣告類型達到不同的行銷目標
       .row.grid-1-2-4
         .col
           .items.image-top.card-style
-            .item.service
+            .item
               .item-image
                 = image_tag("facebook/type-like.svg")
                 /[if IE]
@@ -160,7 +163,7 @@
                 p.item-text 為你的專頁招募大量新粉絲提高品牌知名度
         .col
           .items.image-top.card-style
-            .item.service
+            .item
               .item-image
                 = image_tag("facebook/type-post.svg")
                 /[if IE]
@@ -170,7 +173,7 @@
                 p.item-text 提昇你品牌的黏著度與互動率
         .col
           .items.image-top.card-style
-            .item.service
+            .item
               .item-image
                 = image_tag("facebook/type-app.svg")
                 /[if IE]
@@ -180,7 +183,7 @@
                 p.item-text 提供使用者更多應用程式資訊增加下載量
         .col
           .items.image-top.card-style
-            .item.service
+            .item
               .item-image
                 = image_tag("facebook/type-link.svg")
                 /[if IE]
@@ -192,9 +195,7 @@
   .block
     .container
       .block-header
-        h2.block-title.main-title
-          | 廣告版位
-          .main-sub-title POSITION
+        h2.block-title.main-title 廣告版位
         p.block-content 各版位的優勢不同，類型與版位適切搭配，才能產生最大廣告效益
       .row.grid-1-2-2
         .col
