@@ -4,19 +4,16 @@
     <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="icon-outlook-ux" sketch:type="MSLayerGroup" transform="translate(18.000000, 8.000000)">
-            <g id="Page-1" sketch:type="MSShapeGroup">
-                <g id="Group">
-                    <path d="M22.5020081,57.9210317 C29.6828192,57.9210317 35.5040161,52.154185 35.5040161,45.0404183 C35.5040161,37.9266517 29.6828192,32.159805 22.5020081,32.159805 C15.321197,32.159805 9.5,37.9266517 9.5,45.0404183 C9.5,52.154185 15.321197,57.9210317 22.5020081,57.9210317 L22.5020081,57.9210317 Z" id="Oval-39" fill="#FFFFFF"></path>
-                    <rect id="Rectangle-7" fill="#FFFFFF" x="29" y="27" width="6.50100402" height="20.4233045" rx="5"></rect>
-                    <rect id="Rectangle-7" fill="#FFFFFF" x="23" y="25" width="6.50100402" height="20.4233045" rx="5"></rect>
-                    <rect id="Rectangle-7" fill="#FFFFFF" x="17" y="23" width="6.50100402" height="20.4233045" rx="5"></rect>
-                    <rect id="Rectangle-7" fill="#FFFFFF" transform="translate(9.438751, 43.450466) rotate(-37.000000) translate(-9.438751, -43.450466) " x="5.93875131" y="31.9504659" width="6.50100402" height="23.4616509" rx="5"></rect>
-                    <rect id="Rectangle-7" fill="#FFFFFF" x="11" y="9" width="6.50100402" height="37.8519912" rx="5"></rect>
-                    <path d="M20.7775454,16.0910564 C22.3799526,14.4700354 23.3671146,12.2550258 23.3671146,9.81270203 C23.3671146,7.37743037 22.385645,5.16816202 20.7914107,3.54840436 M7.76067001,3.43890259 C6.01965918,5.07715374 5.11746282,7.25257001 5.11746282,9.81270203 C5.11746282,12.2522297 6.10236593,14.4649635 7.70153095,16.0854867" id="Oval-8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
-                    <path d="M4.39771685,0.340056818 C1.87586388,2.8224935 0.315688316,6.2542544 0.315688316,10.0452774 C0.315688316,13.8641372 1.89886033,17.3184395 4.45342484,19.8050285 M24.0613876,19.7440714 C26.5794068,17.2621401 28.136892,13.83303 28.136892,10.0452774 C28.136892,6.28446373 26.6014822,2.87720938 24.1149672,0.39958235" id="Oval-9" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
-                </g>
+        <g id="target" sketch:type="MSLayerGroup" transform="translate(5.797314, 6.000000)">
+            <g id="Oval-4-+-Oval-5" transform="translate(18.427587, 17.697272)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <path d="M12.9896041,11.1124985 C16.1573338,11.1124985 18.7252859,8.62488115 18.7252859,5.55624926 C18.7252859,2.48761738 16.1573338,0 12.9896041,0 C9.82187429,0 7.25392221,2.48761738 7.25392221,5.55624926 C7.25392221,8.62488115 9.82187429,11.1124985 12.9896041,11.1124985 Z" id="Oval-4"></path>
+                <path d="M25.4088246,25.5017587 C25.4088246,17.354012 19.7208658,10.7489589 12.7044123,10.7489589 C5.68795879,10.7489589 0,17.354012 0,25.5017587" id="Oval-5"></path>
             </g>
+            <path d="M0.423462223,30.5032403 L10.5865556,30.5032403" id="Line" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M51.8811025,30.5032403 L62.0441958,30.5032403" id="Line" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M31.1013431,-0.0281996919 L31.1013423,10.1348937" id="Line" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M31.1013431,50.8433873 L31.1013423,61.0290405" id="Line" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-10" stroke="#FFFFFF" stroke-width="3" sketch:type="MSShapeGroup" x="6.57913027" y="5.98102752" width="49.0444257" height="49.0444257" rx="6"></rect>
         </g>
     </g>
 </svg>
