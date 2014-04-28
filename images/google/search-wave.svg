@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="wave" sketch:type="MSLayerGroup" transform="translate(21.500000, 21.568966)">
+            <ellipse id="Oval-7" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="42.3180077" cy="29.4802867" rx="14.1060026" ry="14.0382318"></ellipse>
+            <path d="M62.5236202,49.0745563 C67.4779195,44.0154724 70.5300128,37.1025946 70.5300128,29.4802867 C70.5300128,21.8799879 67.4955194,14.9850284 62.5664885,9.9298871 M22.2782324,9.58814034 C16.8954003,14.7009984 14.1060026,21.4903082 14.1060026,29.4802867 C14.1060026,37.0938684 17.1511118,43.9996432 22.0953871,49.0571737" id="Oval-8" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M12.418105,-0.322617546 C4.74627355,7.30047792 0,17.8387693 0,29.4802867 C0,41.207286 4.81623197,51.8147978 12.5875766,59.4506443 M72.2377578,59.2634565 C79.8979265,51.6419128 84.6360153,41.1117618 84.6360153,29.4802867 C84.6360153,17.9315364 79.9650829,7.46850008 72.4007544,-0.139825851" id="Oval-9" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <polygon id="Triangle-1" fill="#FFFFFF" sketch:type="MSShapeGroup" points="42.3180077 45.5194043 62.0664112 91.1436576 22.5696041 91.1436576 "></polygon>
+        </g>
+    </g>
+</svg>

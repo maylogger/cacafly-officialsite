@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Rectangle-33-+-Group-+-Rectangle-34" sketch:type="MSLayerGroup" transform="translate(14.000000, 16.000000)" fill="#FFFFFF">
+            <path d="M12.5,29.998187 L12.5,85.001813 C12.5,90.5236592 16.9808832,95 22.498187,95 L77.501813,95 C83.0236592,95 87.5,90.5191168 87.5,85.001813 L87.5,29.998187 C87.5,24.4763408 83.0191168,20 77.501813,20 L22.498187,20 C16.9763408,20 12.5,24.4808832 12.5,29.998187 Z M77.501813,25 C80.259613,25 82.5,27.2396841 82.5,29.998187 L82.5,85.001813 C82.5,87.759613 80.2603159,90 77.501813,90 L22.498187,90 C19.740387,90 17.5,87.7603159 17.5,85.001813 L17.5,29.998187 C17.5,27.240387 19.7396841,25 22.498187,25 L77.501813,25 Z" id="Rectangle-33" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-34" sketch:type="MSShapeGroup" x="50" y="61.25" width="18.75" height="33.75" rx="5"></rect>
+            <g id="Group" sketch:type="MSShapeGroup">
+                <path d="M5.53885331,18.1862793 C3.64704298,23.5395507 0,37.3803711 0,37.3803711 L98.7519531,37.3803711 C98.7519531,37.3803711 95.2127748,24.5405545 92.9431856,18.1206461 C90.8078259,12.0804308 87.5072281,4.58744859 87.5072281,4.58744859 C86.4191616,2.0538707 83.2985172,0 80.5330826,0 L17.7384018,0 C14.9747541,0 11.8822749,2.07374557 10.842484,4.62322325 C10.842484,4.62322325 7.43066406,12.8330078 5.53885331,18.1862793 Z" id="Path-47"></path>
+                <circle id="Oval-8" cx="12.5" cy="37.5" r="12.5"></circle>
+                <circle id="Oval-8" cx="36.25" cy="37.5" r="12.5"></circle>
+                <circle id="Oval-8" cx="61.25" cy="37.5" r="12.5"></circle>
+                <circle id="Oval-8" cx="86.25" cy="37.5" r="12.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Rectangle-26-+-Rectangle-26-+-Group" sketch:type="MSLayerGroup" transform="translate(11.000000, 26.000000)">
+            <g id="Rectangle-26-+-Rectangle-26" transform="translate(-0.218478, 0.207021)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-26" stroke="#5E6A73" stroke-width="4" fill="#FFFFFF" x="12.3000758" y="0" width="80.6048053" height="60.453604" rx="1"></rect>
+                <path d="M68.4569389,64.9677099 L105.45068,64.9677099 C105.45068,70.415434 101.02002,74.8473192 95.5545231,74.8473192 L9.65043375,74.8473192 C4.16135295,74.8473192 -0.245723009,70.4240675 -0.245723009,64.9677099 L39.3904281,64.9677099 L39.3904281,65.6021416 C39.3904281,66.7111175 40.2922042,67.61012 41.3882871,67.61012 L66.4590799,67.61012 C67.5624669,67.61012 68.4569389,66.7122892 68.4569389,65.6021416 L68.4569389,64.9677099 Z" id="Rectangle-26" fill="#5E6A73"></path>
+            </g>
+            <g id="Group" transform="translate(19.890761, 6.905473)" fill="#5E6A73" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-4" x="32.7920792" y="32.039604" width="31.8811881" height="4.55445545"></rect>
+                <rect id="Rectangle-4" x="32.7920792" y="22.019802" width="21.8613861" height="4.55445545"></rect>
+                <rect id="Rectangle-4" x="32.7920792" y="42.0594059" width="27.3267327" height="4.55445545"></rect>
+                <rect id="Rectangle-4" x="32.7920792" y="12" width="27.3267327" height="4.55445545"></rect>
+                <rect id="Rectangle-3" x="0" y="12" width="27.3267327" height="24.5940594"></rect>
+                <rect id="Rectangle-3" x="0" y="-0.297029703" width="64.6732673" height="6.83168317"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

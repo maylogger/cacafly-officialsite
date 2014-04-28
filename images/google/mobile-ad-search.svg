@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="160px" height="320px" viewBox="0 0 160 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)">
+            <g id="Imported-Layers" sketch:type="MSShapeGroup">
+                <path d="M160.354167,23.8374803 C160.354167,17.1327717 153.6975,8.26132283 147.169167,5.406 C144.319167,3.99962205 144.6425,4.25502362 139.251667,3.11072441 C125.035,0.0951496063 100.558333,-0.332188976 75.7683333,-0.332188976 C53.4816667,-0.332188976 31.4758333,0.0951496063 18.695,3.11072441 C13.8483333,4.25502362 14.14,3.99962205 11.5775,5.406 C5.70833333,8.26132283 -0.275833333,17.1327717 -0.275833333,23.8374803 C-0.275833333,24.6053543 -0.218333333,25.3590394 -0.116666667,26.0993701 L-0.275833333,26.0993701 L-0.275833333,293.725165 C-0.275833333,300.429874 6.38,309.301323 12.9083333,312.156646 C15.7583333,313.563024 15.435,313.307622 20.825,314.451087 C35.0425,317.467496 59.5191667,317.894835 84.3091667,317.894835 C106.595833,317.894835 128.600833,317.467496 141.3825,314.451087 C146.229167,313.307622 145.938333,313.563024 148.5,312.156646 C154.369167,309.301323 160.354167,300.429874 160.354167,293.725165 L160.354167,26.0993701 L160.175833,26.0993701 C160.289167,25.3590394 160.354167,24.6053543 160.354167,23.8374803" id="Fill-1" fill="#CFCFCF"></path>
+                <path d="M11.3008333,39.4495276 L149.910833,39.4495276 L149.910833,287.337622 L11.3008333,287.337622 L11.3008333,39.4495276 Z" id="Fill-2" fill="#F8F8F8"></path>
+                <path d="M102.33,15.5269134 C102.33,16.9675118 101.164167,18.1343465 99.7258333,18.1343465 L60.3508333,18.1343465 C58.9125,18.1343465 57.7466667,16.9675118 57.7466667,15.5269134 C57.7466667,14.0871496 58.9125,12.917811 60.3508333,12.917811 L99.7258333,12.917811 C101.164167,12.917811 102.33,14.0871496 102.33,15.5269134" id="Fill-3" fill="#FFFFFF"></path>
+                <path d="M126.1375,16.6228031 C126.1375,14.5770866 127.794167,12.917811 129.835833,12.917811 C131.8775,12.917811 133.533333,14.5770866 133.533333,16.6228031 C133.533333,18.667685 131.8775,20.3252913 129.835833,20.3252913 C127.794167,20.3252913 126.1375,18.667685 126.1375,16.6228031" id="Fill-4" fill="#FFFFFF"></path>
+            </g>
+            <rect id="Rectangle-63" fill="#2C7AB5" sketch:type="MSShapeGroup" x="20.8333333" y="104.400343" width="78.3333333" height="6.67716535"></rect>
+            <rect id="Path" fill="#2C7AB5" sketch:type="MSShapeGroup" x="20.8333333" y="116.920028" width="118.862179" height="6.67716535"></rect>
+            <rect id="Rectangle-63" fill="#2C7AB5" sketch:type="MSShapeGroup" x="20.8333333" y="133.612942" width="78.3333333" height="6.67716535"></rect>
+            <rect id="Path" fill="#2C7AB5" sketch:type="MSShapeGroup" x="20.8333333" y="146.132627" width="118.862179" height="6.67716535"></rect>
+            <rect id="Rectangle-63" fill="#2C7AB5" sketch:type="MSShapeGroup" x="20.8333333" y="161.156249" width="78.3333333" height="6.67716535"></rect>
+            <rect id="Path" fill="#2C7AB5" sketch:type="MSShapeGroup" x="20.8333333" y="173.675934" width="118.862179" height="6.67716535"></rect>
+            <rect id="Rectangle-63" fill="#D8D8D8" sketch:type="MSShapeGroup" x="20.8333333" y="194.542076" width="60.7529384" height="6.67716535"></rect>
+            <rect id="Path" fill="#D8D8D8" sketch:type="MSShapeGroup" x="20.8333333" y="207.061761" width="92.1858724" height="6.67716535"></rect>
+            <rect id="Rectangle-63" fill="#D8D8D8" sketch:type="MSShapeGroup" x="20.8333333" y="223.754674" width="60.7529384" height="6.67716535"></rect>
+            <rect id="Path" fill="#D8D8D8" sketch:type="MSShapeGroup" x="20.8333333" y="236.274359" width="92.1858724" height="6.67716535"></rect>
+            <rect id="Rectangle-63" fill="#D8D8D8" sketch:type="MSShapeGroup" x="20.8333333" y="252.967272" width="60.7529384" height="6.67716535"></rect>
+            <rect id="Path" fill="#D8D8D8" sketch:type="MSShapeGroup" x="20.8333333" y="265.486957" width="92.1858724" height="6.67716535"></rect>
+            <g transform="translate(18.333333, 50.078740)" id="Rectangle-1" sketch:type="MSShapeGroup">
+                <rect fill="#359900" x="36.6509434" y="0" width="6.98175637" height="14.0060387"></rect>
+                <rect fill="#2779B7" x="0" y="0" width="6.98175637" height="14.0060387"></rect>
+                <rect fill="#2779B7" x="27.240566" y="6.94488189" width="6.98175637" height="14.0060387"></rect>
+                <rect fill="#D83132" x="9.41037736" y="6.94488189" width="6.98175637" height="7.00301937"></rect>
+                <rect fill="#D83132" x="45.5660377" y="6.94488189" width="6.98175637" height="7.00301937"></rect>
+                <rect fill="#F99D1C" x="18.3254717" y="6.94488189" width="6.98175637" height="7.00301937"></rect>
+            </g>
+            <rect id="Rectangle-1" fill="#D4D4D4" sketch:type="MSShapeGroup" x="17.5" y="73.4488189" width="125.833333" height="16.864414" rx="3"></rect>
+            <path d="M131.266479,83.402947 C133.087765,83.402947 134.564209,81.9220068 134.564209,80.0951743 C134.564209,78.2683418 133.087765,76.7874016 131.266479,76.7874016 C129.445194,76.7874016 127.96875,78.2683418 127.96875,80.0951743 C127.96875,81.9220068 129.445194,83.402947 131.266479,83.402947 Z" id="Oval-1" stroke="#979797" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M134.229457,82.4728037 L137.962233,86.2169484" id="Line" stroke="#979797" stroke-width="2" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <rect id="Rectangle-4" fill="#9B9B9B" sketch:type="MSShapeGroup" x="22.5" y="78.4566929" width="46.9883286" height="8.24800059"></rect>
+        </g>
+    </g>
+</svg>

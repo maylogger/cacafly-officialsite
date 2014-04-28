@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(9.407692, 4.554688)">
+            <path d="M54.5923077,65.6813702 C60.7166281,65.6813702 65.6813702,60.7166281 65.6813702,54.5923077 C65.6813702,48.4679873 60.7166281,43.5032452 54.5923077,43.5032452 C48.4679873,43.5032452 43.5032452,48.4679873 43.5032452,54.5923077 C43.5032452,60.7166281 48.4679873,65.6813702 54.5923077,65.6813702 Z" id="Oval-47" fill="#D64038" sketch:type="MSShapeGroup"></path>
+            <path d="M54.5923077,110.890625 C65.6813702,110.890625 65.6813702,86.6183268 65.6813702,80.3831589 C65.6813702,74.1479911 60.7166281,69.0933894 54.5923077,69.0933894 C48.4679873,69.0933894 43.5032452,74.1479911 43.5032452,80.3831589 C43.5032452,86.6183268 43.5032452,110.890625 54.5923077,110.890625 Z" id="Path" fill="#D64038" sketch:type="MSShapeGroup"></path>
+            <path d="M55.0188101,78.4764423 C67.9741033,78.4764423 78.4764423,67.9741033 78.4764423,55.0188101 C78.4764423,42.0635169 67.9741033,31.5611779 55.0188101,31.5611779 C42.0635169,31.5611779 31.5611779,42.0635169 31.5611779,55.0188101" id="Oval-49" stroke="#D64038" stroke-width="7" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(55.018810, 55.018810) rotate(-45.000000) translate(-55.018810, -55.018810) "></path>
+            <path d="M54.5923077,92.977524 C75.7918783,92.977524 92.977524,75.7918783 92.977524,54.5923077 C92.977524,33.392737 75.7918783,16.2070913 54.5923077,16.2070913 C33.392737,16.2070913 16.2070913,33.392737 16.2070913,54.5923077" id="Oval-49" stroke="#D64038" stroke-width="7" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(54.592308, 54.592308) rotate(-45.000000) translate(-54.592308, -54.592308) "></path>
+        </g>
+    </g>
+</svg>

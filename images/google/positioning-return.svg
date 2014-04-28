@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Oval-29-+-Oval-37-+-Triangle-1" sketch:type="MSLayerGroup" transform="translate(10.000000, 10.000000)">
+            <path d="M70,140 C108.659934,140 140,108.659934 140,70 C140,31.3400656 108.659934,0 70,0 C31.3400656,0 0,31.3400656 0,70 C0,108.659934 31.3400656,140 70,140 Z" id="Oval-29" fill="#D64038" sketch:type="MSShapeGroup"></path>
+            <g id="Oval-37-+-Triangle-1" transform="translate(4.000000, 23.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <path d="M66.8583333,94.1574376 C92.4270875,93.6558475 113,72.7721224 113,47.0833333 C113,21.0799251 91.9200749,0 65.9166667,0 C39.9132584,0 18.8333333,21.0799251 18.8333333,47.0833333 L37.1958333,47.0833333 C37.1958333,31.2212543 50.0545876,18.3625 65.9166667,18.3625 C81.7787457,18.3625 94.6375,31.2212543 94.6375,47.0833333 C94.6375,62.6303126 82.2845491,75.2921038 66.8583333,75.7890211 L66.8583333,94.1574376 Z" id="Oval-37"></path>
+                <path d="M8.50928469,48.384475 C7.4502135,47.1135895 7.92985366,46.0833333 9.58827753,46.0833333 L45.9700558,46.0833333 C47.6250383,46.0833333 48.10985,47.1115133 47.0490486,48.384475 L30.9740898,67.6744256 C29.2095825,69.7918344 26.3478187,69.7907157 24.5842435,67.6744256 L8.50928469,48.384475 Z" id="Triangle-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
