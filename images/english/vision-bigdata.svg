@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Oval-14-+-Oval-14-+-Oval-14" sketch:type="MSLayerGroup" transform="translate(26.000000, 22.000000)" fill="#FFFFFF">
+            <ellipse id="Oval-14" sketch:type="MSShapeGroup" cx="38" cy="12" rx="38" ry="12"></ellipse>
+            <path d="M75.8699331,18 C75.8780411,18.0310361 75.8857751,18.0621058 75.8931337,18.0932084 C75.963954,18.3925459 76,41.6949436 76,42 C76,48.6274173 58.9868215,54 38,54 C17.0131785,54 0,48.6274173 0,42 C0,41.7421785 0.0257475563,18.486256 0.0764748398,18.2324749 C0.0920049353,18.1547803 0.109876312,18.0772863 0.130066941,18 C1.7392113,24.1595308 18.0795637,29 38,29 C57.9204363,29 74.2607887,24.1595308 75.8699331,18 Z" id="Oval-14" sketch:type="MSShapeGroup"></path>
+            <path d="M75.8699331,48 C75.8780411,48.0310361 75.8857751,48.0621058 75.8931337,48.0932084 C75.963954,48.3925459 76,71.6949436 76,72 C76,78.6274173 58.9868215,84 38,84 C17.0131785,84 0,78.6274173 0,72 C0,71.7421785 0.0257475563,48.486256 0.0764748398,48.2324749 C0.0920049353,48.1547803 0.109876312,48.0772863 0.130066941,48 C1.7392113,54.1595308 18.0795637,59 38,59 C57.9204363,59 74.2607887,54.1595308 75.8699331,48 Z" id="Oval-14" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
