@@ -66,7 +66,7 @@
     display: none;
   }
 
-  @include at-breakpoint($pad) {
+  @include at-breakpoint(860px) {
     padding: 0 24px;
     text-align: center;
     li {
@@ -85,25 +85,11 @@
     .header & {
       display: block;
     }
-    .fb-page {
-      display: block;
-      margin: 9px 6px;
-      padding: 0;
-      background-color: #BBBBB7;
-      @include replace-text-with-svg(nav-extra-icon-fb);
-      border: none;
-      @include border-radius(16px);
-      @include transition(background-color .5s);
-      &:hover {
-        top: 0;
-        background-color: $color-orange;
-      }
-    }
     .pad-hide {
       display: none;
     }
   }
-  @include at-breakpoint($desktop) {
+  @include at-breakpoint(1020px) {
     a {
       padding: rhythm(1.5) 6px;
       @include adjust-font-size-to(14px);
@@ -114,7 +100,18 @@
       }
     }
     .fb-page {
+      display: block;
       margin: 32px 6px;
+      padding: 0;
+      background-color: #BBBBB7;
+      @include replace-text-with-svg(nav-extra-icon-fb);
+      border: none;
+      @include border-radius(16px);
+      @include transition(background-color .5s);
+      &:hover {
+        top: 0;
+        background-color: $color-orange;
+      }
     }
     .phone {
       display: block;
@@ -149,7 +146,9 @@
     .pad-hide {
       display: inline;
     }
-
+    .index {
+      @include nav-icon-animation(nav-icon-index-hover);
+    }
     .about {
       @include nav-icon-animation(nav-icon-about-hover);
     }
@@ -167,6 +166,9 @@
     }
     .contact {
       @include nav-icon-animation(nav-icon-contact-hover);
+    }
+    .english {
+      @include nav-icon-animation(nav-icon-english-hover);
     }
   }
 }

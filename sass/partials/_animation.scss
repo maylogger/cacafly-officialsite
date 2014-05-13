@@ -1,0 +1,17 @@
+.tile-animation {
+  @for $i from 1 through 6 {
+    $delay-time: $i / 10 * 1.5;
+    .col:nth-child(#{$i}) {
+      opacity: 1;
+      @include scale(1);
+      @include transition(.35s);
+      @include transition-delay("#{$delay-time}s");
+    }
+  }
+  &.standby {
+   .col {
+      opacity: 0;
+      @include scale(.65);
+    }
+  }
+}

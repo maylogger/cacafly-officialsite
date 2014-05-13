@@ -46,11 +46,18 @@
     .sub-title {
       float: left;
       @include trailer(0);
-      @include adjust-font-size-to(24px, 2);
+      @include adjust-font-size-to(26px, 2);
     }
     .readmore {
       float: right;
-      @include adjust-font-size-to(18px, 2);
+      @include leader(.25);
+      @include trailer(.25);
+      @include adjust-font-size-to(18px, 1.5);
+      font-weight: bold;
+      border-bottom: 1px dotted;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   .block-headline {
@@ -60,7 +67,7 @@
     padding-left: 18px;
     padding-right: 18px;
     @include trailer(1);
-    @include adjust-font-size-to(22px, 1.25);
+    @include adjust-font-size-to(18px, 1.25);
     text-align: center;
     border-left: 3px solid rgba(black, .1);
     border-right: 3px solid rgba(black, .1);
@@ -97,6 +104,9 @@
 
   @include at-breakpoint($pad) {
     padding: rhythm(2) 0 rhythm(1);
+    .block-headline {
+      @include adjust-font-size-to(22px, 1.25);
+    }
     .block-content {
       @include adjust-font-size-to(18px);
     }

@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 1000; // for cacaFly hero background.
+  z-index: 1500; // for cacaFly hero background.
   .logo {
     float: left;
     @include adjust-font-size-to(22px, 2);
@@ -9,7 +9,7 @@
       display: block;
       color: black;
       @include replace-text-with-svg("logo-small");
-      @include at-breakpoint($desktop) {
+      @include at-breakpoint(1020px) {
         margin: auto;
         @include replace-text-with-svg("logo");
       }
@@ -23,9 +23,18 @@
   .menu-btn {
     float: right;
     margin: 0;
+    margin-top: 5px;
+    padding: 6px 18px;
+    color: $color-orange;
+    background-color: white;
+    border: 1px solid lighten($color-gray, 25%);
+    @include border-radius(3px);
+    &:hover {
+      border-color: $color-orange;
+    }
   }
 
-  @include at-breakpoint($pad) {
+  @include at-breakpoint(860px) {
     padding: 0;
 
     .menu-btn {
@@ -39,7 +48,7 @@
 
   }
 
-  @include at-breakpoint($desktop) {
+  @include at-breakpoint(1020px) {
     padding: 0;
     .logo {
       padding: rhythm(1) 0;

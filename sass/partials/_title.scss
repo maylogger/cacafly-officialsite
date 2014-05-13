@@ -1,9 +1,9 @@
 .main-title {
   @include trailer(2);
-  @include adjust-font-size-to(28px);
+  @include adjust-font-size-to(22px, 1.5);
   text-align: center;
   @include at-breakpoint($pad) {
-    @include adjust-font-size-to(36px);
+    @include adjust-font-size-to(34px);
   }
 }
 .main-sub-title {

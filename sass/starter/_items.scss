@@ -1,5 +1,6 @@
 .items {
   @include pie-clearfix;
+  display: block;
   .item {
     @include pie-clearfix;
     display: block;
@@ -75,8 +76,9 @@
 
   &.image-top {
     .item-image {
-      img {
-        margin: 0 auto;
+      img, canvas {
+        display: block;
+        margin: 0 auto 24px;
       }
     }
     .item-content {
@@ -187,7 +189,7 @@
 
 }
 
-.grid-1-3-3 {
+.grid-1-3-3, .grid-1-2-2, .grid-1-2-4 {
   .items {
     max-width: 400px;
     margin: auto;

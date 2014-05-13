@@ -2,7 +2,6 @@
 
   background-color: $footer-bg-color;
   padding: rhythm(2) 0 rhythm(0);
-  font-weight: 800;
 
   .footer-info-group {
     @include pie-clearfix;
@@ -104,6 +103,7 @@
 
 
   @include at-breakpoint($desktop) {
+    font-weight: 800;
     .left-info {
       float: left;
     }
