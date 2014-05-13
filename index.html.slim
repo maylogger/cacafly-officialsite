@@ -6,15 +6,15 @@
       li data-target="#hero-carousel" data-slide-to="2"
     .carousel-inner
       .item.active
-        = image_tag lorem_image("1280x400")
+        .hero-photo style="background-image: url('http://fakeimg.pl/1280x400');"
         .carousel-caption
           h3 First slide label
       .item
-        = image_tag lorem_image("1280x400")
+        .hero-photo style="background-image: url('http://fakeimg.pl/1280x400');"
         .carousel-caption
           h3 Second slide label
       .item
-        = image_tag lorem_image("1280x400")
+        .hero-photo style="background-image: url('http://fakeimg.pl/1280x400');"
         .carousel-caption
           h3 Third slide label
     a.left.carousel-control href="#hero-carousel" data-slide="prev"
@@ -28,66 +28,69 @@
       h2.block-title.main-title
         | 主要服務
         .main-sub-title SERVICE
-    .row.grid-1-2-2.feature
+    .row.grid-1-2-2.icon-style
       .col
         .items.image-left
           .item
-            .item-image= image_tag("index/service-fb-ads.svg")
+            .item-image
+              = image_tag("index/service-fb-ads.svg")
+              /[if IE]
+                = image_tag("index/service-fb-ads.png")
             .item-content
               h4.item-title Facebook 廣告
               p.item-text 擁有大量真實用戶精準抓出客戶或潛在客戶以達成訂單
       .col
         .items.image-left
           .item
-            .item-image= image_tag("index/service-fb-page.svg")
+            .item-image
+              = image_tag("index/service-fb-page.svg")
+              /[if IE]
+                = image_tag("index/service-fb-page.png")
             .item-content
               h4.item-title 粉絲專頁經營
               p.item-text 利用社交為導向的 Facebook，經營粉絲專頁與客戶打交道、作朋友，建立顧客忠誠度
-    .row.grid-1-2-2.feature
+    .row.grid-1-2-2.icon-style
       .col
         .items.image-left
           .item
-            .item-image= image_tag("index/service-fb-app.svg")
-            .item-content
-              h4.item-title Facebook App 開發
-              p.item-text 客製化 App 吸引客戶注意力、加深品牌印象，取得有效名單
-      .col
-        .items.image-left
-          .item
-            .item-image= image_tag("index/service-msn.svg")
+            .item-image
+              = image_tag("index/service-msn.svg")
+              /[if IE]
+                = image_tag("index/service-msn.png")
             .item-content
               h4.item-title Microsoft 獨家授權廣告
               p.item-text MSN 多媒體廣告訴說故事方式來塑造品牌形象與創造品牌忠誠度
-    .row.grid-1-2-2.feature
       .col
         .items.image-left
           .item
-            .item-image= image_tag("index/service-google.svg")
+            .item-image
+              = image_tag("index/service-skype.svg")
+              /[if IE]
+                = image_tag("index/service-skype.png")
+            .item-content
+              h4.item-title Skype 廣告
+              p.item-text 觸動用戶情感的跨裝置通訊軟體，提高購買意願
+    .row.grid-1-2-2.icon-style
+      .col
+        .items.image-left
+          .item
+            .item-image
+              = image_tag("index/service-google.svg")
+              /[if IE]
+                = image_tag("index/service-google.png")
             .item-content
               h4.item-title Google 廣告
               p.item-text Google 為網路最大的聯播網媒體，透過關鍵字與聯播網為你帶來最大的觸擊率
       .col
         .items.image-left
           .item
-            .item-image= image_tag("index/service-youtube.svg")
+            .item-image
+              = image_tag("index/service-youtube.svg")
+              /[if IE]
+                = image_tag("index/service-youtube.png")
             .item-content
               h4.item-title Youtube 廣告
               p.item-text 多種類型影音廣告，非常適合作為品牌力的宣傳
-    / .row.grid-1-2-2
-    /   .col
-    /     .items.image-left
-    /       .item.service
-    /         .item-image= image_tag lorem_image("72x72")
-    /         .item-content
-    /           h4.item-title A 獎獎
-    /           p.item-text 多功能獎勵機制、更精準的廣告模式，圍榜必備的好幫手
-    /   .col
-    /     .items.image-left
-    /       .item.service
-    /         .item-image= image_tag lorem_image("72x72")
-    /         .item-content
-    /           h4.item-title 粉絲好康
-    /           p.item-text 透過粉絲好康建立「好康活動」達成招募粉絲之效果，讓你無預算也能製作行銷活動並整合粉絲專頁
 
 .block.lightgray-block
   .container
@@ -145,7 +148,7 @@
         .main-sub-title NEWS
     .block-sub-title
       h3.sub-title 最新消息
-      a.readmore href="/post/post-list.html" Read more >
+      a.readmore href="/post/post-list.html" 所有消息 ▸
     .row.grid-1-2-2
       .col
         a.post-preview href="/post/post-page.html"
@@ -167,7 +170,7 @@
   .container
     .block-sub-title
       h3.sub-title 課程活動
-      a.readmore href="/post/post-list.html" Read more >
+      a.readmore href="/post/post-list.html" 所有課程 ▸
     .row.grid-1-2-2
       .col
         a.post-preview href="/post/post-page.html"
@@ -190,7 +193,7 @@
   .container
     .block-sub-title
       h3.sub-title 市場動態
-      a.readmore href="/post/post-list.html" Read more >
+      a.readmore href="/post/post-list.html" 所有動態 ▸
     .row.grid-1-2-2
       .col
         a.post-preview href="/post/post-page.html"
@@ -212,7 +215,7 @@
   .container
     .block-sub-title
       h3.sub-title 市場分析報告
-      a.readmore href="/post/post-list.html" Read more >
+      a.readmore href="/post/post-list.html" 所有報告 ▸
     .row.grid-1-2-2.mktreport
       - 2.times do |i|
         .col
@@ -240,7 +243,7 @@
               h4.item-title 台北據點
               .item-text
                 ul
-                  li.address 台北市信義區基隆路一段 178 號 6 樓 ＆ 8 樓
+                  li.address 台北市大安區敦化南路二段 2 號 16 樓
                   li 品牌客戶：<span class="phone">02-66315699</span>
                   li 中小企業：<span class="phone">02-66315640</span>
                   li 遊戲業務：<span class="phone">02-66315681</span>
