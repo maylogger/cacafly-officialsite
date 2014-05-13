@@ -1,88 +1,308 @@
 .page-header
-  .page-header-bg
+  .page-header-bg.google-banner
   .container
     .block
       .page-header-content
-        h1 科技與數位媒體改變了消費者的決定行為
+        h1 數位媒體改變了消費者的決定行為
         p
 
 .sub-nav.nav-sticky
   h3: a.sub-nav-title href="#" 目錄
   ul.nav
-    li: a href="#title1" Google 廣告類型
-    li: a href="#title2" YouTube 廣告類型
-    li: a href="#title3" Google 特點
-    / li: a href="#title4" 案例分享
+    li: a href="#title1" 媒體特性
+    li: a href="#title2" 搜尋連播網
+    li: a href="#title3" 多媒體連播網
+    li: a href="#title4" YouTube
+    li: a href="#title5" 行動廣告
+    li: a href="#title6" 再行銷
 
 .page-content
+  #title1.block.blue-deep-block
+    .container
+      .block-header
+        h2.block-title.main-title 媒體特性
+
+  .block
+    .container
+      .row.grid-2-2-4.vhr-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/feature-internet-time.svg")
+                /[if IE]
+                  = image_tag("google/feature-internet-time.png")
+              .item-content
+                p.item-text 成年人一週使用網路時間至少18小時以上
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/feature-search.svg")
+                /[if IE]
+                  = image_tag("google/feature-search.png")
+              .item-content
+                p.item-text 全球19億人口每日在網路上搜尋需要的資訊
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/feature-people.svg")
+                /[if IE]
+                  = image_tag("google/feature-people.png")
+              .item-content
+                p.item-text 每日平均30人看到聯播網廣告
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/feature-online.svg")
+                /[if IE]
+                  = image_tag("google/feature-online.png")
+              .item-content
+                p.item-text 1,192萬經常上網人口，擁有高潛在消費人口
+
+  .block.lightgray-block
+    .container
+      .block-header
+        h2.block-title.main-title Google 定位技術將這些人網羅起來
+      .row.grid-2-3-3.vhr-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/positioning-device.svg")
+                /[if IE]
+                  = image_tag("google/positioning-device.png")
+              .item-content
+                h4.item-title 裝置
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/positioning-theme.svg")
+                /[if IE]
+                  = image_tag("google/positioning-theme.png")
+              .item-content
+                h4.item-title 內容主題
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/positioning-gender.svg")
+                /[if IE]
+                  = image_tag("google/positioning-gender.png")
+              .item-content
+                h4.item-title 性別
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/positioning-location.svg")
+                /[if IE]
+                  = image_tag("google/positioning-location.png")
+              .item-content
+                h4.item-title 地點與距離
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/positioning-keyword.svg")
+                /[if IE]
+                  = image_tag("google/positioning-keyword.png")
+              .item-content
+                h4.item-title 關鍵字
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/positioning-return.svg")
+                /[if IE]
+                  = image_tag("google/positioning-return.png")
+              .item-content
+                h4.item-title 舊訪客
+
   .block
     .container
       .block-header
         p.block-headline 利用 Google 廣告在消費者的第一次接觸前給予正向、消費者有興趣的資訊，使消費者主動搜尋資訊，改變消費決策模式而提高你的訂單量。
-      .row.grid-1-2-2
+      .row
+        .col
+          .items.image-top
+            .item
+              .flow-image
+                .item-image.origin.active
+                  = image_tag("google/normal-flow.svg")
+                  /[if IE]
+                    = image_tag("google/normal-flow.png")
+                .item-image.zmot
+                  = image_tag("google/zmot-flow.svg")
+                  /[if IE]
+                    = image_tag("google/zmot-flow.png")
+              .item-content.flow-switch
+                a.origin.active 原本的購買流程
+                a.zmot 新的購買流程
+
+  #title2.block.blue-deep-block
+    .container
+      .block-header
+        h2.block-title.main-title Google 搜尋連播網
+        p.block-headline 拉近潛在消費者的距離
+      .row
         .col
           .items.image-top
             .item
               .item-image
-                = image_tag("google/normal-flow.svg")
+                = image_tag("google/google-search-ad.svg")
                 /[if IE]
-                  = image_tag("google/normal-flow.png")
-              .item-content
-                h4.item-title.center 原本的購買流程
+                  = image_tag("google/google-search-ad.png")
+      .row.grid-1-3-3.vhr-style
         .col
           .items.image-top
             .item
               .item-image
-                = image_tag("google/zmot-flow.svg")
+                = image_tag("google/search-item.svg")
                 /[if IE]
-                  = image_tag("google/zmot-flow.png")
+                  = image_tag("google/search-item.png")
               .item-content
-                h4.item-title.center 新的購買流程
+                h4.item-title 強打你的主打商品與活動
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/search-shop.svg")
+                /[if IE]
+                  = image_tag("google/search-shop.png")
+              .item-content
+                h4.item-title 直接引導網友到店內消費
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/search-wave.svg")
+                /[if IE]
+                  = image_tag("google/search-wave.png")
+              .item-content
+                h4.item-title 抓住任何口碑傳播的機會
 
-  #title1.block.red-block
+  #title3.block.blue-dark-block
     .container
       .block-header
-        h2.block-title.main-title
-          | Google 廣告類型
-          .main-sub-title TYPE
-      .row.grid-1-3-3
-        .col
-          .items
-            .item
-              .item-image
-                = image_tag("google/keyword-ad.svg")
-                /[if IE]
-                  = image_tag("google/keyword-ad.png")
-              .item-content
-                h4.item-title.align-line 搜尋廣告
-                p.item-text 關鍵字廣告能讓你找到對你有興趣的消費者，在千百萬的資訊中一眼看到你的廣告，曝光你的品牌與商品
-        .col
-          .items
-            .item
-              .item-image
-                = image_tag("google/adsense.svg")
-                /[if IE]
-                  = image_tag("google/adsense.png")
-              .item-content
-                h4.item-title.align-line 多媒體聯播網廣告
-                p.item-text 透過 Google 興趣行銷，了解你客戶群的消費行為，整理出客戶的喜好脈絡，為你省下廣告成本
-        .col
-          .items
-            .item
-              .item-image
-                = image_tag("google/youtube-ad.svg")
-                /[if IE]
-                  = image_tag("google/youtube-ad.png")
-              .item-content
-                h4.item-title.align-line YouTube 影音廣告
-                p.item-text 台灣 YouTube 的 99% 高到達率，曝光量最大的網站之一，有影音素材的你，試試 YouTube 廣告為你產品的溝通方式更活潑、具渲染力
+        h2.block-title.main-title Google 多媒體連播網
 
-  #title2.block
+  .block
     .container
       .block-header
-        h2.block-title.main-title
-          | YouTube 廣告類型
-          .main-sub-title TYPE
+        h2.block-title.main-title 使用者的95%上網時間都在做搜尋以外的網路行為
+      .row.grid-2-2-4.vhr-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/behavior-youtube.svg")
+                /[if IE]
+                  = image_tag("google/behavior-youtube.png")
+              .item-content
+                p.item-text 觀看 Youtube
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/behavior-content.svg")
+                /[if IE]
+                  = image_tag("google/behavior-content.png")
+              .item-content
+                p.item-text 瀏覽內容網站
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/behavior-mobile.svg")
+                /[if IE]
+                  = image_tag("google/behavior-mobile.png")
+              .item-content
+                p.item-text 使用手機 App
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/behavior-social.svg")
+                /[if IE]
+                  = image_tag("google/behavior-social.png")
+              .item-content
+                p.item-text 使用社交平台
+
+  .block.lightgray-block
+    .container
+      .block-header
+        h2.block-title.main-title 多媒體聯播網觸及未搜尋的消費者
+      .row.grid-1-2-4.card-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/media-commercial.svg")
+                /[if IE]
+                  = image_tag("google/media-commercial.png")
+              .item-content
+                p.item-text 接觸品牌資訊管道，打響品牌第一步
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/media-interest.svg")
+                /[if IE]
+                  = image_tag("google/media-interest.png")
+              .item-content
+                p.item-text 提高對產品的興趣，帶來更多搜尋機會
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/media-imagine.svg")
+                /[if IE]
+                  = image_tag("google/media-imagine.png")
+              .item-content
+                p.item-text 打造品牌印象，烙印在消費者心中
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/media-position.svg")
+                /[if IE]
+                  = image_tag("google/media-position.png")
+              .item-content
+                p.item-text 上百萬的廣告版位，品牌曝光最大化
+
+  #title4.block.red-block
+    .container
+      .block-header
+        h2.block-title.main-title YouTube 台灣第一線上影音平台
+      .row.grid-1-2-2.image-text-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/theme-youtube.svg")
+                /[if IE]
+                  = image_tag("google/theme-youtube.png")
+        .col
+          .items
+            .item
+              .item-content
+                .item-title
+                  ul.fb-user-content
+                    li 影片觸及率最高的平台
+                    li 台灣人平均每月觀看影片 66 次
+                    li 每月影片瀏覽量 5.8 億
+                    li 擁有 970 萬每月訪客用戶
+
+  .block
+    .container
+      .block-header
+        h2.block-title.main-title YouTube 廣告類型
       .row.grid-1-3-3
         .col
           .items
@@ -93,7 +313,7 @@
                   = image_tag("google/ytb-in-stream-ad.png")
               .item-content
                 h4.item-title.align-line TrueView 串流內廣告
-                p.item-text 在 YouTube 影片播放前播放影片廣告，觀眾可選擇略過廣告，觀看30秒後才計費
+                p.item-text 在 YouTube 影片播放前播放影片廣告，全畫面呈現
         .col
           .items
             .item
@@ -103,7 +323,7 @@
                   = image_tag("google/ytb-search-ad.png")
               .item-content
                 h4.item-title.align-line TrueView 搜尋廣告
-                p.item-text YouTube 搜尋結果的上方或旁邊，觀眾會在搜尋相關影片時看到您的廣告，只有在使用者點擊廣告並開始觀看您的影片時才需付費
+                p.item-text 使用者在Youtube搜尋相關影片時，搜尋結果中看到你的廣告
         .col
           .items
             .item
@@ -113,8 +333,7 @@
                   = image_tag("google/ytb-in-stream-banner.png")
               .item-content
                 h4.item-title.align-line TrueView 展示廣告
-                p.item-text 在影片播放時顯示，在使用者瀏覽影片後開始收費
-      .row.grid-1-3-3
+                p.item-text 影片播放時，在影片下方顯示廣告
         .col
           .items
             .item
@@ -124,7 +343,7 @@
                   = image_tag("google/ytb-first-ad.png")
               .item-content
                 h4.item-title.align-line 第一眼廣告
-                p.item-text 消費者不管進入哪個 YouTube 頁面都優先看到此廣告，限定一天只有一客戶能購買此廣告，讓你的影片有最大的曝光、抓住客戶第一眼的印象
+                p.item-text 進入YouTube 任何頁面，優先看到廣告，抓住客戶第一眼的印象
         .col
           .items
             .item
@@ -134,7 +353,7 @@
                   = image_tag("google/ytb-index-ad.png")
               .item-content
                 h4.item-title.align-line YouTube 首頁
-                p.item-text 一進 YouTube 首頁馬上就看到的廣告，讓你的廣告大量曝光
+                p.item-text 一進 YouTube 首頁馬上就看到的廣告，讓你的廣告最大量曝光
         .col
           .items
             .item
@@ -146,68 +365,226 @@
                 h4.item-title.align-line 品牌頻道
                 p.item-text 為你的影片頁面設計獨特的介面，為你的品牌加分
 
-  #title3.block.lightgray-block
+  .block.lightgray-block
     .container
       .block-header
-        h2.block-title.main-title
-          | Google 特點
-          .main-sub-title FEATURE
-      .row.grid-1-2-2
+        h2.block-title.main-title YouTube 能為你
+      .row.grid-2-2-4.vhr-style
         .col
-          .items.image-left
-            .item.service
-              .item-image= image_tag lorem_image("72x72")
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/ytb-positive-tv.svg")
+                /[if IE]
+                  = image_tag("google/ytb-positive-tv.png")
               .item-content
-                h4.item-title 找到主動對你產品有興趣的客戶
+                p.item-text 增加電視媒體觸及率
         .col
-          .items.image-left
-            .item.service
-              .item-image= image_tag lorem_image("72x72")
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/ytb-positive-video.svg")
+                /[if IE]
+                  = image_tag("google/ytb-positive-video.png")
               .item-content
-                h4.item-title 多種廣告型式
-      .row.grid-1-2-2
+                p.item-text 影片讓你廣告更有渲染力
         .col
-          .items.image-left
-            .item.service
-              .item-image= image_tag lorem_image("72x72")
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/ytb-positive-active.svg")
+                /[if IE]
+                  = image_tag("google/ytb-positive-active.png")
               .item-content
-                h4.item-title 找出到訪過你網站的潛在客戶
-        .col
-          .items.image-left
-            .item.service
-              .item-image= image_tag lorem_image("72x72")
-              .item-content
-                h4.item-title 分析你的客群與喜好
-      .row.grid-1-2-2
-        .col
-          .items.image-left
-            .item.service
-              .item-image= image_tag lorem_image("72x72")
-              .item-content
-                h4.item-title 大量的合作網站，為你的品牌在各大網站上曝光
+                p.item-text 品牌深度溝通與互動
 
-  / #title4.block.lightgray-block
-  /   .container
-  /     .block-header
-  /       h2.block-title.main-title
-  /         | 案例分享
-  /         .main-sub-title CASE
-  /       p.block-content cacaFly 服務超過 2,500 家客戶，深耕不同產業類別，堅強的實力與豐富的操作經驗<br>能專業的做到行銷策略規劃、廣告媒體配置、優化廣告成效，為你控管荷包，避免廣告成本的浪費
-  /     .collapse-wrap
-  /       #showcase.sp-collapse.collapse
-  /         .showcase.collapse-content
-  /           - 12.times do
-  /             .case-item
-  /               .case-item-photo= image_tag lorem_image("400x400")
-  /               .case-item-info
-  /                 h4.case-title Showcase
-  /       .collapse-toggle
-  /         a.collapse-toggle-button.collapsed data-toggle="collapse" href="#showcase" 展開
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/ytb-positive-edu.svg")
+                /[if IE]
+                  = image_tag("google/ytb-positive-edu.png")
+              .item-content
+                p.item-text 適合教育傳播、產品更多細節溝通
+
+  #title5.block
+    .container
+      .block-header
+        h2.block-title.main-title 行動廣告
+        p.block-headline 行動裝置使用人口持續增加
+      .row
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#google-mobile-user width="800" height="400"
+              .item-content.center
+                h4.item-title 使用行動裝置3時機：起床、睡前、外出零碎
+
+  .block.blue-block
+    .container
+      .block-header
+        h2.block-title.main-title 行動廣告類別
+        p.block-headline 行動廣告為你觸及所有行動網路行為
+      .row.grid-2-2-4.vhr-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/mobile-ad-content.svg")
+                /[if IE]
+                  = image_tag("google/mobile-ad-content.png")
+              .item-content
+                h4.item-title 網站內容
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/mobile-ad-app.svg")
+                /[if IE]
+                  = image_tag("google/mobile-ad-app.png")
+              .item-content
+                h4.item-title App 內廣告
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/mobile-ad-video.svg")
+                /[if IE]
+                  = image_tag("google/mobile-ad-video.png")
+              .item-content
+                h4.item-title 影片廣告
+
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/mobile-ad-search.svg")
+                /[if IE]
+                  = image_tag("google/mobile-ad-search.png")
+              .item-content
+                h4.item-title 搜尋廣告
+
+  #title6.block.blue-deep-block
+    .container
+      .block-header
+        h2.block-title.main-title 再行銷
+
+  .block
+    .container
+      .block-header
+        h2.block-title.main-title 利用全網站適用的標記，拓展商機
+        p.block-headline 網站標記能記錄造訪者的行為並投遞高相關度的廣告資訊
+      .row
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/theme-web-tagging.svg")
+                /[if IE]
+                  = image_tag("google/theme-web-tagging.png")
+
+  .block
+    .container
+      .block-header
+        h2.block-title.main-title 回訪客潛在高消費力不容小覷
+        p.block-headline 再行銷廣告讓你擁有第二次吸引消費者機會
+      .row
+        .col
+          .items.image-top
+            .item
+              .item-image
+                canvas.chart#google-remarketing-user width="600" height="400"
+              .item-content.center
+                h4.item-title 回訪客轉換率是第一次造訪者的三倍
+
+  .block.blue-block
+    .container
+      .block-header
+        h2.block-title.main-title Google 再行銷 3 大好處
+      .row.grid-1-3-3.vhr-style
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/remarketing-search-media.svg")
+                /[if IE]
+                  = image_tag("google/remarketing-search-media.png")
+              .item-content
+                h4.item-title 同時涵蓋搜尋與多媒體聯播網廣告
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/remarketing-rule.svg")
+                /[if IE]
+                  = image_tag("google/remarketing-rule.png")
+              .item-content
+                h4.item-title 量身訂製的廣告素材
+        .col
+          .items.image-top
+            .item
+              .item-image
+                = image_tag("google/remarketing-commerical.svg")
+                /[if IE]
+                  = image_tag("google/remarketing-commerical.png")
+              .item-content
+                h4.item-title 刊登位置一覽無遺
 
   .block.contact
     .container
       .action-bar
         .content
-          h3.slogan 若您有需要在 facebook 上進行廣告、行銷活動，歡迎與 cacaFly 連繫。
+          h3.slogan 想了解更多 google 行銷資訊與技術，歡迎與 cacaFly 連繫。
         .action
           a.btn href="/contact" 聯絡我們
+
+= javascript_include_tag "/vender/chart.min.js"
+javascript:
+  var googleMobileUserData = {
+    labels : ["2007","2008","2009","2010","2011","2012","2013","2014"],
+    datasets : [
+      {
+        fillColor : "rgba(39,121,183,.5)",
+        pointColor : "rgba(39,121,183,1)",
+        strokeColor : "rgba(39,121,183,0)",
+        data : [400,600,800,1000,1100,1300,1400,1600]
+      },
+    ]
+  };
+
+  var googleRemarketingUserData = {
+    labels : ["未造訪者","回訪者","再行銷"],
+    datasets : [
+      {
+        fillColor : "rgba(39,121,183,.5)",
+        pointColor : "rgba(39,121,183,1)",
+        strokeColor : "rgba(39,121,183,0)",
+        data : [1,3,6]
+      },
+    ]
+  };
+
+  var googleMobileUser = document.getElementById("google-mobile-user").getContext("2d");
+  new Chart(googleMobileUser).Line(googleMobileUserData, {
+    animationEasing : "easeOutQuart" ,
+    scaleOverride : true,
+    scaleSteps : 9,
+    scaleStepWidth : 200,
+    scaleStartValue : 0,
+    scaleFontSize : 16,
+    bezierCurve : false,
+    barValueSpacing : 20
+  });
+
+  var googleRemarketingUser = document.getElementById("google-remarketing-user").getContext("2d");
+  new Chart(googleRemarketingUser).Bar(googleRemarketingUserData, {
+    animationEasing : "easeOutQuart" ,
+    scaleOverride : true,
+    scaleSteps : 7,
+    scaleStepWidth : 1,
+    scaleStartValue : 0,
+    scaleFontSize : 16,
+    barValueSpacing : 20
+  });
