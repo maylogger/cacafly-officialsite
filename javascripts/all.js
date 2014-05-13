@@ -89,12 +89,12 @@ var currentTallest = 0,
 };
 
 $(window).load(function() {
-  equalheight('.item.member, .mktreport .item-text, .location, .ad-flow .item, .card-style');
+  equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style .item');
 });
 
 
 $(window).resize(function(){
-  equalheight('.item.member, .mktreport .item-text, .location, .ad-flow .item, .card-style');
+  equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style');
 });
 
 // number counter for facebook page with bonana king's stepper.js
