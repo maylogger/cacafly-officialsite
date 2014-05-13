@@ -1,3 +1,6 @@
+.contact-banner {
+  background-image: image-url("contact-banner-bg.jpg");
+}
 .item.location {
   @include trailer(1);
 }

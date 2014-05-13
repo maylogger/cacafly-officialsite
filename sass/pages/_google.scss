@@ -1,0 +1,51 @@
+.google-banner {
+  background-image: image-url("google/banner-bg.jpg");
+}
+.flow-image {
+  position: relative;
+  width: 200%;
+  margin-left: -50%;
+  padding-top: 65%;
+  .item-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    @include transition(.5s);
+    &.active {
+      opacity: 1;
+    }
+    img {
+      margin-left: -50% !important;
+    }
+  }
+  @include at-breakpoint($pad) {
+    min-height: 424px;
+    padding-top: 0;
+  }
+}
+
+.flow-switch {
+  text-align: center;
+  a {
+    display: inline-block;
+    margin: 0 6px;
+    padding: 0 12px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    @include adjust-font-size-to(14px, 1.5);
+    @include border-radius(18px);
+    @include transition(background-color .25s);
+    background-color: $color-gray;
+    &.active {
+      background-color: $color-red;
+    }
+  }
+  @include at-breakpoint($pad) {
+    a {
+      @include adjust-font-size-to(18px, 1.5);
+    }
+  }
+}
+

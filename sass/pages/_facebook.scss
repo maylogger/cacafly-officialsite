@@ -1,7 +1,11 @@
+.fb-banner {
+  background-image: image-url("facebook/banner-bg.jpg");
+}
 .facebook-number {
   .col {
     @include box-sizing(border-box);
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
     text-align: center;
     border-bottom: 1px solid $global-divider;
     &:last-child {
@@ -35,6 +39,8 @@
 
   @include at-breakpoint($pad) {
     .col {
+      margin-bottom: 48px;
+      padding-bottom: 0;
       border-bottom: none;
       border-right: 1px solid $global-divider;
     }
@@ -49,4 +55,12 @@
   height: 16px;
   margin-right: 6px;
   background-color: $color-ashblue;
+}
+
+.fb-user-content, .fb-editor-problem {
+  @include adjust-font-size-to(18px);
+  @include at-breakpoint($pad) {
+    @include leader(3);
+    @include adjust-font-size-to(20px, 1.5);
+  }
 }

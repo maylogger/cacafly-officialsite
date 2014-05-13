@@ -1,3 +1,6 @@
+.about-banner {
+  background-image: image-url("about/about-banner-bg.jpg");
+}
 .ceo-intro {
   max-width: 50em;
   margin: 0 auto;
@@ -49,6 +52,14 @@
 }
 
 .positive {
+  .item {
+    padding: 18px;
+    border: 1px solid $global-divider;
+    @include border-radius(5px);
+  }
+  .item-title {
+    font-weight: bold;
+  }
   .item-content {
     text-align: center;
     ul {
@@ -73,8 +84,9 @@
 
 .positive-list {
   margin: 0;
-  padding: 0 24px;
+  padding: 12px 0 0 20px;
   list-style: disc;
+  border-top: 1px solid $global-divider;
   li {
     margin: 6px 0;
   }
@@ -93,30 +105,34 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 80%;
-    @include replace-text-with-svg("ad-flow-step-mobile");
+    left: 85%;
+    @include replace-text-with-svg("about/ad-flow-step-mobile");
     height: auto;
     @include background-size(contain);
   }
   .col {
     @include box-sizing(border-box);
     position: relative;
-    max-width: 80%;
-    padding: 24px;
+    max-width: 85%;
+    padding: 22px 12px 22px 80px;
     color: white;
-    background-color: desaturate($color-blue-deep, 15%);
+    background-color: desaturate($color-green, 25%);
     background-image: url(/images/block-mask.png);
     @include background-size(cover);
     background-position: center;
-    @include border-radius(5px);
+    @include border-radius(0 12px 0 12px);
     &:after {
       content: "";
       position: absolute;
-      top: 102%;
+      z-index: 10;
+      top: 90%;
       right: 50%;
-      margin-right: -15px;
-      border: 15px solid transparent;
-      border-top-color: $color-blue-deep;
+      margin-right: -30px;
+      font-size: 96px;
+      color: $color-green;
+      @include rotate(90deg);
+      @include text-shadow(0px 0px 7px rgba(black, .25));
+      @include replace-text-with-svg("about/ad-flow-arrow");
     }
     &:nth-child(3) {
       &:after {
@@ -125,17 +141,26 @@
     }
   }
   .item {
+    position: static;
     @include trailer(1);
+    font-weight: bold;
   }
   .item-title {
+    font-size: 24px;
     span {
       position: absolute;
-      bottom: -28px;
-      right: 0;
-      font-size: 42px;
-      line-height: 48px;
+      top: -12px;
+      left: -12px;
+      width: 84px;
+      height: 84px;
+      font-size: 32px;
+      text-align: center;
+      line-height: 84px;
       font-weight: bold;
-      color: darken($color-blue-deep, 12.5%);
+      color: white;
+      background-color: $color-green;
+      @include border-radius(0 12px 0 12px);
+      @include box-shadow(3px 3px 10px rgba(black, .1));
     }
   }
   @include at-breakpoint($pad) {
@@ -143,23 +168,33 @@
       top: auto;
       bottom: -80px;
       left: auto;
-      @include replace-text-with-svg("ad-flow-step");
+      @include replace-text-with-svg("about/ad-flow-step");
       width: 100%;
       @include background-size(contain);
     }
     .col {
       &:after {
         top: 50%;
-        right: -35px;
+        right: -40px;
         margin-top: -15px;
         margin-right: 0;
-        border: 15px solid transparent;
-        border-left-color: $color-blue-deep;
+        @include rotate(0deg);
+        // border: 15px solid transparent;
+        // border-left-color: $color-blue-deep;
       }
       &:last-child {
         &:after {
           display: none;
         }
+      }
+    }
+  }
+  @include at-breakpoint($desktop) {
+    .col {
+      width: 29%;
+      margin-right: 6.4%;
+      &:after {
+        right: -58px;
       }
     }
   }
@@ -194,8 +229,8 @@
       content: "";
       position: absolute;
       bottom: -20px;
-      left: -7px;
-      border: 10px solid transparent;
+      left: -12px;
+      border: 15px solid transparent;
       border-top-color: lighten($color-yellow, 30%);
     }
   }
@@ -304,7 +339,7 @@
     padding: 24px;
     background-color: white;
     border-bottom: 2px solid $color-lighter-gray;
-    @include rotateY(180deg);
+    @include rotateY(0deg);
     @include transition(.5s);
     .item-image {
       img {
@@ -319,12 +354,23 @@
       display: block;
     }
   }
-  &:hover {
-    .member-photo {
-      @include rotateY(-180deg);
-    }
+  .member-photo {
+    @include rotateY(-180deg);
+  }
+  @include at-breakpoint($desktop) {
     .member-intro {
+      @include rotateY(180deg);
+    }
+    .member-photo {
       @include rotateY(0deg);
+    }
+    &:hover {
+      .member-photo {
+        @include rotateY(-180deg);
+      }
+      .member-intro {
+        @include rotateY(0deg);
+      }
     }
   }
 }

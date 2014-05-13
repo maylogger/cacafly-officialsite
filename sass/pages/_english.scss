@@ -1,0 +1,32 @@
+.milestone-item {
+  @include pie-clearfix;
+  @include trailer(1);
+  .year {
+    margin: 0 24px;
+    padding: 12px 0;
+    @include adjust-font-size-to(24px ,1);
+    font-weight: bold;
+    color: $color-orange;
+    border-bottom: 1px solid $global-divider;
+  }
+  .content {
+    margin: 12px 24px;
+    .title {
+      font-weight: bold;
+    }
+  }
+  @include at-breakpoint($desktop) {
+    .year {
+      @include span-columns(2);
+      margin: 0;
+      padding-top: 0px;
+      text-align: right;
+      color: $color-orange;
+      border-bottom: 1px solid $color-orange;
+    }
+    .content {
+      @include span-columns(10 omega);
+      margin: 0;
+    }
+  }
+}
