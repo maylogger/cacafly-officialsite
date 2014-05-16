@@ -1,18 +1,10 @@
 ul
-  li: a.index href="/"
-    span 首頁
-  li: a.about href="/about"
-    span 關於 cacaFly
-  li: a.facebook href="/facebook"
-    span Facebook
-  li: a.msn href="/microsoft"
-    span Microsoft
-  li: a.google href="/google"
-    span Google
-  // li: a.marketing href="/marketing" 行銷工具
-  li: a.contact href="/contact"
-    span 聯絡我們
-  li: a.english href="/english"
-    span English
+  = nav_link_to("<span>首頁</span>","/", :class => "index")
+  = nav_link_to("<span>關於 cacaFly</span>","/about", :class => "about")
+  = nav_link_to("<span>Facebook</span>","/facebook", :class => "facebook")
+  = nav_link_to("<span>Microsoft</span>","/microsoft", :class => "msn")
+  = nav_link_to("<span>Google</span>","/google", :class => "google")
+  = nav_link_to("<span>聯絡我們</span>","/contact", :class => "contact")
+  = nav_link_to("<span>English</span>","/english", :class => "english")
   li: a.fb-page href="https://www.facebook.com/cacaFly" target="_blank" FB粉絲團
   li: a.phone href="/contact" 02 6631 5699
