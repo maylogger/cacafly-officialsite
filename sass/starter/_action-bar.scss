@@ -30,7 +30,7 @@
 
     &:hover {
       text-decoration: none;
-      background: $color-yellow;
+      background: darken($color-orange, 5%);
     }
   }
 
