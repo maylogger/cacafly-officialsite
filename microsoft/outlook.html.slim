@@ -4,32 +4,12 @@
     .block
       .page-header-content
         h1 更有創意的互動廣告，刻劃品牌故事
-.sub-nav.with-icon
+.sub-nav.nav-sticky-nospy
   h3: a.sub-nav-title href="#" 目錄
-  ul.nav
-    li
-      a href="/microsoft/msn.html"
-        span
-          = image_tag("microsoft/product-msn-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-msn-small.png")
-        | MSN 廣告
-
-    li
-      a href="/microsoft/skype.html"
-        span
-          = image_tag("microsoft/product-skype-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-skype-small.png")
-        | Skype 廣告
-
-    li.active
-      a href="/microsoft/outlook.html"
-        span
-          = image_tag("microsoft/product-outlook-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-outlook-small.png")
-        | Outlook.com 廣告
+  ul.nav-nospy
+    li: a href="/microsoft/msn.html" MSN 廣告
+    li: a href="/microsoft/skype.html" Skype 廣告
+    li.active: a href="/microsoft/outlook.html" Outlook.com 廣告
 
 .page-content
   .block.blue-mid-block
