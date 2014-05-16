@@ -15,6 +15,13 @@ $(".nav li").on("click",function(){
 // bs-carousel
 $('.carousel').carousel();
 
+$('.header').affix({
+  offset: {
+    top: 72
+  }
+});
+
+
 //hc sticky
 $('.aside-sticky').hcSticky({
   top: 20,
@@ -31,29 +38,23 @@ function addActive() {
 }
 
 $('.nav-sticky').hcSticky({
-  top: -1,
+  top: 48,
   noContainer: true,
   responsive: true,
+  offResolutions: -760,
   onStop: removeActive,
   onStart: addActive
 });
 
-//collapse button switch content
-$('.collapse-toggle-button').click(function(){
-  $(this).toggleClass('close');
-  if($(this).text() == '展開'){
-    $(this).text('收合');
-  } else {
-    $(this).text('展開');
-  }
+$('.nav-sticky-nospy').hcSticky({
+  top: 48,
+  noContainer: true,
+  responsive: true,
+  offResolutions: -860
 });
 
-// collapse switch accord dom height
-$('.collapse-content').each(function(){
-  if ( $(this).height() < 400 ) {
-    $(this).parent().css("height","auto");
-    $(this).parent().next('.collapse-toggle').remove();
-  }
+$('.report-download').magnificPopup({
+  type: 'ajax'
 });
 
 // equal height
@@ -97,35 +98,5 @@ $(window).resize(function(){
   equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style');
 });
 
-// number counter for facebook page with bonana king's stepper.js
+// number counter for facebook page with stepper.js
 $('.stepper').zero().play();
-
-// google map API
-function buildMap(lat, lng, id, popcontent) {
-    var myLatlng = new google.maps.LatLng(lat, lng);
-    var mapOptions = {
-        zoom: 15,
-        center: myLatlng,
-        scrollwheel: false,
-        streetViewControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById(id), mapOptions);
-
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        map: map,
-        title: 'marker'
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-      content: popcontent
-  });
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
-}
-
-google.maps.event.addDomListener(window, 'load', buildMap(25.0329289, 121.548378, "taipei-map", "台北據點"));
-google.maps.event.addDomListener(window, 'load', buildMap(24.7847633, 121.0182392, "hsinchu-map", "新竹據點"));
-google.maps.event.addDomListener(window, 'load', buildMap(24.1830855, 120.6139413, "taichung-map", "台中據點"));
