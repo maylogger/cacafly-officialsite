@@ -1,3 +1,16 @@
+.post-header {
+  @include padding-leader(0);
+  @include padding-trailer(0);
+  .page-header-bg {
+    background-color: $color-orange;
+    &:after {
+      background: none;
+    }
+  }
+  @include at-breakpoint($pad) {
+    @include padding-trailer(1);
+  }
+}
 // 文章主要區塊
 .post {
   @include pie-clearfix;
