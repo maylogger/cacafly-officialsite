@@ -64,3 +64,16 @@
     @include adjust-font-size-to(20px, 1.5);
   }
 }
+
+.mobile-image {
+  display: block;
+  @include at-breakpoint($pad) {
+    display: none;
+  }
+}
+.normal-image {
+  display: none;
+  @include at-breakpoint($pad) {
+    display: block;
+  }
+}
