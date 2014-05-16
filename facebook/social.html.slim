@@ -5,32 +5,16 @@
       .page-header-content
         h1 全球最多活躍用戶的社交媒體
         p 真實名單能作最精準的鎖定
-.sub-nav.with-icon
+.sub-nav.nav-sticky-nospy
   h3: a.sub-nav-title href="#" 目錄
+  ul.nav-nospy
+    li.active: a href="/facebook/social.html" 社群經營
+    li: a href="/facebook/advertising.html" 廣告
+    li: a href="/facebook/remarketing.html" 再行銷
+
+.sub-nav.hide-spy
   ul.nav
-    li.active
-      a href="/facebook/social.html"
-        span
-          = image_tag("facebook/product-social-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-social-small.png")
-        | 社群經營
-
-    li
-      a href="/facebook/advertising.html"
-        span
-          = image_tag("facebook/product-advertising-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-advertising-small.png")
-        | 廣告
-
-    li
-      a href="/facebook/remarketing.html"
-        span
-          = image_tag("facebook/product-remarketing-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-remarketing-small.png")
-        | 再行銷
+    li.fb-feature: a href="#title1"
 
 .page-content
   .block
@@ -47,7 +31,7 @@
               /[if IE]
                 = image_tag("facebook/feature-fan-page.png")
 
-  .block.lightgray-block
+  #title1.block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title 小編的煩惱
@@ -68,11 +52,11 @@
                     li 粉絲專頁怎麼經營，粉絲數增加慢？
                     li 粉絲數多但互動不佳？
 
-  #title1.block.blue-block
+  .block.blue-block
     .container
       .block-header
         h2.block-title.main-title cacaFly 服務優勢
-      .row.grid-1-2-2.icon-style
+      .row.grid-1-2-2.icon-style.fb-feature.slideup-animation
         .col
           .items.image-left
             .item
@@ -94,7 +78,6 @@
                 h4.item-title 成效回報
                 p.item-text 依據洞察報告調整專頁經營走向與方針
 
-      .row.grid-1-2-2.icon-style
         .col
           .items.image-left
             .item
@@ -115,7 +98,6 @@
               .item-content
                 h4.item-title 內容設計
                 p.item-text 設計提昇互動內容以提昇忠誠度
-      .row.grid-1-2-2.icon-style
         .col
           .items.image-left
             .item

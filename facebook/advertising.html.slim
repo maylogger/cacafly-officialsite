@@ -5,32 +5,17 @@
       .page-header-content
         h1 全球最多活躍用戶的社交媒體
         p 真實名單能作最精準的鎖定
-.sub-nav.with-icon
+.sub-nav.nav-sticky-nospy
   h3: a.sub-nav-title href="#" 目錄
+  ul.nav-nospy
+    li: a href="/facebook/social.html" 社群經營
+    li.active: a href="/facebook/advertising.html" 廣告
+    li: a href="/facebook/remarketing.html" 再行銷
+
+.sub-nav.hide-spy
   ul.nav
-    li
-      a href="/facebook/social.html"
-        span
-          = image_tag("facebook/product-social-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-social-small.png")
-        | 社群經營
-
-    li.active
-      a href="/facebook/advertising.html"
-        span
-          = image_tag("facebook/product-advertising-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-advertising-small.png")
-        | 廣告
-
-    li
-      a href="/facebook/remarketing.html"
-        span
-          = image_tag("facebook/product-remarketing-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-remarketing-small.png")
-        | 再行銷
+    li.fb-ad: a href="#title1"
+    li.fb-positive: a href="#title2"
 
 .page-content
   .block.lightgray-block
@@ -57,7 +42,7 @@
                     li 受眾感情狀態、家庭狀態
                     li 行動裝置使用偏好與更新狀況
 
-  .block.blue-dark-block
+  #title1.block.blue-dark-block
     .container
       .block-header
         h2.block-title.main-title 自訂受眾服務
@@ -68,7 +53,7 @@
     .container
       .block-header
         h3.block-sub-title 自訂受眾成功三步驟
-      .row.grid-1-3-3.card-style
+      .row.grid-1-3-3.card-style.fb-ad.zoom-animation
         .col
           .items.image-top
             .item
@@ -100,6 +85,8 @@
                 h4.item-title 觸及
                 p.item-text 投遞他們有興趣的廣告訊息與擬定廣告策略
 
+  #title2.block
+    .container
       .block-header
         h3.block-sub-title 自訂受眾服務如何運作？
       .row
@@ -107,13 +94,18 @@
           .items.image-top
             .item
               .item-image
-                = image_tag("facebook/feature-target-sorting.svg")
-                /[if IE]
-                  = image_tag("facebook/feature-target-sorting.png")
+                .mobile-image
+                  = image_tag("facebook/feature-target-sorting-mobile.svg")
+                  /[if IE]
+                    = image_tag("facebook/feature-target-sorting-mobile.png")
+                .normal-image
+                  = image_tag("facebook/feature-target-sorting.svg")
+                  /[if IE]
+                    = image_tag("facebook/feature-target-sorting.png")
 
       .block-header
         h3.block-sub-title 三大優勢
-      .row.grid-1-3-3.card-style
+      .row.grid-1-3-3.card-style.fb-positive.zoom-animation
         .col
           .items.image-top
             .item

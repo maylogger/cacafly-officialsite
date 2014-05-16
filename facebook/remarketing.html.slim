@@ -5,32 +5,17 @@
       .page-header-content
         h1 全球最多活躍用戶的社交媒體
         p 真實名單能作最精準的鎖定
-.sub-nav.with-icon
+.sub-nav.nav-sticky-nospy
   h3: a.sub-nav-title href="#" 目錄
+  ul.nav-nospy
+    li: a href="/facebook/social.html" 社群經營
+    li: a href="/facebook/advertising.html" 廣告
+    li.active: a href="/facebook/remarketing.html" 再行銷
+
+.sub-nav.hide-spy
   ul.nav
-    li
-      a href="/facebook/social.html"
-        span
-          = image_tag("facebook/product-social-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-social-small.png")
-        | 社群經營
-
-    li
-      a href="/facebook/advertising.html"
-        span
-          = image_tag("facebook/product-advertising-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-advertising-small.png")
-        | 廣告
-
-    li.active
-      a href="/facebook/remarketing.html"
-        span
-          = image_tag("facebook/product-remarketing-small.svg")
-          /[if IE]
-            = image_tag("facebook/product-remarketing-small.png")
-        | 再行銷
+    li.fb-user-active: a href="#title1"
+    li.fb-retargeting: a href="#title2"
 
 .page-content
   .block.blue-deep-block
@@ -92,7 +77,7 @@
                 h4.item-title 內容網站
                 p.item-text <span class="chart-label"></span>跳出率：40~60%
 
-      .row.grid-1-3-3
+      #title1.row.grid-1-3-3.fb-user-active.zoom-animation
         .col
           .items.image-top
             .item
@@ -154,13 +139,18 @@
           .items.image-top
             .item
               .item-image
-                = image_tag("facebook/retargeting-flow.svg")
-                /[if IE]
-                  = image_tag("facebook/retargeting-flow.png")
+                .mobile-image
+                  = image_tag("facebook/retargeting-flow-mobile.svg")
+                  /[if IE]
+                    = image_tag("facebook/retargeting-flow-mobile.png")
+                .normal-image
+                  = image_tag("facebook/retargeting-flow.svg")
+                  /[if IE]
+                    = image_tag("facebook/retargeting-flow.png")
 
       .block-header
         h3.block-sub-title Facebook Retargeting 好處
-      .row.grid-1-2-4.card-style
+      #title2.row.grid-1-2-4.card-style.fb-retargeting.slideup-animation
         .col
           .items.image-top
             .item
@@ -207,27 +197,5 @@
           a.btn href="/contact" 聯絡我們
 
 
-= javascript_include_tag "/vender/chart.min.js"
-javascript:
-  var fbEcwebData = [
-    { value : 40, color : "#92A3AC" },
-    { value : 60, color : "#2779B7" },
-  ];
-  var fbEventwebData = [
-    { value : 90, color : "#92A3AC" },
-    { value : 10, color : "#2779B7" },
-  ];
-  var fbActivewebData = [
-    { value : 60, color : "#92A3AC" },
-    { value : 40, color : "#2779B7" },
-  ];
+= javascript_include_tag "/vender/chart.min.js","chart/fb-remarketing.chart.js"
 
-
-  var fbEcweb = document.getElementById("fb-ecweb-chart").getContext("2d");
-  new Chart(fbEcweb).Pie(fbEcwebData, { animationEasing : "easeOutQuart" });
-
-  var fbEventweb = document.getElementById("fb-eventweb-chart").getContext("2d");
-  new Chart(fbEventweb).Pie(fbEventwebData, { animationEasing : "easeOutQuart" });
-
-  var fbActiveweb = document.getElementById("fb-activeweb-chart").getContext("2d");
-  new Chart(fbActiveweb).Pie(fbActivewebData, { animationEasing : "easeOutQuart" });

@@ -9,13 +9,49 @@ $(".flow-switch .zmot").on("click",function(){
 
 // scrollspy active trigger
 $(function(){
-  $(".tile-animation").addClass("standby");
+  $(".zoom-animation, .slideup-animation").addClass("standby");
 });
 
-$('.google-ad-type').on('activate.bs.scrollspy', function () {
-  $(".google.tile-animation").removeClass("standby");
+$('.google-search').on('activate.bs.scrollspy', function () {
+  $(".google-search.zoom-animation").removeClass("standby");
 });
 
 $('.youtube-ad-type').on('activate.bs.scrollspy', function () {
-  $(".youtube.tile-animation").removeClass("standby");
+  $(".youtube-ad-type.zoom-animation").removeClass("standby");
+});
+
+$('.mobile-ad').on('activate.bs.scrollspy', function () {
+  $(".mobile-ad.slideup-animation").removeClass("standby");
+});
+
+$('.fb-ad').on('activate.bs.scrollspy', function () {
+  $(".fb-ad.zoom-animation").removeClass("standby");
+});
+
+$('.fb-positive').on('activate.bs.scrollspy', function () {
+  $(".fb-positive.zoom-animation").removeClass("standby");
+});
+
+$('.fb-feature').on('activate.bs.scrollspy', function () {
+  $(".fb-feature.slideup-animation").removeClass("standby");
+});
+
+$('.fb-user-active').on('activate.bs.scrollspy', function () {
+  $(".fb-user-active.zoom-animation").removeClass("standby");
+});
+
+$('.fb-retargeting').on('activate.bs.scrollspy', function () {
+  $(".fb-retargeting.slideup-animation").removeClass("standby");
+});
+
+$('.msn-positive').on('activate.bs.scrollspy', function () {
+  $(".msn-positive.slideup-animation").removeClass("standby");
+});
+
+$('.skype-ad-type').on('activate.bs.scrollspy', function () {
+  $(".skype-ad-type.zoom-animation").removeClass("standby");
+});
+
+$('.skype-feature').on('activate.bs.scrollspy', function () {
+  $(".skype-feature.slideup-animation").removeClass("standby");
 });
