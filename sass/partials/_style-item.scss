@@ -49,24 +49,27 @@
 .card-link-style {
   .items {
     @include box-sizing(border-box);
-    margin: 0 24px;
+    margin: 0 auto;
     padding: 24px 48px 12px;
-    background-color: darken(white, 2%);
     border: 3px solid transparent;
+    background-color: rgba(black, .1);
     @include border-radius(3px);
     @include box-shadow(0px 0px 3px rgba($color-blue-dark, .2));
     @include transition(.25s);
     &:hover {
-      background-color: darken(white, 7%);
-      border: 3px solid $color-blue;
-      @include box-shadow(0px 0px 5px rgba($color-blue, 1));
+      background-color: rgba(black, .25);
       text-decoration: none;
     }
     .item {
       @include trailer(1);
     }
+    .item-image {
+      img {
+        margin-bottom: 0;
+      }
+    }
     .item-content {
-      color: $color-black;
+      color: white;
       text-align: center;
     }
   }
