@@ -53,3 +53,22 @@ html, body {
   .container-inner {
   }
 }
+
+.main {
+  @include at-breakpoint($pad) {
+    padding-top: 48px;
+  }
+  @include at-breakpoint(1020px) {
+    padding-top: 96px;
+  }
+}
+
+.open-menu .main {
+  padding-top: 0;
+  @include at-breakpoint(860px) {
+    padding-top: 48px;
+  }
+  @include at-breakpoint(1020px) {
+    padding-top: 96px;
+  }
+}

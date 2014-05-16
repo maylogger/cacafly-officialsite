@@ -1,14 +1,18 @@
 .header {
   position: relative;
   z-index: 1500; // for cacaFly hero background.
+  background-color: rgba(255, 255, 255, .9);
   .logo {
     float: left;
     @include adjust-font-size-to(22px, 2);
     font-weight: bold;
+    @include transition(.5s);
     a {
       display: block;
       color: black;
       @include replace-text-with-svg("logo-small");
+      @include transition(width .5s);
+      @include background-size(contain);
       @include at-breakpoint(1020px) {
         margin: auto;
         @include replace-text-with-svg("logo");
@@ -55,6 +59,58 @@
       @include adjust-font-size-to(28px);
     }
   }
-
+  @include at-breakpoint($pad) {
+    position: fixed;
+    width: 100%;
+  }
 }
 
+.affix {
+  @include at-breakpoint($pad) {
+    width: 100%;
+    @include box-shadow(0px 1px 3px rgba(0, 0, 0, .25));
+  }
+  @include at-breakpoint(1020px) {
+    .logo {
+      padding: 0;
+      a {
+        width: 130px;
+      }
+    }
+    .main-nav {
+      a {
+        padding: 11px 6px;
+      }
+      li.active {
+        a:before {
+          top: 48px;
+        }
+      }
+      .fb-page {
+        margin: 8px 6px;
+        padding: 0;
+      }
+      .phone {
+        margin: 8px 6px;
+        padding: 0 12px 0 40px;
+      }
+      .index,
+      .about,
+      .facebook,
+      .msn,
+      .google,
+      .marketing,
+      .contact,
+      .english {
+        &:after {
+          display: none;
+        }
+        &:hover {
+          span {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
