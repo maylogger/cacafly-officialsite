@@ -1,0 +1,24 @@
+.download {
+  padding: 24px;
+  background-color: white;
+  @include border-radius(5px);
+  .privacy-content {
+    height: 250px;
+    overflow-y: scroll;
+    padding: 12px;
+    background-color: $color-lightgray2;
+    border: 1px solid $global-divider;
+    @include border-radius(5px);
+  }
+}
+.mail-form {
+  margin-top: 24px;
+  text-align: center;
+  .label {
+    display: inline-block;
+    padding: 12px;
+  }
+  input {
+    width: 80%;
+  }
+}
