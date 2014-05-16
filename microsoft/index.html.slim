@@ -4,12 +4,6 @@
     .block
       .page-header-content
         h1 更有創意的互動廣告，刻劃品牌故事
-/ .sub-nav.nav-sticky
-/   h3: a.sub-nav-title href="#" 目錄
-/   ul.nav
-/     li: a href="#title1" MSN 廣告
-/     li: a href="#title2" Skype
-/     li: a href="#title3" Outlook.com
 
 .page-content
   .block
@@ -84,26 +78,4 @@
         .action
           a.btn href="/contact" 聯絡我們
 
-= javascript_include_tag "/vender/chart.min.js"
-javascript:
-  var msUserSalaryData = [
-    { value : 67, color : "#D1DCE0" },
-    { value : 33, color : "#359900" },
-  ];
-  var msUserPositionData = [
-    { value : 50, color : "#D1DCE0" },
-    { value : 50, color : "#2779B7" },
-  ];
-  var msUserLocationData = [
-    { value : 40, color : "#D1DCE0" },
-    { value : 60, color : "#7C5122" },
-  ];
-
-  var msUserSalary = document.getElementById("ms-user-salary").getContext("2d");
-  new Chart(msUserSalary).Doughnut(msUserSalaryData, { animationEasing : "easeOutQuart" });
-
-  var msUserPosition = document.getElementById("ms-user-position").getContext("2d");
-  new Chart(msUserPosition).Doughnut(msUserPositionData, { animationEasing : "easeOutQuart" });
-
-  var msUserLocation = document.getElementById("ms-user-location").getContext("2d");
-  new Chart(msUserLocation).Doughnut(msUserLocationData, { animationEasing : "easeOutQuart" });
+= javascript_include_tag "/vender/chart.min.js","chart/microsoft.chart.js"
