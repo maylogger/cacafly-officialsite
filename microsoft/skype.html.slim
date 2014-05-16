@@ -4,32 +4,17 @@
     .block
       .page-header-content
         h1 更有創意的互動廣告，刻劃品牌故事
-.sub-nav.with-icon
+.sub-nav.nav-sticky-nospy
   h3: a.sub-nav-title href="#" 目錄
+  ul.nav-nospy
+    li: a href="/microsoft/msn.html" MSN 廣告
+    li.active: a href="/microsoft/skype.html" Skype 廣告
+    li: a href="/microsoft/outlook.html" Outlook.com 廣告
+
+.sub-nav.hide-spy
   ul.nav
-    li
-      a href="/microsoft/msn.html"
-        span
-          = image_tag("microsoft/product-msn-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-msn-small.png")
-        | MSN 廣告
-
-    li.active
-      a href="/microsoft/skype.html"
-        span
-          = image_tag("microsoft/product-skype-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-skype-small.png")
-        | Skype 廣告
-
-    li
-      a href="/microsoft/outlook.html"
-        span
-          = image_tag("microsoft/product-outlook-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-outlook-small.png")
-        | Outlook.com 廣告
+    li.skype-ad-type: a href="#title1"
+    li.skype-feature: a href="#title2"
 
 .page-content
   .block.blue-block
@@ -96,7 +81,7 @@
     .container
       .block-header
         h2.block-title.main-title Skype 廣告類型
-      .row.grid-1-2-4
+      #title1.row.grid-1-2-4.skype-ad-type.zoom-animation
         .col
           .items
             .item
@@ -142,7 +127,7 @@
     .container
       .block-header
         h2.block-title.main-title 進入消費者購買決策的最佳媒介
-      .row.grid-1-2-2.icon-style
+      #title2.row.grid-1-2-2.icon-style.skype-feature.slideup-animation
         .col
           .items.image-left
             .item
@@ -163,7 +148,6 @@
               .item-content
                 h4.item-title 廣告最吸睛
                 p.item-text 獨家廣告版位呈現方式，網友更加聚焦
-      .row.grid-1-2-2.icon-style
         .col
           .items.image-left
             .item
@@ -193,26 +177,5 @@
         .action
           a.btn href="/contact" 聯絡我們
 
-= javascript_include_tag "/vender/chart.min.js"
-javascript:
-  var skypeUserTypeData = {
-    labels : ["朋友：0.83","家人：0.5","同事：0.46"],
-    datasets : [
-      {
-        fillColor : "rgba(39,121,183,.8)",
-        strokeColor : "rgba(39,121,183,0)",
-        data : [0.83,0.5,0.46]
-      },
-    ]
-  };
+= javascript_include_tag "/vender/chart.min.js","chart/skype.chart.js"
 
-  var skypeUserType = document.getElementById("skype-user-type").getContext("2d");
-  new Chart(skypeUserType).Bar(skypeUserTypeData, {
-    animationEasing : "easeOutQuart" ,
-    scaleOverride : true,
-    scaleSteps : 5,
-    scaleStepWidth : 0.2,
-    scaleStartValue : 0,
-    scaleFontSize : 16,
-    barValueSpacing : 20
-  });

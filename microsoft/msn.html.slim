@@ -4,35 +4,19 @@
     .block
       .page-header-content
         h1 更有創意的互動廣告，刻劃品牌故事
-.sub-nav.with-icon
+.sub-nav.nav-sticky-nospy
   h3: a.sub-nav-title href="#" 目錄
+  ul.nav-nospy
+    li.active: a href="/microsoft/msn.html" MSN 廣告
+    li: a href="/microsoft/skype.html" Skype 廣告
+    li: a href="/microsoft/outlook.html" Outlook.com 廣告
+
+.sub-nav.hide-spy
   ul.nav
-    li.active
-      a href="/microsoft/msn.html"
-        span
-          = image_tag("microsoft/product-msn-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-msn-small.png")
-        | MSN 廣告
-
-    li
-      a href="/microsoft/skype.html"
-        span
-          = image_tag("microsoft/product-skype-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-skype-small.png")
-        | Skype 廣告
-
-    li
-      a href="/microsoft/outlook.html"
-        span
-          = image_tag("microsoft/product-outlook-small.svg")
-          /[if IE]
-            = image_tag("microsoft/product-outlook-small.png")
-        | Outlook.com 廣告
+    li.msn-positive: a href="#title1"
 
 .page-content
-  #title1.block.blue-deep-block
+  .block.blue-deep-block
     .container
       .block-header
         h2.block-title.main-title MSN
@@ -110,7 +94,7 @@
     .container
       .block-header
         h2.block-title.main-title MSN 廣告是品牌深耕最佳利器
-      .row.grid-1-2-2.icon-style
+      #title1.row.grid-1-2-2.icon-style.msn-positive.slideup-animation
         .col
           .items.image-left
             .item
@@ -131,7 +115,6 @@
               .item-content
                 h4.item-title 短期大量曝光
                 p.item-text 網友高停留時間使 MSN 廣告短期內大量曝光
-      .row.grid-1-2-2.icon-style
         .col
           .items.image-left
             .item
