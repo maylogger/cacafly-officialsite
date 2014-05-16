@@ -224,9 +224,9 @@
               .item-content
                 h4.item-title #{i+1}月份市場分析報告
                 p.item-text= zh_lorem_sentences 5
-                input.button type="button" value="下載 分析報告 PDF"
+                a.button.report-download href="/download/download-page.html" 下載 分析報告 PDF
 
-.block
+.block.lightgray-block
   .container
     .block-header
       h2.block-title.main-title
@@ -276,3 +276,21 @@
                   li.address 台中市中港路 3 段 181 號 301-3 室<br>（東海大學育成中心）
                   li 中小企業：<span class="phone">04-23594525</span>
                   li 傳真：<span class="phone">04-23597348</span>
+
+.block.agent
+  .container
+    .block-header
+      h2.block-title.main-title
+        .main-sub-title OUR PARTNER
+    .row
+      .agent-logo
+        = image_tag ("agent/logo-foresight.jpg")
+        = image_tag ("agent/logo-imax.jpg")
+        = image_tag ("agent/logo-rich.jpg")
+        = image_tag ("agent/logo-advanced.jpg")
+        = image_tag ("agent/logo-icon.jpg")
+        = image_tag ("agent/logo-yenchen.jpg")
+        = image_tag ("agent/logo-seven.jpg")
+        = image_tag ("agent/logo-itaiwan.jpg")
+        = image_tag ("agent/logo-warno.jpg")
+        = image_tag ("agent/logo-dc.jpg")
