@@ -10,32 +10,25 @@
 .vhr-style {
   .items {
     position: relative;
-    padding: 0 12px;
     .item {
       @include trailer(1);
     }
     .item-content {
       text-align: center;
     }
-    @include at-breakpoint($pad) {
-      padding: 0 36px;
-    }
+  }
+  @include at-breakpoint($desktop) {
+    padding: 0 rhythm(4);
   }
 }
 
 .card-style {
   .items {
-    padding: 36px 36px 0;
-    background-color: darken(white, 7%);
+    padding: 24px 24px 12px;
+    background-color: rgba(black, .05);
     @include border-radius(3px);
     @include box-shadow(0px 0px 3px rgba($color-blue-dark, .2));
     @include transition(background-color .25s);
-
-    &:hover {
-      background-color: darken(white, 2%);
-      @include box-shadow(0px 0px 5px rgba($color-blue, 1));
-      text-decoration: none;
-    }
     .item {
       @include trailer(1);
     }
@@ -44,17 +37,22 @@
       text-align: center;
     }
   }
+  @include at-breakpoint($desktop) {
+    .items {
+      padding: 24px 36px 0px;
+    }
+  }
 }
 
 .card-link-style {
   .items {
     @include box-sizing(border-box);
     margin: 0 auto;
-    padding: 24px 48px 12px;
+    padding: 30px 36px 12px;
     border: 3px solid transparent;
     background-color: rgba(black, .1);
     @include border-radius(3px);
-    @include box-shadow(0px 0px 3px rgba($color-blue-dark, .2));
+    @include box-shadow(0px 3px 5px rgba(black, .15));
     @include transition(.25s);
     &:hover {
       background-color: rgba(black, .25);
@@ -72,6 +70,11 @@
       color: white;
       text-align: center;
     }
+    .item-readmore {
+      padding-top: 10px;
+      color: $color-yellow;
+      border-top: 1px solid white;
+    }
   }
   @include at-breakpoint($pad) {
     .items {
@@ -85,5 +88,8 @@
     .item {
       margin-bottom: 0;
     }
+  }
+  @include at-breakpoint($desktop) {
+    padding: 0 rhythm(4);
   }
 }
