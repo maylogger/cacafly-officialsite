@@ -24,7 +24,7 @@ $('.header').affix({
 
 //hc sticky
 $('.aside-sticky').hcSticky({
-  top: 20,
+  top: 72,
   responsive: true,
   offResolutions: -940
 });
