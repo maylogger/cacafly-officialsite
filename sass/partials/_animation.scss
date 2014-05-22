@@ -2,16 +2,16 @@
   @for $i from 1 through 6 {
     $delay-time: $i / 10 * 1.5;
     .col:nth-child(#{$i}) {
-      opacity: 1;
-      @include scale(1);
+      opacity: 0;
+      @include scale(.65);
       @include transition(transform .25s, opacity .25s);
       @include transition-delay("#{$delay-time}s");
     }
   }
-  &.standby {
+  &.active {
    .col {
-      opacity: 0;
-      @include scale(.65);
+      opacity: 1;
+      @include scale(1);
     }
   }
 }
@@ -20,16 +20,34 @@
   @for $i from 1 through 6 {
     $delay-time: $i / 10 * 1.5;
     .col:nth-child(#{$i}) {
-      opacity: 1;
-      @include translateY(0px);
+      opacity: 0;
+      @include translateY(50px);
       @include transition(transform .25s, opacity .25s);
       @include transition-delay("#{$delay-time}s");
     }
   }
-  &.standby {
+  &.active {
    .col {
+      opacity: 1;
+      @include translateY(0px);
+    }
+  }
+}
+
+.rotate-animation {
+    @for $i from 1 through 6 {
+    $delay-time: $i / 10 * 1.5;
+    .col:nth-child(#{$i}) {
       opacity: 0;
-      @include translateY(50px);
+      @include rotate(-10deg);
+      @include transition(transform .25s, opacity .25s);
+      @include transition-delay("#{$delay-time}s");
+    }
+  }
+  &.active {
+   .col {
+      opacity: 1;
+      @include rotate(0deg);
     }
   }
 }
