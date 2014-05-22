@@ -1,4 +1,4 @@
-.post-header {
+.post-list-header {
   @include padding-leader(0);
   @include padding-trailer(0);
   .page-header-bg {
@@ -8,6 +8,7 @@
     }
   }
   @include at-breakpoint($pad) {
+    @include padding-leader(4);
     @include padding-trailer(1);
   }
 }
