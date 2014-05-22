@@ -94,7 +94,8 @@
 
 }
 @include at-breakpoint($pad) {
-  @include padding-leader(1.5);
+  margin-top: -96px;
+  @include padding-leader(5.5);
   @include padding-trailer(2.25);
 }
 
