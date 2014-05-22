@@ -16,7 +16,8 @@
     li: a href="#title6" 經營團隊
 
 .page-content
-  #title1.block
+  #title1.anchor
+  .block
     .container
       .block-header
         .block-image= image_tag("about/cacafly-corepower.png")
@@ -75,7 +76,8 @@
                     li 讓技術與數位廣告完美結合
                     li 強大的技術支援，解決客戶所面臨的技術難題
 
-  #title2.block.lightgray-block
+  #title2.anchor
+  .block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title cacaFly 擁有完整的廣告策略週期
@@ -115,7 +117,8 @@
                     li 粉絲專頁經營方向
         .ad-flow-step
 
-  #title3.block.orange-block
+  #title3.anchor
+  .block.orange-block
     .container
       .block-header
         h2.block-title.main-title
@@ -148,6 +151,7 @@
             ul
               li 取得 Google 廣告媒體代理，整合三大媒體
 
+  #title4.anchor
   #title4.block.blue-deep-block
     .container
       .block-header
@@ -180,8 +184,8 @@
                     li 提供東南亞學生獎學金
                     li 贊助學生研討會、活動
 
-
-  #title5.block.lightgray-block
+  #title5.anchor
+  .block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title
@@ -198,7 +202,9 @@
   .team-photo-block.blue-deep-block
     .container
       .block-header
-        h2.block-title.main-title 我們的團隊
+        h2.block-title.main-title
+          | 我們的團隊
+          .main-sub-title OUR TEAM
     #team-carousel.carousel.slide data-ride="carousel"
       ol.carousel-indicators
         li.active data-target="#team-carousel" data-slide-to="0"
@@ -272,7 +278,8 @@
       a.right.carousel-control href="#team-carousel" data-slide="next"
         span.glyphicon.icon-next
 
-  #title6.block.lightgray-block
+  #title6.anchor
+  .block.lightgray-block
     .container
       .block-header
         h2.block-title.main-title
@@ -384,5 +391,8 @@
               .item-content
                 h4.item-title This could be YOU
             .item.member-intro
-              p.item-text cacaFly 就像是一個交響樂團，每個人都會在適當的時候扮演好自己的角色，如果喜歡這樣的感覺與大家庭，歡迎加入我們。
-              a.button.joinus-btn href="http://www.104.com.tw/jobbank/custjob/index.php?r=cust&amp;j=383a44253c463e6856583a1d1d1d1d5f2443a363189j56&amp;jobsource=n104bank1" target="_blank" 104 徵才
+              .item-image
+                img src="/images/about/photo-you.png"
+              .item-content
+                p.item-text cacaFly 就像是一個交響樂團，每個人都會在適當的時候扮演好自己的角色，如果喜歡這樣的感覺與大家庭，歡迎加入我們。
+                a.button.joinus-btn href="http://www.104.com.tw/jobbank/custjob/index.php?r=cust&amp;j=383a44253c463e6856583a1d1d1d1d5f2443a363189j56&amp;jobsource=n104bank1" target="_blank" 104 徵才
