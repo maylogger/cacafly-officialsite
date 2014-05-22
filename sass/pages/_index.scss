@@ -50,14 +50,28 @@
     }
   }
 }
-
+.hero {
+  max-height: 500px;
+  overflow: hidden;
+  background-color: $color-lightgray2;
+  .hero-holder {
+    position: relative;
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 33.78%;
+  }
+  .carousel {
+    position: absolute;
+    top: 0;
+  }
+}
 .hero-photo {
   width: 100%;
-  height: 240px;
-  background-position: 50% 50%;
-  background-size: cover;
-  @include at-breakpoint($pad) {
-    height: 360px;
+  line-height: 0;
+  img {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -74,7 +88,7 @@
     text-align: center;
     img {
       display: inline-block;
-      padding: 3px 18px;
+      padding: 3px 12px;
     }
   }
 }
@@ -84,5 +98,42 @@
   margin: 0 auto 72px auto;
   @include at-breakpoint($pad) {
     width: 70%;
+  }
+}
+
+.customer {
+  .items.image-top .item-image {
+    margin-bottom: 0;
+    img {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.main-service-block {
+  background: url("/images/index/main-service-bg.png") bottom center no-repeat;
+  @include background-size(cover);
+  a {
+    color: $color-black;
+    .item-title {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 0;
+      color: $color-orange;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: -18px;
+        border: 6px solid transparent;
+        border-left-color: $color-orange;
+      }
+    }
+  }
+  @include at-breakpoint($pad) {
+    @include background-size(contain);
   }
 }
