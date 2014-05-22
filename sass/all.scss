@@ -8,7 +8,7 @@
   display: none;
 }
 
-@include at-breakpoint(860px) {
+@include at-breakpoint(760px) {
   .outside .main-nav {
     display: none;
   }

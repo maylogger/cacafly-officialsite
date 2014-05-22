@@ -41,8 +41,14 @@ html, body {
 
 
 @include at-breakpoint($pad) {
-  #{$page-container}, .header-inner, .footer-inner {
+  #{$page-container}, .footer-inner {
     max-width: 85%; // 限制 conntainer 寬度，並且預留左右留白空間
+  }
+}
+
+@include at-breakpoint(1020px) {
+  .header-inner {
+    max-width: 85%;
   }
 }
 
@@ -65,7 +71,7 @@ html, body {
 
 .open-menu .main {
   padding-top: 0;
-  @include at-breakpoint(860px) {
+  @include at-breakpoint(760px) {
     padding-top: 48px;
   }
   @include at-breakpoint(1020px) {

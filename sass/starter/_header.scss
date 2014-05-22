@@ -1,7 +1,8 @@
 .header {
   position: relative;
   z-index: 1500; // for cacaFly hero background.
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba( white, 1 );
+  @include transition(background-color .5s);
   .logo {
     float: left;
     @include adjust-font-size-to(22px, 2);
@@ -38,7 +39,7 @@
     }
   }
 
-  @include at-breakpoint(860px) {
+  @include at-breakpoint(760px) {
     padding: 0;
 
     .menu-btn {
@@ -66,6 +67,7 @@
 }
 
 .affix {
+  background-color: rgba( white, .93 );
   @include at-breakpoint($pad) {
     width: 100%;
     @include box-shadow(0px 1px 3px rgba(0, 0, 0, .25));
@@ -79,12 +81,7 @@
     }
     .main-nav {
       a {
-        padding: 11px 6px;
-      }
-      li.active {
-        a:before {
-          top: 48px;
-        }
+        padding: 11px 16px;
       }
       .fb-page {
         margin: 8px 6px;

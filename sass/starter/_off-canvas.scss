@@ -19,6 +19,17 @@ $off-canvas-main-bg-color: white;
     background-color: white;
   }
 
+  .outside-inner {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: $color-lighter-gray;
+    border-left: 7px solid $color-orange;
+    a {
+      color: $color-black;
+    }
+  }
+
   .page {
     position: relative;
     z-index: 100;
@@ -47,23 +58,12 @@ $off-canvas-main-bg-color: white;
       height: 100%;
     }
 
-    .outside-inner {
-      height: 100%;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      background-color: $color-orange;
-      border-left: 7px solid $color-yellow;
-      a {
-        color: white;
-      }
-    }
-
     .page {
       height: 100%;
       // overflow: auto; 目前無 javascript 控制，暫時取消滾動。
       overflow: hidden;
       @include translateX( -$off-canvas-menu-width);
-      @include at-breakpoint(860px) {
+      @include at-breakpoint(760px) {
         -o-transform: none !important;
         -moz-transform: none !important;
         -ms-transform: none !important;
@@ -74,7 +74,7 @@ $off-canvas-main-bg-color: white;
 
     .header {
       position: relative;
-      @include at-breakpoint(860px) {
+      @include at-breakpoint(760px) {
         position: fixed;
       }
     }
@@ -94,7 +94,7 @@ $off-canvas-main-bg-color: white;
 
 
 
-  @include at-breakpoint(860px) {
+  @include at-breakpoint(760px) {
 
     .wrapper {
 
