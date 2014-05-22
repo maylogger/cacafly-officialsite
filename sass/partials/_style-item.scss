@@ -73,7 +73,7 @@
     .item-readmore {
       padding-top: 10px;
       color: $color-yellow;
-      border-top: 1px solid white;
+      border-top: 1px solid rgba(white ,0.15);
     }
   }
   @include at-breakpoint($pad) {

@@ -701,7 +701,7 @@ button.left, .button.left, a.button.left { float: left; }
 .card-link-style .items .item { margin-bottom: 24px; }
 .card-link-style .items .item-image img { margin-bottom: 0; }
 .card-link-style .items .item-content { color: white; text-align: center; }
-.card-link-style .items .item-readmore { padding-top: 10px; color: #f99d1c; border-top: 1px solid white; }
+.card-link-style .items .item-readmore { padding-top: 10px; color: #f99d1c; border-top: 1px solid rgba(255, 255, 255, 0.15); }
 @media (min-width: 760px) { .card-link-style .items { margin: 0; } }
 
 .image-text-style .items .item { margin-bottom: 0; }
@@ -844,7 +844,9 @@ ol.carousel-indicators { position: absolute; bottom: 10px; left: 50%; z-index: 1
 .main-service-block a .item-title { display: inline-block; position: relative; margin-bottom: 0; color: #f26522; }
 .main-service-block a .item-title:hover { text-decoration: underline; }
 .main-service-block a .item-title:after { content: ""; position: absolute; top: 6px; right: -18px; border: 6px solid transparent; border-left-color: #f26522; }
-@media (min-width: 760px) { .main-service-block { -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; } }
+.main-service-block .items .item-title + .item-text { margin-top: 0px; }
+@media (min-width: 760px) { .main-service-block { -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+  .main-service-block .item-text { font-size: 15px; line-height: 24px; } }
 
 .about-banner { background-image: url('/images/about/about-banner-bg.jpg?1399971325'); }
 
