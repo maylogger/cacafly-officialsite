@@ -36,7 +36,7 @@ $global-color: $color-black;
 $global-muted-color: lighten($global-color, 50%);
 
 $global-link-color: $color-orange;
-$global-link-hover-color: darken($color-orange, 20%);
+$global-link-hover-color: $color-yellow;
 
 // background & border
 $global-background: white;
