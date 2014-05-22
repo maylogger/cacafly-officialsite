@@ -31,15 +31,16 @@
     display: inline-block;
     margin: 0 6px;
     padding: 0 12px;
-    color: white;
+    color: $color-black;
     text-decoration: none;
     cursor: pointer;
     @include adjust-font-size-to(14px, 1.5);
+    border: 1px solid transparent;
     @include border-radius(18px);
     @include transition(background-color .25s);
-    background-color: $color-gray;
     &.active {
-      background-color: $color-red;
+      color: $color-red;
+      border-color: $color-red;
     }
   }
   @include at-breakpoint($pad) {
@@ -49,3 +50,13 @@
   }
 }
 
+.youtube-platform {
+  @include adjust-font-size-to(18px);
+  @include at-breakpoint($pad) {
+    @include leader(1.5);
+    @include adjust-font-size-to(20px, 1.5);
+  }
+  @include at-breakpoint($desktop) {
+    @include leader(3);
+  }
+}

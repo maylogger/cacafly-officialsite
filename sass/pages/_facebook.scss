@@ -39,10 +39,20 @@
 
   @include at-breakpoint($pad) {
     .col {
-      margin-bottom: 48px;
+      margin-left: 2.52%;
+      margin-right: 0;
+      padding-right: 2.52%;
       padding-bottom: 0;
       border-bottom: none;
       border-right: 1px solid $global-divider;
+    }
+  }
+  @include at-breakpoint($desktop) {
+    .col {
+      margin-left: 1.2%;
+      margin-right: 0;
+      padding-right: 1.2%;
+      margin-bottom: 48px;
     }
   }
 }
@@ -60,8 +70,11 @@
 .fb-user-content, .fb-editor-problem {
   @include adjust-font-size-to(18px);
   @include at-breakpoint($pad) {
-    @include leader(3);
+    @include leader(1.5);
     @include adjust-font-size-to(20px, 1.5);
+  }
+  @include at-breakpoint($desktop) {
+    @include leader(3);
   }
 }
 

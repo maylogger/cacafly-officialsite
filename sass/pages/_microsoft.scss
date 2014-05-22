@@ -6,10 +6,13 @@
   top: 43%;
   left: 0;
   right: 0;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   color: $color-green-deep;
+  @include at-breakpoint($desktop) {
+    font-size: 36px;
+  }
 }
 
 #ms-user-position + .chart-number {
@@ -17,10 +20,13 @@
   top: 43%;
   left: 0;
   right: 0;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   color: $color-blue-deep;
+  @include at-breakpoint($desktop) {
+    font-size: 36px;
+  }
 }
 
 #ms-user-location + .chart-number {
@@ -28,10 +34,13 @@
   top: 43%;
   left: 0;
   right: 0;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
   color: $color-brown;
+  @include at-breakpoint($desktop) {
+    font-size: 36px;
+  }
 }
 
 .msn-ad-set {
@@ -51,7 +60,7 @@
       margin-right: -30px;
       font-size: 100px;
       font-weight: bold;
-      color: $color-blue;
+      color: $color-blue-deep;
     }
     &:last-child {
       &:after {
@@ -79,7 +88,8 @@
         right: -40px;
         margin-top: -15px;
         margin-right: 0;
-        @include text-shadow(0px 0px 10px rgba(white, .5));
+        color: white;
+        @include text-shadow(0px 0px 10px rgba(black, .5));
       }
       &:last-child {
         &:after {
