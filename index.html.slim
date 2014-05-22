@@ -1,28 +1,29 @@
 .hero
-  #hero-carousel.carousel.slide data-ride="carousel"
-    ol.carousel-indicators
-      li.active data-target="#hero-carousel" data-slide-to="0"
-      li data-target="#hero-carousel" data-slide-to="1"
-      li data-target="#hero-carousel" data-slide-to="2"
-    .carousel-inner
-      .item.active
-        .hero-photo style="background-image: url('http://fakeimg.pl/1280x400');"
-        .carousel-caption
-          h3 First slide label
-      .item
-        .hero-photo style="background-image: url('http://fakeimg.pl/1280x400');"
-        .carousel-caption
-          h3 Second slide label
-      .item
-        .hero-photo style="background-image: url('http://fakeimg.pl/1280x400');"
-        .carousel-caption
-          h3 Third slide label
-    a.left.carousel-control href="#hero-carousel" data-slide="prev"
-      span.glyphicon.icon-prev
-    a.right.carousel-control href="#hero-carousel" data-slide="next"
-      span.glyphicon.icon-next
+  .hero-holder
+    #hero-carousel.carousel.slide data-ride="carousel"
+      ol.carousel-indicators
+        li.active data-target="#hero-carousel" data-slide-to="0"
+        li data-target="#hero-carousel" data-slide-to="1"
+        li data-target="#hero-carousel" data-slide-to="2"
+      .carousel-inner
+        .item.active
+          .hero-photo
+            img src="http://hhhhold.com/1480x500/1"
+          .carousel-caption
+        .item
+          .hero-photo
+            img src="http://hhhhold.com/1480x500/2"
+          .carousel-caption
+        .item
+          .hero-photo
+            img src="http://hhhhold.com/1480x500/3"
+          .carousel-caption
+      a.left.carousel-control href="#hero-carousel" data-slide="prev"
+        span.glyphicon.icon-prev
+      a.right.carousel-control href="#hero-carousel" data-slide="next"
+        span.glyphicon.icon-next
 
-.block
+.block.main-service-block
   .container
     .block-header
       h2.block-title.main-title
@@ -31,7 +32,7 @@
     .row.grid-1-2-2.icon-style
       .col
         .items.image-left
-          .item
+          a.item href="/facebook/advertising.html"
             .item-image
               = image_tag("index/service-fb-ads.svg")
               /[if IE]
@@ -41,7 +42,7 @@
               p.item-text 擁有大量真實用戶精準抓出客戶或潛在客戶以達成訂單
       .col
         .items.image-left
-          .item
+          a.item href="/facebook/social.html"
             .item-image
               = image_tag("index/service-fb-page.svg")
               /[if IE]
@@ -49,10 +50,9 @@
             .item-content
               h4.item-title 粉絲專頁經營
               p.item-text 利用社交為導向的 Facebook，經營粉絲專頁與客戶打交道、作朋友，建立顧客忠誠度
-    .row.grid-1-2-2.icon-style
       .col
         .items.image-left
-          .item
+          a.item href="/microsoft/msn.html"
             .item-image
               = image_tag("index/service-msn.svg")
               /[if IE]
@@ -62,7 +62,7 @@
               p.item-text MSN 多媒體廣告訴說故事方式來塑造品牌形象與創造品牌忠誠度
       .col
         .items.image-left
-          .item
+          a.item href='/microsoft/skype.html'
             .item-image
               = image_tag("index/service-skype.svg")
               /[if IE]
@@ -70,10 +70,9 @@
             .item-content
               h4.item-title Skype 廣告
               p.item-text 觸動用戶情感的跨裝置通訊軟體，提高購買意願
-    .row.grid-1-2-2.icon-style
       .col
         .items.image-left
-          .item
+          a.item href="google/index.html"
             .item-image
               = image_tag("index/service-google.svg")
               /[if IE]
@@ -83,7 +82,7 @@
               p.item-text Google 為網路最大的聯播網媒體，透過關鍵字與聯播網為你帶來最大的觸擊率
       .col
         .items.image-left
-          .item
+          a.item href="google/index.html"
             .item-image
               = image_tag("index/service-youtube.svg")
               /[if IE]
@@ -99,7 +98,7 @@
         | 服務客群
         .main-sub-title CUSTOMER
       p.block-content cacaFly 擁有豐富的媒體行銷經驗，精細分割不同的客戶以深耕服務與提供更專業的服務品質
-    .row.grid-2-2-4
+    .row.grid-2-2-4.customer
       .col
         .items.image-top
           .item
