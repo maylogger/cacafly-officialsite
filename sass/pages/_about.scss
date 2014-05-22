@@ -341,9 +341,11 @@
     border-bottom: 2px solid $color-lighter-gray;
     @include rotateY(0deg);
     @include transition(.5s);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     .item-image {
       img {
-        max-width: 80px;
+        max-width: 110px;
         height: auto;
       }
     }
@@ -360,6 +362,12 @@
   @include at-breakpoint($desktop) {
     .member-intro {
       @include rotateY(180deg);
+      .item-image {
+        img {
+          max-width: 80px;
+          height: auto;
+        }
+      }
     }
     .member-photo {
       @include rotateY(0deg);
