@@ -133,7 +133,13 @@
       }
     }
   }
+  .items .item-title + .item-text {
+    @include leader(0);
+  }
   @include at-breakpoint($pad) {
     @include background-size(contain);
+    .item-text {
+      @include adjust-font-size-to(15px);
+    }
   }
 }
