@@ -41,6 +41,9 @@
     .address {
       margin-bottom: rhythm(.5);
     }
+    a {
+      color: white;
+    }
   }
 }
 
@@ -100,7 +103,6 @@
   }
 
   .contact-form {
-    padding: rhythm(1) rhythm(2);
     .submit {
       height: 218px;
       padding: 128px 48px 0;
