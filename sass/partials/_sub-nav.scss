@@ -87,10 +87,10 @@
       &:after {
         content: "";
         position: absolute;
+        top: 36px;
         left: 50%;
-        margin-left: -8px;
-        border: 8px solid transparent;
-        border-top: 8px solid $color-orange;
+        margin-left: -11px;
+        @include replace-text-with-svg("sub-nav-active-arrow");
       }
     }
     &.with-icon {
@@ -103,4 +103,11 @@
 
 .hide-spy {
   display: none;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -82px;
+  visibility: hidden;
 }
