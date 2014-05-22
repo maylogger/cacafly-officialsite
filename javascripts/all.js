@@ -90,12 +90,12 @@ var currentTallest = 0,
 };
 
 $(window).load(function() {
-  equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style .item');
+  equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style .item, .card-link-style .item');
 });
 
 
 $(window).resize(function(){
-  equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style');
+  equalheight('.item.member, .mktreport .item-text, .location, .positive .item, .ad-flow .item, .card-style .item, .card-link-style .item');
 });
 
 // number counter for facebook page with stepper.js
