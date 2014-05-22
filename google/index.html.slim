@@ -9,15 +9,16 @@
 .sub-nav.nav-sticky
   h3: a.sub-nav-title href="#" 目錄
   ul.nav
-    li: a href="#title1" 媒體特性
+    li.google-feature: a href="#title1" 媒體特性
     li.google-search: a href="#title2" 搜尋連播網
-    li: a href="#title3" 多媒體連播網
+    li.google-media: a href="#title3" 多媒體連播網
     li.youtube-ad-type: a href="#title4" YouTube
     li.mobile-ad: a href="#title5" 行動廣告
     li: a href="#title6" 再行銷
 
 .page-content
-  #title1.block.blue-deep-block
+  #title1.anchor
+  .block.blue-deep-block
     .container
       .block-header
         h2.block-title.main-title 媒體特性
@@ -66,7 +67,7 @@
     .container
       .block-header
         h2.block-title.main-title Google 定位技術將這些人網羅起來
-      .row.grid-2-3-3.vhr-style
+      .row.grid-2-3-3.vhr-style.google-feature.rotate-animation
         .col
           .items.image-top
             .item
@@ -143,12 +144,13 @@
                 a.origin.active 原本的購買流程
                 a.zmot 新的購買流程
 
-  #title2.block.blue-deep-block
+  #title2.anchor
+  .block.blue-deep-block
     .container
       .block-header
         h2.block-title.main-title Google 搜尋連播網
-        p.block-headline 拉近潛在消費者的距離
-      .row
+        p.block-content 拉近潛在消費者的距離
+      .row.google-search.zoom-animation
         .col
           .items.image-top
             .item
@@ -185,7 +187,8 @@
               .item-content
                 h4.item-title 抓住任何口碑傳播的機會
 
-  #title3.block.blue-dark-block
+  #title3.anchor
+  .block.blue-dark-block
     .container
       .block-header
         h2.block-title.main-title Google 多媒體連播網
@@ -194,7 +197,7 @@
     .container
       .block-header
         h2.block-title.main-title 使用者的95%上網時間都在做搜尋以外的網路行為
-      .row.grid-2-2-4.vhr-style
+      .row.grid-2-2-4.vhr-style.google-media.rotate-animation
         .col
           .items.image-top
             .item
@@ -203,7 +206,7 @@
                 /[if IE]
                   = image_tag("google/behavior-youtube.png")
               .item-content
-                p.item-text 觀看 Youtube
+                h4.item-title 觀看 Youtube
         .col
           .items.image-top
             .item
@@ -212,7 +215,7 @@
                 /[if IE]
                   = image_tag("google/behavior-content.png")
               .item-content
-                p.item-text 瀏覽內容網站
+                h4.item-title 瀏覽內容網站
         .col
           .items.image-top
             .item
@@ -221,7 +224,7 @@
                 /[if IE]
                   = image_tag("google/behavior-mobile.png")
               .item-content
-                p.item-text 使用手機 App
+                h4.item-title 使用手機 App
 
         .col
           .items.image-top
@@ -231,7 +234,7 @@
                 /[if IE]
                   = image_tag("google/behavior-social.png")
               .item-content
-                p.item-text 使用社交平台
+                h4.item-title 使用社交平台
 
   .block.lightgray-block
     .container
@@ -276,7 +279,8 @@
               .item-content
                 p.item-text 上百萬的廣告版位，品牌曝光最大化
 
-  #title4.block.red-block
+  #title4.anchor
+  .block.red-block
     .container
       .block-header
         h2.block-title.main-title YouTube 台灣第一線上影音平台
@@ -293,7 +297,7 @@
             .item
               .item-content
                 .item-title
-                  ul.fb-user-content
+                  ul.youtube-platform
                     li 影片觸及率最高的平台
                     li 台灣人平均每月觀看影片 66 次
                     li 每月影片瀏覽量 5.8 億
@@ -378,7 +382,7 @@
                 /[if IE]
                   = image_tag("google/ytb-positive-tv.png")
               .item-content
-                p.item-text 增加電視媒體觸及率
+                h4.item-title 增加電視媒體觸及率
         .col
           .items.image-top
             .item
@@ -387,7 +391,7 @@
                 /[if IE]
                   = image_tag("google/ytb-positive-video.png")
               .item-content
-                p.item-text 影片讓你廣告更有渲染力
+                h4.item-title 影片讓你廣告更有渲染力
         .col
           .items.image-top
             .item
@@ -396,7 +400,7 @@
                 /[if IE]
                   = image_tag("google/ytb-positive-active.png")
               .item-content
-                p.item-text 品牌深度溝通與互動
+                h4.item-title 品牌深度溝通與互動
 
         .col
           .items.image-top
@@ -406,13 +410,14 @@
                 /[if IE]
                   = image_tag("google/ytb-positive-edu.png")
               .item-content
-                p.item-text 適合教育傳播、產品更多細節溝通
+                h4.item-title 適合教育傳播、產品更多細節溝通
 
-  #title5.block
+  #title5.anchor
+  .block
     .container
       .block-header
         h2.block-title.main-title 行動廣告
-        p.block-headline 行動裝置使用人口持續增加
+        p.block-content 行動裝置使用人口持續增加
       .row
         .col
           .items.image-top
@@ -426,7 +431,7 @@
     .container
       .block-header
         h2.block-title.main-title 行動廣告類別
-        p.block-headline 行動廣告為你觸及所有行動網路行為
+        p.block-content 行動廣告為你觸及所有行動網路行為
       .row.grid-2-2-4.vhr-style.mobile-ad.slideup-animation
         .col
           .items.image-top
@@ -466,7 +471,8 @@
               .item-content
                 h4.item-title 搜尋廣告
 
-  #title6.block.blue-deep-block
+  #title6.anchor
+  .block.blue-deep-block
     .container
       .block-header
         h2.block-title.main-title 再行銷
@@ -475,7 +481,7 @@
     .container
       .block-header
         h2.block-title.main-title 利用全網站適用的標記，拓展商機
-        p.block-headline 網站標記能記錄造訪者的行為並投遞高相關度的廣告資訊
+        p.block-content 網站標記能記錄造訪者的行為並投遞高相關度的廣告資訊
       .row
         .col
           .items.image-top
@@ -489,7 +495,7 @@
     .container
       .block-header
         h2.block-title.main-title 回訪客潛在高消費力不容小覷
-        p.block-headline 再行銷廣告讓你擁有第二次吸引消費者機會
+        p.block-content 再行銷廣告讓你擁有第二次吸引消費者機會
       .row
         .col
           .items.image-top
