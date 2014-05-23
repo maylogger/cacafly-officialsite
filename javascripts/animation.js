@@ -11,7 +11,7 @@ $(".flow-switch .zmot").on("click",function(){
 
 $(window).load(function() {
   var windowHeight = $(window).height();
-  var scrollOffset = windowHeight / 2;
+  var scrollOffset = windowHeight / 2.8;
   $('body').scrollspy({
     target: '.sub-nav',
     offset: scrollOffset
@@ -32,7 +32,7 @@ $(window).load(function() {
 
 }).resize( function() {
   var windowHeight = $(window).height();
-  var scrollOffset = windowHeight / 2;
+  var scrollOffset = windowHeight / 2.8;
   $('body').scrollspy("refresh", {
     target: '.sub-nav',
     offset: scrollOffset
