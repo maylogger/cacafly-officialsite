@@ -126,9 +126,6 @@
       position: relative;
       margin-bottom: 0;
       color: $color-orange;
-      &:hover {
-        text-decoration: underline;
-      }
       &:after {
         content: "";
         position: absolute;
@@ -136,6 +133,11 @@
         right: -18px;
         border: 6px solid transparent;
         border-left-color: $color-orange;
+      }
+    }
+    &:hover {
+      .item-title {
+        text-decoration: underline;
       }
     }
   }
