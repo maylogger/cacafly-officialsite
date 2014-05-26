@@ -89,10 +89,6 @@ $('.fb-retargeting').on('activate.bs.scrollspy', function () {
   $(".fb-retargeting.slideup-animation").addClass("active");
 });
 
-$('.msn-ad-set').on('activate.bs.scrollspy', function () {
-  $(".msn-ad-set.zoom-animation").addClass("active");
-});
-
 $('.msn-positive').on('activate.bs.scrollspy', function () {
   $(".msn-positive.slideup-animation").addClass("active");
 });
