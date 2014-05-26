@@ -27,7 +27,6 @@ $page-container: ".container";
 
 // starter partials
 @import "starter/layout";
-// @import "starter/layout-debug"; // for debug.
 @import "starter/typography";
 
 @import "starter/off-canvas";
@@ -35,14 +34,12 @@ $page-container: ".container";
 @import "starter/header";
 @import "starter/footer";
 @import "starter/main-nav";
-// @import "starter/headline";
 @import "starter/block";
 @import "starter/grid";
 @import "starter/items";
 @import "starter/button";
 @import "starter/form";
 @import "starter/list";
-@import "starter/tab";
 @import "starter/action-bar";
 @import "starter/pagination";
 
