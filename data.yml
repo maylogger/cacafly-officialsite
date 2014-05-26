@@ -1,8 +1,8 @@
-site-url: "http://localhost:3750"
+site-url: "http://caacfly.com"
 site-title: "cacaFly"
 site-name: "cacaFly"
-site-description: "尚未填寫敘述"
+site-description: "cacaFly official website"
 
 og-type: "website"
-og-image: "http://localhost:3750/fb.png"
-fb-admins: "123456"
+og-image: "http://caacfly.com/fb-og-image.png"
+fb-admins: "admin"
