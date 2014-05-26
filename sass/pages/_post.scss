@@ -16,6 +16,9 @@
 .post {
   @include pie-clearfix;
   @include leader(1);
+  .post-body {
+    @include trailer(2);
+  }
   .post-header {
     @include padding-trailer(.25);
     border-bottom: 1px solid $global-divider;
